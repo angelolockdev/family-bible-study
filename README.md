@@ -1,20 +1,38 @@
-# Family Bible Study
+# Fianaram-pianakaviana
 
-Private React companion for the Lock To Hang family’s weekly Bible study.
+Compagnon React statique pour une étude biblique familiale en malagasy, alimenté exclusivement par des sources officielles [jw.org](https://www.jw.org/mg/).
 
-Live site: `https://angelolockdev.github.io/family-bible-study/`
+## Ce que contient l’application
 
-## What it provides
+- programme familial hebdomadaire et préparation à la prédication ;
+- navigation fluide entre `Fianarana`, `Fanompoana` et `Tahiry` ;
+- mise en évidence automatique de **la journée en cours** uniquement lorsque la semaine affichée contient la date actuelle ;
+- archive glissante de **deux mois maximum** ;
+- prompt imprimable associé à chaque étude familiale ;
+- liens directs vers les articles et les passages de la Bible en malagasy sur jw.org ;
+- cartes de rôles anonymisées, afin que le code puisse être publié sans noms des enfants ou des parents.
 
-- a weekly reading program sourced from jw.org in Malagasy;
-- four family participation roles: `Mpitarika`, `Mpampifandray`, `Mpamaly sy Mpisafidy`, and `Mpandray anjara`;
-- a rotating activity selector designed for Arielle and Gaëlle;
-- a printable role-card preview;
-- a versioned weekly-result source file at `src/data/latest-week.json`.
-- a dedicated Malagasy JW preaching-preparation study with an opening, question, scripture, response guidance, next step, and practice exercise at `src/data/preaching-study.json`.
-- automatic GitHub Pages deployment after each validated content update.
+## Source de données unique
 
-## Local development
+`src/data/studies.json` est le registre unique des études. Chaque entrée doit contenir :
+
+- une période ISO (`startDate`, `endDate`) ;
+- au moins une URL `https://www.jw.org/mg/...` ;
+- les liens directs jw.org pour chaque passage biblique ;
+- un `printPrompt` pour chaque étude familiale.
+
+L’application filtre elle-même les entrées clôturées depuis plus de deux mois.
+
+## Synchronisation Slack
+
+Le canal privé Slack `#bible-malagasy` est le canal de diffusion. Les deux tâches récurrentes mettent d’abord à jour le registre JSON, valident l’application, puis publient le résumé correspondant dans Slack :
+
+- dimanche 18:00 UTC+3 : programme familial ;
+- vendredi 19:00 UTC+3 : préparation à la prédication.
+
+Ainsi, le site et Slack utilisent toujours le même contenu. WhatsApp n’est pas encore connecté : il devra reprendre ce même registre, sans dupliquer ni générer un contenu distinct.
+
+## Développement local
 
 ```bash
 npm install
@@ -28,10 +46,6 @@ npm test
 npm run build
 ```
 
-## Weekly cron contract
+## Publication GitHub Pages
 
-The Sunday Bible cron updates `src/data/latest-week.json` with the next week’s jw.org-based program, validates it as JSON, commits it, pushes it to `main`, then publishes the same summary to Slack.
-
-The Friday preaching cron follows the same single-source pattern for `src/data/preaching-study.json`: it researches jw.org, validates the app, commits the structured result, and publishes the matching briefing to Slack. GitHub Pages redeploys automatically after the push.
-
-No credentials, API keys, or tokens belong in this repository.
+Le workflow `.github/workflows/deploy-pages.yml` est prêt, mais le dépôt est volontairement privé et GitHub Pages est actuellement désactivé. Une publication publique exige d’abord une décision explicite sur la visibilité du dépôt ou la création d’un dépôt public séparé, car GitHub Pages rend les fichiers publiés accessibles publiquement.

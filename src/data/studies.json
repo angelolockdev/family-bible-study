@@ -1,0 +1,75 @@
+[
+  {
+    "id": "family-2026-07-13",
+    "kind": "family",
+    "startDate": "2026-07-13",
+    "endDate": "2026-07-19",
+    "weekLabel": "13-19 Jolay 2026",
+    "reading": "Jeremia 16-17",
+    "theme": "Tena zava-dehibe ny hoe iza no atokisanao",
+    "days": [
+      { "day": "Alatsinainy", "focus": "Vakio Jeremia 16:1-13; diniho ny vokatry ny tsy fankatoavana an’i Jehovah." },
+      { "day": "Talata", "focus": "Vakio Jeremia 16:14-21; resaho ny fampanantenan’i Jehovah hanangona sy hampody ny vahoakany." },
+      { "day": "Alarobia", "focus": "Vakio Jeremia 17:1-8; ampitahao ny matoky olona sy ny matoky an’i Jehovah." },
+      { "day": "Alakamisy", "focus": "Vakio Jeremia 17:9-18; mivavaha amin’i Jehovah mba handininy ny fo sy hanampiany anao hitoetra ho mahatoky." },
+      { "day": "Zoma", "focus": "Nampitaha olona roa i Jeremia: ny matoky olona toy ny zenevrie any an-tany efitra, fa ny matoky an’i Jehovah kosa toy ny hazo eo amoron-drano." },
+      { "day": "Sabotsy", "focus": "Toetra: Fitokiana an’i Jehovah. Rehefa mila manapa-kevitra ianao, ahoana no itadiavanao ny toroheviny ao amin’ny Baiboly?" },
+      { "day": "Alahady", "focus": "Famerenana: Inona no vokatry ny fitokiana an’i Jehovah? Ahoana no anampian’ny famakiana Baiboly isan’andro antsika?" }
+    ],
+    "memoryVerse": {
+      "reference": "Jeremia 17:7",
+      "application": "Mitadiava torohevitra ao amin’ny Baiboly sy amin’ny vavaka alohan’ny handraisana fanapahan-kevitra.",
+      "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jeremia/17/#v24017007"
+    },
+    "sourceUrl": "https://www.jw.org/mg/zavatra-misy/fivoriana-vj-tari-dalana/jolay-aogositra-2026-mwb/Fivoriana-Momba-ny-Fiainantsika-sy-ny-Fanompoana-Fandaharana-ho-Anny-13-19-Jolay-2026",
+    "printPrompt": "Create one A4 portrait printable activity sheet, exactly 2480 x 3508 px at 300 DPI. Make two child-friendly illustrated cards: a dry tree in a desert and a healthy tree beside a river. Use clean outlines, warm natural colours, large simple shapes, a light cream background, 10 mm safe margins, dotted cut guides only, and no text, logos, watermarks, crosses, or representation of God. The story must make the contrast between trusting people and trusting Jehovah visually clear."
+  },
+  {
+    "id": "family-2026-07-20",
+    "kind": "family",
+    "startDate": "2026-07-20",
+    "endDate": "2026-07-26",
+    "weekLabel": "20-26 Jolay 2026",
+    "reading": "Jeremia 18-19",
+    "theme": "Azo atao tsara ny miorina indray",
+    "days": [
+      { "day": "Alatsinainy", "focus": "Vakio Jeremia 18:1-6; diniho hoe Mpanefy Tanimanga Lehibe i Jehovah." },
+      { "day": "Talata", "focus": "Vakio Jeremia 18:7, 8; resaho hoe afaka miova sy mandresy ota isika." },
+      { "day": "Alarobia", "focus": "Vakio Jeremia 18:11, 12; mifidiana fahazarana iray hatsaraina." },
+      { "day": "Alakamisy", "focus": "Vakio Jeremia 19:1-11; hazavao ny vokatry ny tsy fankatoavana maharitra." },
+      { "day": "Zoma", "focus": "Tantara: Nentin’i Jehovah tany amin’ny mpanefy tanimanga i Jeremia. Toy ny tanimanga eo an-tanan’ny mpanefy, afaka manova ny lalany ny olona." },
+      { "day": "Sabotsy", "focus": "Toetra: Fanetren-tena. Ahoana no anekentsika ny fanampian’i Jehovah mba hanovantsika fahazarana iray?" },
+      { "day": "Alahady", "focus": "Famerenana: Nahoana i Jehovah no Mpanefy Tanimanga Lehibe? Inona no porofo fa afaka miova isika?" }
+    ],
+    "memoryVerse": {
+      "reference": "Jeremia 18:8",
+      "application": "Rehefa mahatsikaritra fahazarana ratsy ianao, mivavaha amin’i Jehovah ary manaova dingana kely iray hialana amin’izany.",
+      "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jeremia/18/#v24018008"
+    },
+    "sourceUrl": "https://www.jw.org/mg/zavatra-misy/fivoriana-vj-tari-dalana/jolay-aogositra-2026-mwb/Fivoriana-Momba-ny-Fiainantsika-sy-ny-Fanompoana-Fandaharana-ho-Anny-20-26-Jolay-2026",
+    "printPrompt": "Create one A4 portrait printable activity sheet, exactly 2480 x 3508 px at 300 DPI, with four clearly separated warm illustrated story cards for children aged 2 and 3.5. Narrative order: Jeremiah walking to a potter’s workshop; a potter reshaping a flawed clay vessel; a person noticing a bad habit and stopping to think; the same person praying and choosing a good action. Use clear outlines, a light cream background, 10 mm safe margins, rounded rectangles, dotted cut guides only, and no text, letters, numbers, logos, watermarks, crosses, representation of God, or frightening imagery."
+  },
+  {
+    "id": "preaching-2026-07-17",
+    "kind": "preaching",
+    "startDate": "2026-07-17",
+    "endDate": "2026-07-18",
+    "weekLabel": "17-18 Jolay 2026",
+    "publishedAt": "17 Jolay 2026, 19:00",
+    "title": "Fianarana ho an’ny fanompoana",
+    "subtitle": "Manomana resaka fohy, manaja, ary mifantoka amin’ny zavatra mahaliana ilay olona.",
+    "objective": "Miezaha hahafantatra izay eritreretin’ilay olona ary ampifandraiso amin’ny andinin-teny iray ny resaka.",
+    "theme": "Ahoana no ahazoana fampaherezana rehefa manahy?",
+    "opening": "Maro no mahatsapa tebiteby rehefa mieritreritra ny hoavy. Aminao, inona no tena manampy olona iray hahazo fiadanana?",
+    "question": "Mino ve ianao fa afaka manampy antsika amin’ny ahiahintsika ny Baiboly?",
+    "scripture": {
+      "reference": "1 Petera 5:7",
+      "application": "Vakio ilay andinin-teny, dia anontanio hoe: ‘Inona amin’io no hitanao fa mampahery?’",
+      "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/1-petera/5/#v60005007"
+    },
+    "response": "Henoy aloha ny valin’ilay olona. Aza miady hevitra; misaora azy nizara ny heviny ary valio amin’ny teny tsotra mifanaraka amin’izay nolazainy.",
+    "nextStep": "Raha liana ilay olona, manolora lahatsoratra iray ao amin’ny jw.org momba ny fiatrehana ny fanahiana, ary mangataha alalana hiverina hiresaka aminy.",
+    "practice": "Mifandimby: olona iray mitory, olona iray mamaly toy ny tompon-trano, ary olona iray mijery raha voatonona ilay fanontaniana sy ilay andinin-teny.",
+    "sourceUrl": "https://www.jw.org/mg/zavatra-misy/fivoriana-vj-tari-dalana/jolay-aogositra-2026-mwb/Fivoriana-Momba-ny-Fiainantsika-sy-ny-Fanompoana-Fandaharana-ho-Anny-20-26-Jolay-2026"
+  }
+]

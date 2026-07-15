@@ -23,4 +23,15 @@ describe('Family Bible Study companion', () => {
     await user.click(screen.getByRole('button', { name: /activité suivante/i }))
     expect(screen.getByText(/Alaharo ny tantara/i)).toBeInTheDocument()
   })
+
+  it('shows a JW preaching-preparation study with a conversation flow', () => {
+    render(<App />)
+
+    expect(screen.getByRole('heading', { name: /Fianarana ho an’ny fanompoana/i })).toBeInTheDocument()
+    expect(screen.getByText(/Fanombohana resaka/i)).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: '1 Petera 5:7' })).toBeInTheDocument()
+    expect(screen.getByText(/Fanazaran-tena/i)).toBeInTheDocument()
+    expect(screen.getByText(/Nohavaozina:/i)).toBeInTheDocument()
+    expect(screen.getAllByRole('link', { name: /Jereo ao amin’ny jw.org/i })).toHaveLength(2)
+  })
 })

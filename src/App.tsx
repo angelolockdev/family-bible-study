@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import latestWeek from './data/latest-week.json'
+import preachingStudy from './data/preaching-study.json'
 import './styles.css'
 
 type Role = {
@@ -47,6 +48,7 @@ const activities = [
 export default function App() {
   const [activityIndex, setActivityIndex] = useState(0)
   const activity = activities[activityIndex]
+  const roleCardsUrl = `${import.meta.env.BASE_URL}assets/role-cards.svg`
 
   function showNextActivity() {
     setActivityIndex((current) => (current + 1) % activities.length)
@@ -54,13 +56,25 @@ export default function App() {
 
   return (
     <main className="app-shell">
-      <section className="hero" aria-labelledby="page-title">
+      <nav className="site-nav" aria-label="Fizarana lehibe">
+        <a className="site-brand" href="#top" aria-label="Fianaram-pianakaviana - pejy fandraisana">
+          <span aria-hidden="true">LT</span>
+          <strong>Fianaram-pianakaviana</strong>
+        </a>
+        <div>
+          <a href="#fianarana">Fianarana</a>
+          <a href="#fanompoana">Fanompoana</a>
+        </div>
+      </nav>
+
+      <section className="hero" id="top" aria-labelledby="page-title">
         <div>
           <p className="eyebrow">Fianakaviana Lock To Hang</p>
           <h1 id="page-title">Fianaram-pianakaviana</h1>
           <p className="intro">Drafitra tsotra mba hianaran’ny fianakaviana miaraka, hifandimby handray anjara, ary hampihatra lesona iray isan-kerinandro.</p>
         </div>
         <div className="week-chip">
+          <span className="live-dot">Vaovao</span>
           <span>Herinandro</span>
           <strong>{latestWeek.weekLabel}</strong>
         </div>
@@ -86,7 +100,7 @@ export default function App() {
         </div>
       </section>
 
-      <section className="study-grid" aria-label="Programme et activité">
+      <section className="study-grid" id="fianarana" aria-label="Programme et activité">
         <article className="weekly-card">
           <p className="eyebrow">Famakiana amin’ity herinandro ity</p>
           <h2>{latestWeek.reading}</h2>
@@ -107,7 +121,7 @@ export default function App() {
           <a href={latestWeek.sourceUrl} target="_blank" rel="noreferrer">Jereo ao amin’ny jw.org</a>
         </article>
 
-        <article className="activity-card">
+        <article className="activity-card" key={activityIndex}>
           <p className="eyebrow">Hetsika ho an’ny fianakaviana</p>
           <h2>{activity.title}</h2>
           <p className="activity-description">{activity.description}</p>
@@ -119,14 +133,64 @@ export default function App() {
         </article>
       </section>
 
+      <section className="preaching-study" id="fanompoana" aria-labelledby="preaching-title">
+        <div className="preaching-study__heading">
+          <div className="preaching-study__meta">
+            <p className="eyebrow">Fanomanana ny fanompoana</p>
+            <span>Nohavaozina: {preachingStudy.publishedAt}</span>
+          </div>
+          <h2 id="preaching-title">{preachingStudy.title}</h2>
+          <p>{preachingStudy.subtitle}</p>
+          <strong className="study-date">Ho an’ny {preachingStudy.weekLabel}</strong>
+        </div>
+
+        <div className="preaching-study__grid">
+          <article className="preaching-study__card preaching-study__card--focus">
+            <span className="preaching-study__label">Tanjona</span>
+            <p>{preachingStudy.objective}</p>
+            <span className="preaching-study__label">Lohahevitra</span>
+            <h3>{preachingStudy.theme}</h3>
+          </article>
+          <article className="preaching-study__card">
+            <span className="preaching-study__label">Fanombohana resaka</span>
+            <p>{preachingStudy.opening}</p>
+            <span className="preaching-study__label">Fanontaniana</span>
+            <p>{preachingStudy.question}</p>
+          </article>
+          <article className="preaching-study__card">
+            <span className="preaching-study__label">Andinin-teny</span>
+            <h3>{preachingStudy.scripture.reference}</h3>
+            <p>{preachingStudy.scripture.application}</p>
+          </article>
+          <article className="preaching-study__card">
+            <span className="preaching-study__label">Rehefa mamaly ilay olona</span>
+            <p>{preachingStudy.response}</p>
+          </article>
+          <article className="preaching-study__card">
+            <span className="preaching-study__label">Dingana manaraka</span>
+            <p>{preachingStudy.nextStep}</p>
+          </article>
+          <article className="preaching-study__card preaching-study__card--practice">
+            <span className="preaching-study__label">Fanazaran-tena</span>
+            <p>{preachingStudy.practice}</p>
+            <a href={preachingStudy.sourceUrl} target="_blank" rel="noreferrer">Jereo ao amin’ny jw.org</a>
+          </article>
+        </div>
+      </section>
+
       <section className="print-preview" aria-labelledby="print-title">
         <div>
           <p className="eyebrow">Karatra azo pirinty</p>
           <h2 id="print-title">Karatra fandraisana anjara</h2>
           <p>Azo ampiasaina miaraka amin’ny anarana azo afindra mba hifandimby andraikitra ny rehetra.</p>
         </div>
-        <img src="/assets/role-cards.svg" alt="Planche de quatre cartes de rôles pour étude biblique familiale" />
+        <img src={roleCardsUrl} alt="Planche de quatre cartes de rôles pour étude biblique familiale" />
       </section>
+
+      <footer>
+        <p>Fitaovana tsotra ho an’ny fianakaviana, mifototra amin’ny loharano ao amin’ny jw.org.</p>
+        <a href="#top">Hiverina eny ambony</a>
+      </footer>
     </main>
   )
 }

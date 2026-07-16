@@ -154,6 +154,7 @@ export function createModelClient({ fetchImpl = fetch, env = process.env } = {})
           positiveInteger(env.STUDY_MAX_TOKENS, DEFAULT_MAX_TOKENS),
         ),
         temperature: 0.2,
+        response_format: { type: 'json_object' },
       };
 
       let response;
@@ -193,7 +194,11 @@ export function createModelClient({ fetchImpl = fetch, env = process.env } = {})
       }
 
       try {
-        return parseDraftContent(payload?.choices?.[0]?.message?.content, input?.questionId);
+        const content = payload?.choices?.[0]?.message?.content;
+        if (content && typeof content === 'object' && !Array.isArray(content)) {
+          return validateDraft(content, input?.questionId);
+        }
+        return parseDraftContent(content, input?.questionId);
       } catch (error) {
         if (error instanceof ModelClientError) throw error;
         throw new ModelClientError(

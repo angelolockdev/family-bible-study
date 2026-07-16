@@ -66,6 +66,7 @@ test('posts an OpenAI-compatible request using configured model settings', async
     ],
     max_tokens: 321,
     temperature: 0.2,
+    response_format: { type: 'json_object' },
   });
 });
 

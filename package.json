@@ -8,7 +8,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "validate:watchtower": "node scripts/validate-watchtower-studies.mjs"
   },
   "repository": {
     "type": "git",

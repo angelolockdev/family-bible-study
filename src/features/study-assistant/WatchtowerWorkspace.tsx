@@ -69,7 +69,6 @@ export function WatchtowerWorkspace({ studies, today = new Date() }: WatchtowerW
           <p>{selected.weekLabel} · Réponses préparées en malagasy</p>
         </div>
         <div className="watchtower-header__meta">
-          <span>GPT-5.6-terra · Hermes local</span>
           <a href={selected.sourceUrl} target="_blank" rel="noreferrer">Lire l’article officiel</a>
         </div>
       </header>

@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import studiesData from './data/studies.json'
-import { PreparationWorkspace } from './features/study-assistant/PreparationWorkspace'
+import watchtowerData from './data/watchtower-studies.json'
+import { WatchtowerWorkspace, type WatchtowerStudy } from './features/study-assistant/WatchtowerWorkspace'
 import './styles.css'
 
 type Role = {
@@ -63,6 +64,7 @@ const activities = [
 
 const weekdayNames = ['Alahady', 'Alatsinainy', 'Talata', 'Alarobia', 'Alakamisy', 'Zoma', 'Sabotsy']
 const studies = studiesData as Study[]
+const watchtowerStudies = watchtowerData as WatchtowerStudy[]
 const bibleBooks: Record<string, { number: number; slug: string }> = {
   Jeremia: { number: 24, slug: 'jeremia' },
   '1 Petera': { number: 60, slug: '1-petera' },
@@ -214,12 +216,12 @@ export default function App() {
         <div>
           <a href={`#/fianarana/${familyStudy.id}`} aria-current={activeRoute.section === 'fianarana' ? 'page' : undefined}>Fianarana</a>
           <a href={`#/fanompoana/${preachingStudy.id}`} aria-current={activeRoute.section === 'fanompoana' ? 'page' : undefined}>Fanompoana</a>
-          <a href="#/assistant" aria-current={activeRoute.section === 'assistant' ? 'page' : undefined}>Assistant / Fanomanana</a>
+          <a href="#/assistant" aria-current={activeRoute.section === 'assistant' ? 'page' : undefined}>Étude Tour de Garde</a>
         </div>
       </nav>
 
       {activeRoute.section === 'assistant' ? (
-        <PreparationWorkspace studies={familyStudies} today={today} />
+        <WatchtowerWorkspace studies={watchtowerStudies} today={today} />
       ) : <>
 
       <section className="hero" id="top" aria-labelledby="page-title">

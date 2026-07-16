@@ -78,6 +78,6 @@ describe('Family Bible Study companion', () => {
 
     expect(window.location.hash).toBe('#/assistant')
     expect(assistantLink).toHaveAttribute('aria-current', 'page')
-    expect(screen.getByRole('heading', { name: /Aucune étude préparée/i })).toBeInTheDocument()
+    expect(screen.getAllByText(/Étude de La Tour de Garde|prochain cron Hermes/i).length).toBeGreaterThan(0)
   })
 })

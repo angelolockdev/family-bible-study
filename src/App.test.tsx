@@ -4,6 +4,7 @@ import App from './App'
 
 beforeEach(() => {
   window.history.replaceState(null, '', '#/top')
+  localStorage.clear()
 })
 
 describe('Family Bible Study companion', () => {
@@ -66,5 +67,17 @@ describe('Family Bible Study companion', () => {
     render(<App />)
 
     expect(screen.getByRole('heading', { name: 'Jeremia 18-19' })).toBeInTheDocument()
+  })
+
+  it('links to and renders the preparation assistant route', async () => {
+    const user = userEvent.setup()
+    render(<App />)
+
+    const assistantLink = screen.getByRole('link', { name: 'Assistant / Fanomanana' })
+    await user.click(assistantLink)
+
+    expect(window.location.hash).toBe('#/assistant')
+    expect(assistantLink).toHaveAttribute('aria-current', 'page')
+    expect(screen.getByRole('heading', { name: /Préparation locale/i })).toBeInTheDocument()
   })
 })

@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import studiesData from './data/studies.json'
+import { PreparationWorkspace } from './features/study-assistant/PreparationWorkspace'
 import './styles.css'
 
 type Role = {
@@ -192,7 +193,7 @@ export default function App() {
       if (routedStudy?.kind === 'family') setFamilyStudyId(routedStudy.id)
       if (routedStudy?.kind === 'preaching') setPreachingStudyId(routedStudy.id)
       setActiveRoute(route)
-      const targetId = route.section === 'fianarana' ? 'fianarana' : route.section === 'fanompoana' ? 'fanompoana' : route.section === 'tahiry' ? 'tahiry' : 'top'
+      const targetId = route.section === 'assistant' ? 'assistant' : route.section === 'fianarana' ? 'fianarana' : route.section === 'fanompoana' ? 'fanompoana' : route.section === 'tahiry' ? 'tahiry' : 'top'
       window.requestAnimationFrame(() => document.getElementById(targetId)?.scrollIntoView?.({ behavior: 'smooth', block: 'start' }))
     }
     window.addEventListener('hashchange', syncRoute)
@@ -213,8 +214,13 @@ export default function App() {
         <div>
           <a href={`#/fianarana/${familyStudy.id}`} aria-current={activeRoute.section === 'fianarana' ? 'page' : undefined}>Fianarana</a>
           <a href={`#/fanompoana/${preachingStudy.id}`} aria-current={activeRoute.section === 'fanompoana' ? 'page' : undefined}>Fanompoana</a>
+          <a href="#/assistant" aria-current={activeRoute.section === 'assistant' ? 'page' : undefined}>Assistant / Fanomanana</a>
         </div>
       </nav>
+
+      {activeRoute.section === 'assistant' ? (
+        <PreparationWorkspace studies={familyStudies} today={today} />
+      ) : <>
 
       <section className="hero" id="top" aria-labelledby="page-title">
         <div><p className="eyebrow">Mifototra amin’ny loharano ofisialy jw.org</p><h1 id="page-title">Fianaram-pianakaviana</h1><p className="intro">Drafitra tsotra, azo aleha isan’andro, ary tahiry azo averina jerena mandritra ny roa volana.</p></div>
@@ -266,6 +272,7 @@ export default function App() {
 
       <section className="print-preview" aria-labelledby="print-title"><div><p className="eyebrow">Karatra azo pirinty</p><h2 id="print-title">Karatra fandraisana anjara</h2><p>Azo ampiasaina miaraka amin’ny anarana azo afindra mba hifandimby andraikitra ny rehetra.</p></div><img src={roleCardsUrl} alt="Planche de quatre cartes de rôles pour étude biblique familiale" /></section>
       <footer><p>Ny loharano sy andinin-teny rehetra dia mankany amin’ny jw.org ofisialy.</p><a href="#top">Hiverina eny ambony</a></footer>
+      </>}
     </main>
   )
 }

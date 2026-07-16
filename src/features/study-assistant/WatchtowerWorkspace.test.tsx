@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
+import { vi } from 'vitest'
 import { WatchtowerWorkspace, type WatchtowerStudy } from './WatchtowerWorkspace'
 
 const study: WatchtowerStudy = {
@@ -22,6 +23,16 @@ const study: WatchtowerStudy = {
   }],
 }
 
+const historicStudy: WatchtowerStudy = {
+  ...study,
+  id: 'watchtower-2026399',
+  documentId: 2026399,
+  title: 'Fianarana teo aloha',
+  weekLabel: '6-12 Jolay 2026',
+  startDate: '2026-07-06',
+  endDate: '2026-07-12',
+}
+
 describe('WatchtowerWorkspace', () => {
   it('shows an explicit empty state before the cron publishes a study', () => {
     render(<WatchtowerWorkspace studies={[]} today={new Date(2026, 6, 16)} />)
@@ -40,5 +51,23 @@ describe('WatchtowerWorkspace', () => {
 
     expect(screen.getByText(study.questions[0].answer)).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Genesisy 1:26, 27' })).toHaveAttribute('href', study.questions[0].references[0].url)
+  })
+
+  it('lists published studies and selects a historical study through a durable route', async () => {
+    const user = userEvent.setup()
+    const onSelectStudy = vi.fn()
+    const { rerender } = render(<WatchtowerWorkspace studies={[study, historicStudy]} selectedStudyId={study.id} today={new Date(2026, 6, 16)} onSelectStudy={onSelectStudy} />)
+
+    const history = screen.getByRole('complementary', { name: /Historique des études/i })
+    const historicLink = screen.getByRole('link', { name: /6-12 Jolay 2026Fianarana teo aloha/i })
+    expect(historicLink).toHaveAttribute('href', '#/assistant/watchtower-2026399')
+    expect(screen.getByRole('link', { name: /13-19 Jolay 2026Ampiasao/i })).toHaveAttribute('aria-current', 'page')
+
+    await user.click(historicLink)
+    expect(onSelectStudy).toHaveBeenCalledWith(historicStudy.id)
+
+    rerender(<WatchtowerWorkspace studies={[study, historicStudy]} selectedStudyId={historicStudy.id} today={new Date(2026, 6, 16)} onSelectStudy={onSelectStudy} />)
+    expect(screen.getByRole('heading', { name: historicStudy.title })).toBeInTheDocument()
+    expect(history).toContainElement(screen.getByRole('link', { name: /6-12 Jolay 2026Fianarana teo aloha/i, current: 'page' }))
   })
 })

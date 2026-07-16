@@ -174,6 +174,10 @@ export default function App() {
     const routed = studies.find((study) => study.kind === 'preaching' && study.id === initialRoute.studyId)
     return routed?.id ?? pickDefaultStudy(studies, 'preaching', today).id
   })
+  const [watchtowerStudyId, setWatchtowerStudyId] = useState(() => {
+    const routed = watchtowerStudies.find((study) => study.id === initialRoute.studyId)
+    return routed?.id
+  })
   const [activeRoute, setActiveRoute] = useState(initialRoute)
   const [promptCopied, setPromptCopied] = useState(false)
   const roleCardsUrl = `${import.meta.env.BASE_URL}assets/role-cards.svg`
@@ -192,8 +196,10 @@ export default function App() {
     function syncRoute() {
       const route = getRoute()
       const routedStudy = studies.find((study) => study.id === route.studyId)
+      const routedWatchtowerStudy = watchtowerStudies.find((study) => study.id === route.studyId)
       if (routedStudy?.kind === 'family') setFamilyStudyId(routedStudy.id)
       if (routedStudy?.kind === 'preaching') setPreachingStudyId(routedStudy.id)
+      if (route.section === 'assistant') setWatchtowerStudyId(routedWatchtowerStudy?.id)
       setActiveRoute(route)
       const targetId = route.section === 'assistant' ? 'assistant' : route.section === 'fianarana' ? 'fianarana' : route.section === 'fanompoana' ? 'fanompoana' : route.section === 'tahiry' ? 'tahiry' : 'top'
       window.requestAnimationFrame(() => document.getElementById(targetId)?.scrollIntoView?.({ behavior: 'smooth', block: 'start' }))
@@ -221,7 +227,7 @@ export default function App() {
       </nav>
 
       {activeRoute.section === 'assistant' ? (
-        <WatchtowerWorkspace studies={watchtowerStudies} today={today} />
+        <WatchtowerWorkspace studies={watchtowerStudies} selectedStudyId={watchtowerStudyId} today={today} onSelectStudy={setWatchtowerStudyId} />
       ) : <>
 
       <section className="hero" id="top" aria-labelledby="page-title">

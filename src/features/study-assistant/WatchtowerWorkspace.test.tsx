@@ -50,7 +50,22 @@ describe('WatchtowerWorkspace', () => {
     await user.click(screen.getByRole('button', { name: 'Asehoy ny valiny' }))
 
     expect(screen.getByText(study.questions[0].answer)).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'Genesisy 1:26, 27' })).toHaveAttribute('href', study.questions[0].references[0].url)
+    await user.click(screen.getByRole('button', { name: 'Genesisy 1:26, 27' }))
+    expect(screen.getByRole('dialog', { name: 'Andinin-teny Genesisy 1:26, 27' })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Vakio ao amin’ny jw.org' })).toHaveAttribute('href', study.questions[0].references[0].url)
+  })
+
+  it('keeps paragraph numbers optional until the user asks to display them', async () => {
+    const user = userEvent.setup()
+    render(<WatchtowerWorkspace studies={[study]} today={new Date(2026, 6, 16)} />)
+
+    expect(screen.queryByText('Paragraphes 1, 2')).not.toBeInTheDocument()
+
+    await user.click(screen.getByRole('button', { name: 'Asehoy ny paragrafy' }))
+    expect(screen.getByText('Paragraphes 1, 2')).toBeInTheDocument()
+
+    await user.click(screen.getByRole('button', { name: 'Afeno ny paragrafy' }))
+    expect(screen.queryByText('Paragraphes 1, 2')).not.toBeInTheDocument()
   })
 
   it('lists published studies and selects a historical study through a durable route', async () => {

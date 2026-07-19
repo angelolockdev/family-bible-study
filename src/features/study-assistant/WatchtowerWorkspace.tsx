@@ -3,6 +3,31 @@ import { useMemo, useState } from 'react'
 export type WatchtowerReference = {
   label: string
   url: string
+  excerpt?: string
+}
+
+function VersePreview({ reference }: { reference: WatchtowerReference }) {
+  const [isOpen, setIsOpen] = useState(false)
+
+  return (
+    <span className={`watchtower-verse ${isOpen ? 'is-open' : ''}`}>
+      <button
+        type="button"
+        className="watchtower-verse__trigger"
+        aria-expanded={isOpen}
+        onClick={() => setIsOpen((value) => !value)}
+      >
+        {reference.label}
+      </button>
+      {isOpen && (
+        <span className="watchtower-verse__preview" role="dialog" aria-label={`Andinin-teny ${reference.label}`}>
+          <strong>{reference.label}</strong>
+          {reference.excerpt ? <p>{reference.excerpt}</p> : <p>Jereo ao amin’ny jw.org ilay andinin-teny feno.</p>}
+          <a href={reference.url} target="_blank" rel="noreferrer">Vakio ao amin’ny jw.org</a>
+        </span>
+      )}
+    </span>
+  )
 }
 
 export type WatchtowerQuestion = {
@@ -58,6 +83,7 @@ export function WatchtowerWorkspace({ studies, selectedStudyId, today = new Date
   const selected = studies.find((study) => study.id === selectedStudyId) ?? defaultStudy
   const history = useMemo(() => visibleHistory(studies, today), [studies, today])
   const [revealed, setRevealed] = useState<string[]>([])
+  const [showParagraphs, setShowParagraphs] = useState(false)
 
   if (!selected) {
     return (
@@ -96,7 +122,10 @@ export function WatchtowerWorkspace({ studies, selectedStudyId, today = new Date
         </aside>
         <div className="watchtower-main">
           <div className="watchtower-notice" role="note">
-            Répondez d’abord avec vos propres mots. Ouvrez ensuite la réponse préparée pour la comparer avec les paragraphes indiqués.
+            <span>Répondez d’abord avec vos propres mots. Ouvrez ensuite la réponse préparée pour la comparer.</span>
+            <button type="button" className="watchtower-paragraph-toggle" aria-pressed={showParagraphs} onClick={() => setShowParagraphs((value) => !value)}>
+              {showParagraphs ? 'Afeno ny paragrafy' : 'Asehoy ny paragrafy'}
+            </button>
           </div>
           {selected.questions.length === 0 ? (
             <p className="watchtower-empty">Les questions de cette étude seront publiées après la prochaine génération hebdomadaire.</p>
@@ -106,12 +135,15 @@ export function WatchtowerWorkspace({ studies, selectedStudyId, today = new Date
                 const isRevealed = revealed.includes(question.id)
                 return (
                   <article className={`watchtower-question ${isRevealed ? 'is-revealed' : ''}`} key={question.id}>
-                    <div className="watchtower-question__topline"><span className="watchtower-question__number">{question.number}</span><span>Paragraphes {question.paragraphNumbers.join(', ') || 'article'}</span></div>
+                    <div className="watchtower-question__topline">
+                      <span className="watchtower-question__number">{question.number}</span>
+                      {showParagraphs && <span>Paragraphes {question.paragraphNumbers.join(', ') || 'article'}</span>}
+                    </div>
                     <h2>{question.text}</h2>
                     {isRevealed ? (
                       <div className="watchtower-answer" aria-live="polite">
                         <p>{question.answer}</p>
-                        {question.references.length > 0 && <ul>{question.references.map((reference) => <li key={`${question.id}-${reference.url}`}><a href={reference.url} target="_blank" rel="noreferrer">{reference.label}</a></li>)}</ul>}
+                        {question.references.length > 0 && <ul>{question.references.map((reference) => <li key={`${question.id}-${reference.url}`}><VersePreview reference={reference} /></li>)}</ul>}
                       </div>
                     ) : <p className="watchtower-answer-placeholder">Valio aloha ilay fanontaniana, dia asehoy ny valiny.</p>}
                     <button type="button" onClick={() => toggleAnswer(question.id)}>{isRevealed ? 'Afeno ny valiny' : 'Asehoy ny valiny'}</button>

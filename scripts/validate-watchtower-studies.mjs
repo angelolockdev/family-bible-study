@@ -27,6 +27,13 @@ if (!Array.isArray(studies)) {
     if (!Array.isArray(study.questions)) continue
     assertUnique(study.questions, (question) => question.id, `id de question de ${study.documentId}`)
     assertUnique(study.questions, (question) => question.number, `numéro de question de ${study.documentId}`)
+    for (const question of study.questions) {
+      for (const reference of question.references ?? []) {
+        if (typeof reference.excerpt !== 'string' || reference.excerpt.trim().length === 0) {
+          errors.push(`extrait biblique absent pour ${question.id} : ${reference.label ?? reference.url}`)
+        }
+      }
+    }
   }
 }
 

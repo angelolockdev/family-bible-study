@@ -9,6 +9,7 @@
     "build": "tsc -b && vite build",
     "test": "vitest run",
     "test:watch": "vitest",
+    "hydrate:watchtower-verses": "node scripts/extract-jw-verses.mjs",
     "validate:watchtower": "node scripts/validate-watchtower-studies.mjs"
   },
   "repository": {

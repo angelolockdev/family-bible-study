@@ -180,7 +180,7 @@ export default function App() {
   })
   const [activeRoute, setActiveRoute] = useState(initialRoute)
   const [promptCopied, setPromptCopied] = useState(false)
-  const roleCardsUrl = `${import.meta.env.BASE_URL}assets/role-cards.png`
+  const roleCardsUrl = `${import.meta.env.BASE_URL}assets/role-cards.svg`
   const activity = activities[activityIndex]
   const activityArtUrl = `${import.meta.env.BASE_URL}assets/${activity.art}`
   const familyStudies = studies.filter((study): study is FamilyStudy => study.kind === 'family').sort((a, b) => b.startDate.localeCompare(a.startDate))

@@ -19,7 +19,11 @@ const study: WatchtowerStudy = {
     text: 'a) Inona no fanomezana nomen’i Jehovah an’i Adama sy Eva?',
     paragraphNumbers: ['1', '2'],
     answer: 'Nomen’i Jehovah safidy malalaka i Adama sy Eva.',
-    references: [{ label: 'Genesisy 1:26, 27', url: 'https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/genesisy/1/#v1001026-v1001027' }],
+    references: [{
+      label: 'Genesisy 1:26, 27',
+      url: 'https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/genesisy/1/#v1001026-v1001027',
+      excerpt: '26 Hoy koa Andriamanitra: “Andao isika hanao olona mitovy endrika amintsika.” 27 Dia namorona ny olona hitovy endrika aminy Andriamanitra.',
+    }],
   }],
 }
 
@@ -51,7 +55,8 @@ describe('WatchtowerWorkspace', () => {
 
     expect(screen.getByText(study.questions[0].answer)).toBeInTheDocument()
     await user.click(screen.getByRole('button', { name: 'Genesisy 1:26, 27' }))
-    expect(screen.getByRole('dialog', { name: 'Andinin-teny Genesisy 1:26, 27' })).toBeInTheDocument()
+    expect(screen.getByRole('dialog', { name: 'Andinin-teny Genesisy 1:26, 27' })).toHaveTextContent(study.questions[0].references[0].excerpt!)
+    expect(screen.queryByText('Jereo ao amin’ny jw.org ilay andinin-teny feno.')).not.toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Vakio ao amin’ny jw.org' })).toHaveAttribute('href', study.questions[0].references[0].url)
   })
 

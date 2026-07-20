@@ -47,7 +47,7 @@
       "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jeremia/18/#v24018008"
     },
     "sourceUrl": "https://www.jw.org/mg/zavatra-misy/fivoriana-vj-tari-dalana/jolay-aogositra-2026-mwb/Fivoriana-Momba-ny-Fiainantsika-sy-ny-Fanompoana-Fandaharana-ho-Anny-20-26-Jolay-2026",
-    "printPrompt": "Create one A4 portrait printable activity sheet, exactly 2480 x 3508 px at 300 DPI, with four clearly separated warm illustrated story cards for children aged 2 and 3.5. Narrative order: Jeremiah walking to a potter’s workshop; a potter reshaping a flawed clay vessel; a person noticing a bad habit and stopping to think; the same person praying and choosing a good action. Use clear outlines, a light cream background, 10 mm safe margins, rounded rectangles, dotted cut guides only, and no text, letters, numbers, logos, watermarks, crosses, representation of God, or frightening imagery."
+    "printPrompt": "Create one A4 portrait printable activity sheet, exactly 2480 x 3508 px at 300 DPI, with four clearly separated warm illustrated story cards for children aged 2 and 3.5. Narrative order: Jeremiah walking to a potter's workshop; a potter reshaping a flawed clay vessel; a person noticing a bad habit and stopping to think; the same person praying and choosing a good action. Use clear outlines, a light cream background, 10 mm safe margins, rounded rectangles, dotted cut guides only, and no text, letters, numbers, logos, watermarks, crosses, representation of God, or frightening imagery."
   },
   {
     "id": "preaching-2026-07-17",
@@ -56,20 +56,43 @@
     "endDate": "2026-07-18",
     "weekLabel": "17-18 Jolay 2026",
     "publishedAt": "17 Jolay 2026, 19:00",
-    "title": "Fianarana ho an’ny fanompoana",
-    "subtitle": "Manomana resaka fohy, manaja, ary mifantoka amin’ny zavatra mahaliana ilay olona.",
-    "objective": "Miezaha hahafantatra izay eritreretin’ilay olona ary ampifandraiso amin’ny andinin-teny iray ny resaka.",
+    "title": "Fianarana ho an'ny fanompoana",
+    "subtitle": "Manomana resaka fohy, manaja, ary mifantoka amin'ny zavatra mahaliana ilay olona.",
+    "objective": "Miezaha hahafantatra izay eritreretin'ilay olona ary ampifandraiso amin'ny andinin-teny iray ny resaka.",
     "theme": "Ahoana no ahazoana fampaherezana rehefa manahy?",
     "opening": "Maro no mahatsapa tebiteby rehefa mieritreritra ny hoavy. Aminao, inona no tena manampy olona iray hahazo fiadanana?",
-    "question": "Mino ve ianao fa afaka manampy antsika amin’ny ahiahintsika ny Baiboly?",
+    "question": "Mino ve ianao fa afaka manampy antsika amin'ny ahiahintsika ny Baiboly?",
     "scripture": {
       "reference": "1 Petera 5:7",
-      "application": "Vakio ilay andinin-teny, dia anontanio hoe: ‘Inona amin’io no hitanao fa mampahery?’",
+      "application": "Vakio ilay andinin-teny, dia anontanio hoe: 'Inona amin'io no hitanao fa mampahery?'",
       "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/1-petera/5/#v60005007"
     },
-    "response": "Henoy aloha ny valin’ilay olona. Aza miady hevitra; misaora azy nizara ny heviny ary valio amin’ny teny tsotra mifanaraka amin’izay nolazainy.",
-    "nextStep": "Raha liana ilay olona, manolora lahatsoratra iray ao amin’ny jw.org momba ny fiatrehana ny fanahiana, ary mangataha alalana hiverina hiresaka aminy.",
+    "response": "Henoy aloha ny valin'ilay olona. Aza miady hevitra; misaora azy nizara ny heviny ary valio amin'ny teny tsotra mifanaraka amin'izay nolazainy.",
+    "nextStep": "Raha liana ilay olona, manolora lahatsoratra iray ao amin'ny jw.org momba ny fiatrehana ny fanahiana, ary mangataha alalana hiverina hiresaka aminy.",
     "practice": "Mifandimby: olona iray mitory, olona iray mamaly toy ny tompon-trano, ary olona iray mijery raha voatonona ilay fanontaniana sy ilay andinin-teny.",
+    "sourceUrl": "https://www.jw.org/mg/zavatra-misy/fivoriana-vj-tari-dalana/jolay-aogositra-2026-mwb/Fivoriana-Momba-ny-Fiainantsika-sy-ny-Fanompoana-Fandaharana-ho-Anny-20-26-Jolay-2026"
+  },
+  {
+    "id": "preaching-2026-07-24",
+    "kind": "preaching",
+    "startDate": "2026-07-24",
+    "endDate": "2026-07-25",
+    "weekLabel": "24-25 Jolay 2026",
+    "publishedAt": "24 Jolay 2026, 19:00",
+    "title": "Fianarana ho an'ny fanompoana",
+    "subtitle": "Manasa hianatra Baiboly, miverina mitsidika, ary manazava ny foto-kevitra momba ny safidy malalaka.",
+    "objective": "Miezaha hanasa olona hianatra Baiboly sy hanazava ny foto-kevitra ara-Baiboly momba ny safidy malalaka.",
+    "theme": "Manana safidy ve isika sa efa voalahatr'Andriamanitra ny fiainantsika?",
+    "opening": "Maro no mino fa efa voalahatra mialoha ny zava-drehetra. Inona kosa no ampianarin'ny Baiboly marina? Moa ve isika manana safidy?",
+    "question": "Araka ny hevitrao, isika ve no misafidy ny lalantsika sa Andriamanitra no efa nandahatra izany?",
+    "scripture": {
+      "reference": "Deoteronomia 30:19, 20",
+      "application": "Vakio ilay andinin-teny, dia anontanio hoe: 'Araka izany, inona no heverinao — misy dikany ve ny safidintsika?'",
+      "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/deoteronomia/30/#v05030019"
+    },
+    "response": "Henoy amim-panajana ny valin'ilay olona. Aza miady hevitra fa ampifandraiso amin'ny andinin-teny ny resaka. Raha liana izy, asao hianatra Baiboly.",
+    "nextStep": "Raha liana ilay olona, asao hianatra Baiboly ary atoroy azy ny fomba fanaovana izany. Apetraho ny trakta iray ary mangataha alalana hiverina hiresaka momba izany.",
+    "practice": "Mifandimby: olona iray mitory, olona iray mamaly toy ny tompon-trano, ary olona iray mijery raha voaresaka ny fanasana hianatra Baiboly sy ny foto-kevitra momba ny safidy.",
     "sourceUrl": "https://www.jw.org/mg/zavatra-misy/fivoriana-vj-tari-dalana/jolay-aogositra-2026-mwb/Fivoriana-Momba-ny-Fiainantsika-sy-ny-Fanompoana-Fandaharana-ho-Anny-20-26-Jolay-2026"
   }
 ]

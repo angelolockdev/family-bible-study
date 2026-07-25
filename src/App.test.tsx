@@ -34,17 +34,17 @@ describe('Family Bible Study companion', () => {
     const user = userEvent.setup()
     render(<App />)
 
-    const verse = screen.getByRole('button', { name: 'Jeremia 17:1-8' })
+    const verse = screen.getByRole('button', { name: 'Jeremia 18:1-6' })
     await user.hover(verse)
-    expect(screen.getByRole('dialog', { name: /Jeremia 17:1-8/i })).toBeInTheDocument()
+    expect(screen.getByRole('dialog', { name: /Jeremia 18:1-6/i })).toBeInTheDocument()
     await user.unhover(verse)
-    expect(screen.queryByRole('dialog', { name: /Jeremia 17:1-8/i })).not.toBeInTheDocument()
+    expect(screen.queryByRole('dialog', { name: /Jeremia 18:1-6/i })).not.toBeInTheDocument()
 
-    await user.click(screen.getByRole('button', { name: '1 Petera 5:7' }))
-    expect(screen.getByRole('dialog', { name: /1 Petera 5:7/i })).toBeInTheDocument()
+    await user.click(screen.getByRole('button', { name: 'Deoteronomia 30:19, 20' }))
+    expect(screen.getByRole('dialog', { name: /Deoteronomia 30:19, 20/i })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: /Vakio ao amin’ny jw.org/i })).toHaveAttribute(
       'href',
-      'https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/1-petera/5/#v60005007',
+      'https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/deoteronomia/30/#v05030019',
     )
   })
 

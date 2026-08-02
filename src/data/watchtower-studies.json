@@ -1,5 +1,284 @@
 [
   {
+    "id": "watchtower-2026404",
+    "documentId": 2026404,
+    "title": "Hajao ny Fanapahan-kevitry ny Hafa",
+    "weekLabel": "3-9 Aogositra 2026",
+    "startDate": "2026-08-03",
+    "endDate": "2026-08-09",
+    "sourceUrl": "https://www.jw.org/mg/zavatra-misy/gazety/gazety-fianarana-mey-2026/Hajao-ny-Fanapahan-kevitry-ny-Hafa/",
+    "generatedAt": "2026-08-02T17:21:10Z",
+    "model": "gpt-5.6-terra",
+    "questions": [
+      {
+        "id": "2026404-q1-2",
+        "number": "1-2",
+        "text": "Nahoana no tsy mitovy amin’ny an’ny Kristianina hafa ny fanapahan-kevitra raisintsika indraindray?",
+        "paragraphNumbers": [
+          "1",
+          "2"
+        ],
+        "answer": "Samy hafa ny fomba fijery, ny kolontsaina, ny fitaizana, ary ny zavatra niainantsika, ka mety ho samy hafa ny fanapahan-kevitra. Tsy tokony hampisaratsaraka ny fiangonana anefa izany, fa tokony hiezaka hiray saina isika.",
+        "references": [
+          {
+            "label": "Efes. 4:3",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/efesianina/4/#v49004003",
+            "excerpt": "Miezaha mafy foana mba hiray saina."
+          }
+        ]
+      },
+      {
+        "id": "2026404-q3",
+        "number": "3",
+        "text": "Nahoana isika no mety hitsaratsara ny Kristianina iray noho ny fanapahan-keviny?",
+        "paragraphNumbers": [
+          "3"
+        ],
+        "answer": "Rehefa tsy mety amintsika ny safidiny, dia mety hieritreritra isika hoe tokony hiova hevitra izy. Matetika anefa ny fitiavana sy ny faniriana hahasoa azy no mahatonga izany, satria tsy tiantsika hanimba ny fifandraisany amin’i Jehovah izy.",
+        "references": [
+          {
+            "label": "Ohab. 17:17",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/ohabolana/17/#v20017017",
+            "excerpt": "Ny tena namana tia amin’ny fotoana rehetra."
+          }
+        ]
+      },
+      {
+        "id": "2026404-q4-5",
+        "number": "4-5",
+        "text": "Inona no tokony hataontsika raha tsy mitovy amin’izay eritreretintsika ny fanapahan-kevitra raisin’ny Kristianina iray?",
+        "paragraphNumbers": [
+          "4",
+          "5"
+        ],
+        "answer": "Raha mandika fitsipiky ny Baiboly ilay izy, dia miezaha hanitsy azy satria tia azy isika. Fa raha safidy manokana tsy mety amintsika fotsiny, dia hajao ny fanapahan-keviny ary aza tsaratsaraina izy.",
+        "references": [
+          {
+            "label": "Ohab. 27:5, 6",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/ohabolana/27/#v20027005-v20027006",
+            "excerpt": "Tsara kokoa ny anatra ampahibemaso noho ny fitiavana afenina."
+          },
+          {
+            "label": "Rom. 14:1",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/romanina/14/#v45014001",
+            "excerpt": "Aza tsaratsaraina izy raha tsy mitovy hevitra aminao."
+          }
+        ]
+      },
+      {
+        "id": "2026404-q6-7",
+        "number": "6-7",
+        "text": "Rehefa inona, ohatra, isika no mety hitsaratsara ny hafa noho ny fanapahan-kevitra noraisiny?",
+        "paragraphNumbers": [
+          "6",
+          "7"
+        ],
+        "answer": "Mety hitranga izany rehefa voakasiky ny zavatra niainantsika ny fomba fijerintsika, ohatra amin’ny fisotroana toaka, fitsaboana, fandevenana, volombava, pataloa, na fianarana ambony. Tsy voatery hitovy amin’ny antsika anefa ny fanapahan-kevitry ny hafa.",
+        "references": []
+      },
+      {
+        "id": "2026404-q8",
+        "number": "8",
+        "text": "a) Inona no mety hahatonga ny olona iray hitsaratsara ny hafa noho ny fomba itaizany ny zanany? b) Inona no mety ho vokany eo amin’ny fiangonana raha tia manakiana ny hafa isika?",
+        "paragraphNumbers": [
+          "8"
+        ],
+        "answer": "Mety hanakiana ny ray aman-dreny hafa isika rehefa tsy mitovy amin’ny antsika ny fetrany sy ny fanapahan-keviny momba ny zanany. Raha tia manakiana anefa isika, dia mety hampiharatsy ny fihavanana; izay mampiray saina ny fiangonana no tokony hatao zava-dehibe kokoa.",
+        "references": [
+          {
+            "label": "Efes. 6:4",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/efesianina/6/#v49006004",
+            "excerpt": "Tezao araka izay anatra omen’i Jehovah sy izay atorony ny zanakareo."
+          }
+        ]
+      },
+      {
+        "id": "2026404-q9",
+        "number": "9",
+        "text": "Nahoana isika no tsy tokony hitsaratsara ny hafa amin’ny fanapahan-kevitra raisiny? (Jereo koa ny sary.)",
+        "paragraphNumbers": [
+          "9"
+        ],
+        "answer": "Mety samy hafa ny safidy nefa samy mety, raha manaraka ny fitsipik’i Jehovah. Mitovy ny tanjontsika: ny hampifaly an’i Jehovah. Koa aza mitsara ny safidin’ny hafa amin’ny raharaha miankina amin’ny tsirairay.",
+        "references": [
+          {
+            "label": "Rom. 14:5",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/romanina/14/#v45014005",
+            "excerpt": "Samy aoka ho resy lahatra tsara ao an-tsainy avy ny tsirairay."
+          },
+          {
+            "label": "2 Kor. 13:11",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/2-korintianina/13/#v47013011",
+            "excerpt": "Miezaha hiray saina, ary mihavàna."
+          },
+          {
+            "label": "Mat. 7:1",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/matio/7/#v40007001",
+            "excerpt": "Aza mitsara intsony mba tsy hotsaraina ianareo."
+          },
+          {
+            "label": "1 Tes. 4:11",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/1-tesalonianina/4/#v52004011",
+            "excerpt": "Miezaha mafy hiaina milamin-tsaina."
+          }
+        ]
+      },
+      {
+        "id": "2026404-q10",
+        "number": "10",
+        "text": "Araka ny Jakoba 4:12, tsy manan-jo hanao inona isika, ary nahoana?",
+        "paragraphNumbers": [
+          "10"
+        ],
+        "answer": "Tsy manan-jo hitsara ny safidin’ny hafa amin’ny raharaha manokana isika. I Jehovah irery no Mpanao Lalàna sy Mpitsara, ary izy no hitsara ny mpanompony fa tsy isika.",
+        "references": [
+          {
+            "label": "Jak. 4:12",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jakoba/4/#v59004012",
+            "excerpt": "Iray ihany no Mpanao Lalàna sy Mpitsara."
+          },
+          {
+            "label": "Rom. 14:10",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/romanina/14/#v45014010",
+            "excerpt": "Isika rehetra dia hijoro eo anoloan’ny seza fitsaran’Andriamanitra."
+          }
+        ]
+      },
+      {
+        "id": "2026404-q11",
+        "number": "11",
+        "text": "Inona no azontsika atao mba hiray saina ny fiangonana? (Jereo koa ny sary.)",
+        "paragraphNumbers": [
+          "11"
+        ],
+        "answer": "Ekentsika fa samy hafa ny maha izy azy ny olona. Fa izay mampisy firaisan-tsaina no ataontsika zava-dehibe kokoa noho ny hevitsika manokana, ka miezaka mitandro fihavanana isika.",
+        "references": [
+          {
+            "label": "Rom. 14:19",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/romanina/14/#v45014019",
+            "excerpt": "Katsaho foana izay mampisy fihavanana."
+          }
+        ]
+      },
+      {
+        "id": "2026404-q12-13",
+        "number": "12-13",
+        "text": "Inona no tokony hosaintsainintsika raha mieritreritra isika hoe ‘nanao zavatra tsy mety’ ny olona iray? (Galatianina 6:1; jereo koa ilay hoe “Rehefa Tsy Ekenao Ilay Izy.”)",
+        "paragraphNumbers": [
+          "12",
+          "13"
+        ],
+        "answer": "Diniho aloha raha tena mandika fitsipiky ny Baiboly izy, sa tsy mitovy amin’ny hevitrao fotsiny. Raha manao ratsy izy ary mahafeno fepetra ianao, dia ampio amim-pahalemem-panahy. Raha safidiny manokana kosa ilay izy, dia hajao fa aza manery azy hanaraka ny hevitrao.",
+        "references": [
+          {
+            "label": "Gal. 6:1",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/galatianina/6/#v48006001",
+            "excerpt": "Ampio amin’ny toe-tsaina malemy paika izy mba hiverina amin’ny lala-mahitsy."
+          },
+          {
+            "label": "Rom. 14:2-4",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/romanina/14/#v45014002-v45014004",
+            "excerpt": "Iza moa ianao no mitsara ny mpanompon’olona?"
+          },
+          {
+            "label": "Gal. 6:5",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/galatianina/6/#v48006005",
+            "excerpt": "Samy hitondra ny entany avy ny tsirairay."
+          }
+        ]
+      },
+      {
+        "id": "2026404-q14",
+        "number": "14",
+        "text": "Rehefa handray fanapahan-kevitra isika, dia inona no azontsika atao mba hiray saina foana ny fiangonana? (1 Korintianina 8:12, 13)",
+        "paragraphNumbers": [
+          "14"
+        ],
+        "answer": "Na azo atao aza ny safidintsika, dia diniho raha mety hanafintohina ny hafa. Ataovy izay hihavanana amin’ny rehetra, ka aza izay tiantsika fotsiny no jerena fa izay hahasoa ny hafa koa.",
+        "references": [
+          {
+            "label": "1 Kor. 8:12, 13",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/1-korintianina/8/#v46008012-v46008013",
+            "excerpt": "Aza manao izay hahatafintohina ny rahalahinao."
+          },
+          {
+            "label": "1 Kor. 10:23, 24",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/1-korintianina/10/#v46010023-v46010024",
+            "excerpt": "Tsy ny zava-drehetra no mahasoa."
+          },
+          {
+            "label": "Rom. 15:1",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/romanina/15/#v45015001",
+            "excerpt": "Mila mitondra ny fahalemen’izay tsy matanjaka isika."
+          },
+          {
+            "label": "Rom. 12:18",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/romanina/12/#v45012018",
+            "excerpt": "Ataovy izay rehetra azo atao mba hihavanana amin’ny olona rehetra."
+          }
+        ]
+      },
+      {
+        "id": "2026404-q15",
+        "number": "15",
+        "text": "Inona no azon’ny anti-panahy atao mba hiray saina foana ny fiangonana? (1 Korintianina 4:6)",
+        "paragraphNumbers": [
+          "15"
+        ],
+        "answer": "Tsy mamorona lalàna amin’ny raharaha miankina amin’ny tsirairay ny anti-panahy ary tsy mihoatra an’izay voasoratra. Rehefa manome torohevitra izy, dia miorina amin’ny Tenin’Andriamanitra fa tsy amin’ny heviny manokana.",
+        "references": [
+          {
+            "label": "1 Kor. 4:6",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/1-korintianina/4/#v46004006",
+            "excerpt": "Aza mihoatra an’izay voasoratra."
+          },
+          {
+            "label": "Isaia 48:17, 18",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/isaia/48/#v23048017-v23048018",
+            "excerpt": "Izaho Jehovah no mampianatra anao mba hahasoa anao."
+          }
+        ]
+      },
+      {
+        "id": "2026404-q16",
+        "number": "16",
+        "text": "Ahoana no hampisehoan’ny anti-panahy iray hoe manaja ny fanapahan-kevitry ny anti-panahy rehetra izy?",
+        "paragraphNumbers": [
+          "16"
+        ],
+        "answer": "Na tsy laniny aza ny heviny, dia manaja ny fanapahan-kevitra tapaky ny anti-panahy rehetra izy. Manaraka tsara ny tari-dalan’ny Soratra Masina sy ny boky aman-gazety izy fa tsy manodina azy ireny hanohanana ny heviny.",
+        "references": [
+          {
+            "label": "Efes. 5:17",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/efesianina/5/#v49005017",
+            "excerpt": "Fantaro foana izay sitrapon’i Jehovah."
+          }
+        ]
+      },
+      {
+        "id": "2026404-q17",
+        "number": "17",
+        "text": "Inona ny soa ho azo raha manaja ny fanapahan-kevitry ny hafa isika?",
+        "paragraphNumbers": [
+          "17"
+        ],
+        "answer": "Hihavana sy hiray saina kokoa ny fiangonana, nefa mbola samy manana ny mampiavaka azy ny tsirairay. Raha tsy manafintohina ny hafa isika ary manaja ny safidiny amin’ny raharaha manokana, dia ho falifaly ny fiangonana.",
+        "references": [
+          {
+            "label": "Sal. 133:1",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/salamo/133/#v19133001",
+            "excerpt": "Tsara sady mahafinaritra ny miara-mitoetra amim-piraisan-tsaina."
+          },
+          {
+            "label": "Mat. 5:9",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/matio/5/#v40005009",
+            "excerpt": "Sambatra izay tia fihavanana."
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "watchtower-2026403",
     "documentId": 2026403,
     "title": "Miezaha Hatanjaka Ara-panahy Foana Rehefa Manao Fianarana Fanampiny",

@@ -32,19 +32,22 @@ describe('Family Bible Study companion', () => {
 
   it('shows every detected scripture as a hover/click preview', async () => {
     const user = userEvent.setup()
+    window.history.replaceState(null, '', '#/fianarana/family-2026-07-20')
     render(<App />)
 
     const verse = screen.getByRole('button', { name: 'Jeremia 18:1-6' })
     await user.hover(verse)
     expect(screen.getByRole('dialog', { name: /Jeremia 18:1-6/i })).toBeInTheDocument()
     await user.unhover(verse)
-    expect(screen.queryByRole('dialog', { name: /Jeremia 18:1-6/i })).not.toBeInTheDocument()
+    await waitFor(() => {
+      expect(screen.queryByRole('dialog', { name: /Jeremia 18:1-6/i })).not.toBeInTheDocument()
+    })
 
-    await user.click(screen.getByRole('button', { name: 'Deoteronomia 30:19, 20' }))
-    expect(screen.getByRole('dialog', { name: /Deoteronomia 30:19, 20/i })).toBeInTheDocument()
+    await user.click(screen.getByRole('button', { name: '1 Korintianina 9:22' }))
+    expect(screen.getByRole('dialog', { name: /1 Korintianina 9:22/i })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: /Vakio ao amin’ny jw.org/i })).toHaveAttribute(
       'href',
-      'https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/deoteronomia/30/#v05030019',
+      'https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/1-korintianina/9/#v46009022',
     )
   })
 

@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { ScripturePopover } from '../../components/ScripturePopover'
 
 export type WatchtowerReference = {
   label: string
@@ -7,26 +8,10 @@ export type WatchtowerReference = {
 }
 
 function VersePreview({ reference }: { reference: WatchtowerReference }) {
-  const [isOpen, setIsOpen] = useState(false)
-
   return (
-    <span className={`watchtower-verse ${isOpen ? 'is-open' : ''}`}>
-      <button
-        type="button"
-        className="watchtower-verse__trigger"
-        aria-expanded={isOpen}
-        onClick={() => setIsOpen((value) => !value)}
-      >
-        {reference.label}
-      </button>
-      {isOpen && (
-        <span className="watchtower-verse__preview" role="dialog" aria-label={`Andinin-teny ${reference.label}`}>
-          <strong>{reference.label}</strong>
-          {reference.excerpt ? <p>{reference.excerpt}</p> : <p>Jereo ao amin’ny jw.org ilay andinin-teny feno.</p>}
-          <a href={reference.url} target="_blank" rel="noreferrer">Vakio ao amin’ny jw.org</a>
-        </span>
-      )}
-    </span>
+    <ScripturePopover label={reference.label} url={reference.url} variant="watchtower">
+      {reference.excerpt ?? 'Jereo ao amin’ny jw.org ilay andinin-teny feno.'}
+    </ScripturePopover>
   )
 }
 

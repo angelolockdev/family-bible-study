@@ -1,6 +1,7 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import studiesData from './data/studies.json'
 import watchtowerData from './data/watchtower-studies.json'
+import { ScripturePopover } from './components/ScripturePopover'
 import { WatchtowerWorkspace, type WatchtowerStudy } from './features/study-assistant/WatchtowerWorkspace'
 import './styles.css'
 
@@ -105,51 +106,10 @@ function buildBibleUrl(reference: string) {
 }
 
 function VerseLink({ verse }: { verse: Verse }) {
-  const [isPinned, setIsPinned] = useState(false)
-  const [isHovering, setIsHovering] = useState(false)
-  const wrapperRef = useRef<HTMLSpanElement>(null)
-  const isOpen = isPinned || isHovering
-
-  useEffect(() => {
-    function closeOnOutsideClick(event: MouseEvent) {
-      if (!wrapperRef.current?.contains(event.target as Node)) setIsPinned(false)
-    }
-    function closeOnEscape(event: KeyboardEvent) {
-      if (event.key === 'Escape') {
-        setIsPinned(false)
-        setIsHovering(false)
-      }
-    }
-    document.addEventListener('pointerdown', closeOnOutsideClick)
-    document.addEventListener('keydown', closeOnEscape)
-    return () => {
-      document.removeEventListener('pointerdown', closeOnOutsideClick)
-      document.removeEventListener('keydown', closeOnEscape)
-    }
-  }, [])
-
   return (
-    <span
-      className={`verse-link ${isOpen ? 'is-open' : ''}`}
-      ref={wrapperRef}
-      onMouseEnter={() => setIsHovering(true)}
-      onMouseLeave={() => setIsHovering(false)}
-      onFocus={() => setIsHovering(true)}
-      onBlur={(event) => {
-        if (!event.currentTarget.contains(event.relatedTarget)) setIsHovering(false)
-      }}
-    >
-      <button type="button" className="verse-link__trigger" aria-expanded={isOpen} onClick={() => setIsPinned((value) => !value)}>
-        {verse.reference}
-      </button>
-      {isOpen && (
-        <span className="verse-link__popover" role="dialog" aria-label={`Andinin-teny ${verse.reference}`}>
-          <strong>{verse.reference}</strong>
-          <p>{verse.application}</p>
-          <a href={verse.url} target="_blank" rel="noreferrer">Vakio ao amin’ny jw.org</a>
-        </span>
-      )}
-    </span>
+    <ScripturePopover label={verse.reference} url={verse.url}>
+      {verse.application}
+    </ScripturePopover>
   )
 }
 

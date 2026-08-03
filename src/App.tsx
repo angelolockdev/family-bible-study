@@ -76,14 +76,16 @@ function dateAtNoon(value: string) {
 }
 
 function isWithinStudy(study: Study, date: Date) {
-  const day = new Date(date.getFullYear(), date.getMonth(), date.getDate())
+  const day = new Date(date.getFullYear(), date.getMonth(), date.getDate(), 12)
   return day >= dateAtNoon(study.startDate) && day <= dateAtNoon(study.endDate)
 }
 
 function pickDefaultStudy(items: Study[], kind: Study['kind'], today: Date) {
-  const matching = items.find((study) => study.kind === kind && isWithinStudy(study, today))
+  const candidates = items.filter((study) => study.kind === kind).sort((a, b) => a.startDate.localeCompare(b.startDate))
+  const matching = candidates.find((study) => isWithinStudy(study, today))
   if (matching) return matching
-  return items.filter((study) => study.kind === kind).sort((a, b) => b.startDate.localeCompare(a.startDate))[0]
+  const todayAtNoon = new Date(today.getFullYear(), today.getMonth(), today.getDate(), 12)
+  return candidates.find((study) => dateAtNoon(study.startDate) >= todayAtNoon) ?? candidates.at(-1)!
 }
 
 function getRoute() {

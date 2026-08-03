@@ -43,11 +43,11 @@ describe('Family Bible Study companion', () => {
       expect(screen.queryByRole('dialog', { name: /Jeremia 18:1-6/i })).not.toBeInTheDocument()
     })
 
-    await user.click(screen.getByRole('button', { name: '1 Korintianina 9:22' }))
-    expect(screen.getByRole('dialog', { name: /1 Korintianina 9:22/i })).toBeInTheDocument()
+    await user.click(screen.getByRole('button', { name: 'Matio 16:16' }))
+    expect(screen.getByRole('dialog', { name: /Matio 16:16/i })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: /Vakio ao amin’ny jw.org/i })).toHaveAttribute(
       'href',
-      'https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/1-korintianina/9/#v46009022',
+      'https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/matio/16/#v40016016',
     )
   })
 

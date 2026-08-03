@@ -1,5 +1,195 @@
 [
   {
+    "id": "watchtower-2026442",
+    "documentId": 2026442,
+    "title": "Inona no Hanampy Antsika Tsy Hivadika Rehefa Misy Fitsapana?",
+    "weekLabel": "10-16 Aogositra 2026",
+    "startDate": "2026-08-10",
+    "endDate": "2026-08-16",
+    "sourceUrl": "https://www.jw.org/mg/zavatra-misy/gazety/gazety-fianarana-jona-2026/Inona-no-Hanampy-Antsika-Tsy-Hivadika-Rehefa-Misy-Fitsapana/",
+    "generatedAt": "2026-08-03T08:20:00Z",
+    "model": "gpt-5.6-sol",
+    "questions": [
+      {
+        "id": "2026442-q1-2",
+        "number": "1-2",
+        "text": "Inona no nitranga tamin’i Jesosy nampianatra tany Kapernaomy?",
+        "paragraphNumbers": [
+          "1",
+          "2"
+        ],
+        "answer": "Nilaza i Jesosy fa mila mihinana ny nofony sy misotro ny rany izay te hahazo fiainana. Tafintohina tamin’izany ny mpianatra maromaro, ka na dia efa nahita porofo aza ry zareo fa Mpaminany izy, dia nandao azy rehefa niharam-pitsapana ny finoany.",
+        "references": [
+          {
+            "label": "Jaona 6:53, 54",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jaona/6/#v43006053-v43006054",
+            "excerpt": "Raha tsy mihinana ny nofon’ny Zanak’olona sy misotro ny rany ianareo, dia tsy hahazo fiainana. Izay mihinana ny nofoko sy misotro ny rako dia hahazo fiainana mandrakizay, ary hanangana azy amin’ny maty aho amin’ny andro farany."
+          }
+        ]
+      },
+      {
+        "id": "2026442-q3",
+        "number": "3",
+        "text": "Ahoana no nataon’ny apostoly rehefa naheno ny tenin’i Jesosy, ary nahoana? (Jereo koa ny sary.)",
+        "paragraphNumbers": [
+          "3"
+        ],
+        "answer": "Tsy nandao an’i Jesosy ny apostoly na dia tsy azony tsara aza ny teniny. Resy lahatra izy ireo fa i Jesosy no Kristy sy Ilay Masin’Andriamanitra, ary ny teniny no hahazoana fiainana mandrakizay.",
+        "references": [
+          {
+            "label": "Jaona 6:68, 69",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jaona/6/#v43006068-v43006069",
+            "excerpt": "Tompo ô, hankany amin’iza moa izahay? Ny teny lazainao no hahazoana fiainana mandrakizay. Mino izahay sady mahafantatra fa ianao Ilay Masin’Andriamanitra."
+          }
+        ]
+      },
+      {
+        "id": "2026442-q4",
+        "number": "4",
+        "text": "Inona no fitsapana mety hatrehintsika?",
+        "paragraphNumbers": [
+          "4"
+        ],
+        "answer": "Mety ho voasedra isika rehefa ahitsy ny fahazoantsika andinin-teny, ovana ny fomba andaminana ny asa, tsy azontsika ny antony hamelan’i Jehovah loza hitranga, na mandratra antsika ny namana na olona hajaintsika.",
+        "references": []
+      },
+      {
+        "id": "2026442-q5",
+        "number": "5",
+        "text": "Nahoana ny finoantsika no tokony ho mafy orina? Hazavao amin’ny ohatra. (Kolosianina 1:23)",
+        "paragraphNumbers": [
+          "5"
+        ],
+        "answer": "Toy ny tranobe any amin’ny toerana be horohoron-tany mila fototra mafy, dia mila finoana tsara fototra isika. Raha manatanjaka azy io foana isika, dia tsy ho voahozongozona na hivadika rehefa misy fitsapana.",
+        "references": []
+      },
+      {
+        "id": "2026442-q6",
+        "number": "6",
+        "text": "Inona no nanampy ny apostoly tsy hivadika tamin’i Jesosy?",
+        "paragraphNumbers": [
+          "6"
+        ],
+        "answer": "Resy lahatra izy ireo fa mendrika hotompoina i Jehovah, Zanak’Andriamanitra i Jesosy, ny tenin’i Jesosy no hahazoana fiainana, ary manohana azy i Jehovah. Hanampy antsika koa ny fahamarinana hoe Mpamorona i Jehovah, avy aminy ny Baiboly, ary manohana ny vahoakany izy.",
+        "references": [
+          {
+            "label": "Jaona 6:68",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jaona/6/#v43006068",
+            "excerpt": "Tompo ô, hankany amin’iza moa izahay? Ny teny lazainao no hahazoana fiainana mandrakizay."
+          }
+        ]
+      },
+      {
+        "id": "2026442-q7",
+        "number": "7",
+        "text": "Inona no resahin’ny Apokalypsy 4:11 momba an’i Jehovah? Inona anefa no mety hitranga rehefa miatrika fitsapana isika?",
+        "paragraphNumbers": [
+          "7"
+        ],
+        "answer": "I Jehovah no namorona ny zava-drehetra, ka mendrika ny hivavahana ary afaka manafaka antsika. Raha tsy resy lahatra amin’izany anefa isika, dia mety hampisalasala antsika ny laingan’i Satana rehefa misy fitsapana.",
+        "references": []
+      },
+      {
+        "id": "2026442-q8-9",
+        "number": "8-9",
+        "text": "Inona no tokony hataonao raha manomboka misalasala ianao hoe i Jehovah tokoa ve no Mpamorona? (Jereo koa ny sary.)",
+        "paragraphNumbers": [
+          "8",
+          "9"
+        ],
+        "answer": "Manaova zavatra avy hatrany: mikaroha porofo ao amin’ny boky sy gazetintsika ary mandiniha porofo momba ny fisian’ny Mpamorona amin’ny fianarana samirery. Vao mainka hahafantatra an’i Jehovah sy hanampy ny hafa izany.",
+        "references": []
+      },
+      {
+        "id": "2026442-q10",
+        "number": "10",
+        "text": "Ahoana no fiheverantsika ny Baiboly? (2 Timoty 3:16, 17)",
+        "paragraphNumbers": [
+          "10"
+        ],
+        "answer": "Hafatr’i Jehovah ho an’ny olombelona ny Baiboly. Mamaly fanontaniana lehibe izy io, mampahafantatra ny sitrapony, ary satria avy aminy dia sarobidy amintsika ka ezahintsika takarina sy ampiharina.",
+        "references": []
+      },
+      {
+        "id": "2026442-q11",
+        "number": "11",
+        "text": "Nahoana ianao no resy lahatra fa avy amin’Andriamanitra ny Baiboly?",
+        "paragraphNumbers": [
+          "11"
+        ],
+        "answer": "Mifanaraka amin’ny tantara sy ny zavaboary ny Baiboly, voatahiry na dia nisy niezaka namongotra aza, mirindra na dia lehilahy maro no nanoratra azy nandritra ny taonjato maro, mahasoa ny toroheviny, ary tanteraka ny faminaniany.",
+        "references": []
+      },
+      {
+        "id": "2026442-q12",
+        "number": "12",
+        "text": "Inona no tokony hataontsika raha manomboka misalasala isika hoe avy amin’Andriamanitra tokoa ve ny Baiboly?",
+        "paragraphNumbers": [
+          "12"
+        ],
+        "answer": "Mivavaha momba izany ary manaova fikarohana ao amin’ny bokintsika mba hahitana valiny. Raha miezaka ho resy lahatra kokoa foana isika, dia vao mainka hatanjaka ny finoantsika.",
+        "references": []
+      },
+      {
+        "id": "2026442-q13",
+        "number": "13",
+        "text": "Inona no tokony hataontsika raha tsy tena azontsika antoka hoe iza marina ny vahoakan’Andriamanitra amin’izao?",
+        "paragraphNumbers": [
+          "13"
+        ],
+        "answer": "Manaova zavatra haingana ary diniho hoe iza no tena manaraka ny fitsipiky ny Baiboly, tsy mino afa-tsy izay lazainy, ary manao ny sitrapon’i Jehovah. Ny vokatra hita no manampy hamantatra ny vahoakany.",
+        "references": []
+      },
+      {
+        "id": "2026442-q14",
+        "number": "14",
+        "text": "Ny Vavolombelon’i Jehovah ve no ampiasain’Andriamanitra mba hanatanteraka ny Matio 24:14? Hazavao.",
+        "paragraphNumbers": [
+          "14"
+        ],
+        "answer": "Eny. Ny Vavolombelon’i Jehovah no mitory ny vaovao tsaran’ny Fanjakana any amin’ny tany 240 mahery, ary efa zato taona mahery no nifantohany tamin’ny asa fitoriana sy fampianarana nasain’i Jesosy natao.",
+        "references": []
+      },
+      {
+        "id": "2026442-q15",
+        "number": "15",
+        "text": "Inona no manaporofo fa manamasina ny anaran’Andriamanitra ny Vavolombelon’i Jehovah? (Matio 6:9; Isaia 43:10)",
+        "paragraphNumbers": [
+          "15"
+        ],
+        "answer": "Ny anaran’i Jehovah no ahafantarana antsika ary voninahitra amintsika ny mitondra izany. Nampahafantatra an’io anarana io isika ary namerina azy teo amin’ny toerana nisy azy tany am-boalohany ao amin’ny Baiboly.",
+        "references": []
+      },
+      {
+        "id": "2026442-q16",
+        "number": "16",
+        "text": "Nahoana isika no milaza fa ankatoavin’ny Vavolombelon’i Jehovah ilay didy ao amin’ny Jaona 13:34, 35? (Jereo koa ny sary.)",
+        "paragraphNumbers": [
+          "16"
+        ],
+        "answer": "Na dia samy hafa fiaviana sy fitaizana aza isika, dia mifankatia sy miray saina maneran-tany. Hita amin’izany fitiavana izany fa mampiasa ny Vavolombelony i Jehovah mba hanao ny sitrapony.",
+        "references": []
+      },
+      {
+        "id": "2026442-q17-18",
+        "number": "17-18",
+        "text": "Inona ny olana mety hatrehintsika, nefa inona no mbola azontsika lazaina amin’i Jehovah?",
+        "paragraphNumbers": [
+          "17",
+          "18"
+        ],
+        "answer": "Mety tsy ho azontsika ny fanapahan-kevitry ny fandaminana, ho diso fandray antsika ny hafa, na hisy olana tsy fantatsika ny antony. Raha resy lahatra amin’ireo fahamarinana telo anefa isika, dia tsy hivadika ary afaka milaza hoe: “Hankany amin’iza moa izahay? Ny teny lazainao no hahazoana fiainana mandrakizay.”",
+        "references": [
+          {
+            "label": "Jaona 6:68",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jaona/6/#v43006068",
+            "excerpt": "Tompo ô, hankany amin’iza moa izahay? Ny teny lazainao no hahazoana fiainana mandrakizay."
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "watchtower-2026404",
     "documentId": 2026404,
     "title": "Hajao ny Fanapahan-kevitry ny Hafa",

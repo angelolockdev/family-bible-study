@@ -225,7 +225,7 @@ export default function App() {
         </article>
       </section>
 
-      <section className="print-prompt" key={`prompt-${familyStudy.id}`} aria-labelledby="prompt-title"><div><p className="eyebrow">Sary azo pirinty</p><h2 id="prompt-title">Prompt ho an’ny sary amin’ity herinandro ity</h2><p>Voatahiry miaraka amin’ilay fianarana mba ahafahanao mamerina manonta azy rehefa ilaina.</p></div><div><pre>{familyStudy.printPrompt}</pre><button type="button" onClick={copyPrintPrompt}>{promptCopied ? 'Voakopia' : 'Adikao ny prompt'}</button></div></section>
+      <section className="print-prompt" key={`prompt-${familyStudy.id}`} aria-labelledby="prompt-title"><div><p className="eyebrow">Sary azo pirinty</p><h2 id="prompt-title">Prompt ho an’ny sary amin’ity herinandro ity</h2><p>Voatahiry miaraka amin’ilay fianarana mba ahafahanao mamerina manonta azy rehefa ilaina.</p></div><div><pre>{familyStudy.printPrompt}</pre><button type="button" data-state={promptCopied ? 'copied' : 'default'} onClick={copyPrintPrompt}>{promptCopied ? 'Voakopia' : 'Adikao ny prompt'}</button></div></section>
 
       <section className="preaching-study" id="fanompoana" aria-labelledby="preaching-title">
         <div className="preaching-study__heading"><div className="preaching-study__meta"><p className="eyebrow">Fanomanana ny fanompoana</p><span>Nohavaozina: {preachingStudy.publishedAt}</span></div><h2 id="preaching-title">{preachingStudy.title}</h2><p>{preachingStudy.subtitle}</p><strong className="study-date">Ho an’ny {preachingStudy.weekLabel}</strong></div>

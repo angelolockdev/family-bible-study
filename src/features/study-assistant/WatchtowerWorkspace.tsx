@@ -131,7 +131,7 @@ export function WatchtowerWorkspace({ studies, selectedStudyId, today = new Date
                         {question.references.length > 0 && <ul>{question.references.map((reference) => <li key={`${question.id}-${reference.url}`}><VersePreview reference={reference} /></li>)}</ul>}
                       </div>
                     ) : <p className="watchtower-answer-placeholder">Valio aloha ilay fanontaniana, dia asehoy ny valiny.</p>}
-                    <button type="button" onClick={() => toggleAnswer(question.id)}>{isRevealed ? 'Afeno ny valiny' : 'Asehoy ny valiny'}</button>
+                    <button type="button" aria-pressed={isRevealed} onClick={() => toggleAnswer(question.id)}>{isRevealed ? 'Afeno ny valiny' : 'Asehoy ny valiny'}</button>
                   </article>
                 )
               })}

@@ -1,4 +1,4 @@
-import { type CSSProperties, type ReactNode, useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react'
+import { type CSSProperties, type ReactNode, useCallback, useEffect, useId, useLayoutEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 
 type PopoverPosition = {
@@ -27,14 +27,16 @@ function clamp(value: number, minimum: number, maximum: number) {
 }
 
 export function ScripturePopover({ children, label, url, variant = 'family' }: ScripturePopoverProps) {
+  const popoverId = useId()
   const [isPinned, setIsPinned] = useState(false)
-  const [isTriggerHovered, setIsTriggerHovered] = useState(false)
-  const [isPopoverHovered, setIsPopoverHovered] = useState(false)
+  const [isHovered, setIsHovered] = useState(false)
+  const [isFocused, setIsFocused] = useState(false)
+  const [isDismissed, setIsDismissed] = useState(false)
   const [position, setPosition] = useState<PopoverPosition | null>(null)
   const triggerRef = useRef<HTMLButtonElement>(null)
   const popoverRef = useRef<HTMLSpanElement>(null)
   const hoverTimerRef = useRef<number | null>(null)
-  const isOpen = isPinned || isTriggerHovered || isPopoverHovered
+  const isOpen = !isDismissed && (isPinned || isHovered || isFocused)
   const classPrefix = variant === 'watchtower' ? 'watchtower-verse' : 'verse-link'
   const initialWidth = typeof window === 'undefined'
     ? MAX_POPOVER_WIDTH
@@ -45,11 +47,16 @@ export function ScripturePopover({ children, label, url, variant = 'family' }: S
     hoverTimerRef.current = null
   }
 
-  const scheduleHoverClose = (target: 'trigger' | 'popover') => {
+  const openOnHover = () => {
+    clearHoverTimer()
+    setIsDismissed(false)
+    setIsHovered(true)
+  }
+
+  const scheduleHoverClose = () => {
     clearHoverTimer()
     hoverTimerRef.current = window.setTimeout(() => {
-      if (target === 'trigger') setIsTriggerHovered(false)
-      else setIsPopoverHovered(false)
+      setIsHovered(false)
     }, 120)
   }
 
@@ -122,15 +129,19 @@ export function ScripturePopover({ children, label, url, variant = 'family' }: S
   useEffect(() => {
     function closeOnOutsidePointer(event: PointerEvent) {
       const target = event.target as Node
-      if (!triggerRef.current?.contains(target) && !popoverRef.current?.contains(target)) setIsPinned(false)
+      const trigger = triggerRef.current
+      if (trigger?.contains(target) || popoverRef.current?.contains(target)) return
+      setIsPinned(false)
+      setIsHovered(false)
+      setIsDismissed(true)
+      if (trigger && document.activeElement === trigger) trigger.blur()
     }
 
     function closeOnEscape(event: KeyboardEvent) {
       if (event.key !== 'Escape') return
       setIsPinned(false)
-      setIsTriggerHovered(false)
-      setIsPopoverHovered(false)
-      triggerRef.current?.focus()
+      setIsHovered(false)
+      setIsDismissed(true)
     }
 
     document.addEventListener('pointerdown', closeOnOutsidePointer)
@@ -144,15 +155,13 @@ export function ScripturePopover({ children, label, url, variant = 'family' }: S
 
   const popover = isOpen ? createPortal(
     <span
+      id={popoverId}
       className={`scripture-popover scripture-popover--${position?.placement ?? 'below'} ${classPrefix}__popover`}
       ref={popoverRef}
       role="dialog"
       aria-label={`Andinin-teny ${label}`}
-      onMouseEnter={() => {
-        clearHoverTimer()
-        setIsPopoverHovered(true)
-      }}
-      onMouseLeave={() => scheduleHoverClose('popover')}
+      onMouseEnter={openOnHover}
+      onMouseLeave={scheduleHoverClose}
       style={{
         '--scripture-arrow-left': `${position?.arrowLeft ?? MIN_ARROW_OFFSET}px`,
         left: position?.left ?? VIEWPORT_MARGIN,
@@ -172,20 +181,28 @@ export function ScripturePopover({ children, label, url, variant = 'family' }: S
   return (
     <span
       className={`${classPrefix} ${isOpen ? 'is-open' : ''}`}
-      onMouseEnter={() => {
-        clearHoverTimer()
-        setIsTriggerHovered(true)
-      }}
-      onMouseLeave={() => scheduleHoverClose('trigger')}
+      onMouseEnter={openOnHover}
+      onMouseLeave={scheduleHoverClose}
     >
       <button
         type="button"
         className={`${classPrefix}__trigger`}
         ref={triggerRef}
+        aria-controls={isOpen ? popoverId : undefined}
         aria-expanded={isOpen}
-        onClick={() => setIsPinned((value) => !value)}
-        onFocus={() => setIsTriggerHovered(true)}
-        onBlur={() => setIsTriggerHovered(false)}
+        aria-haspopup="dialog"
+        onClick={() => setIsPinned((value) => {
+          setIsDismissed(value)
+          return !value
+        })}
+        onFocus={() => {
+          setIsFocused(true)
+          setIsDismissed(false)
+        }}
+        onBlur={() => {
+          setIsFocused(false)
+          setIsDismissed(false)
+        }}
       >
         {label}
       </button>

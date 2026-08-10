@@ -104,6 +104,10 @@ dist
 # vitepress cache directory
 **/.vitepress/cache
 
+# Family-only Watchtower article packs (never publish or commit)
+.private/
+*.watchtower-private.json
+
 # Docusaurus cache and generated files
 .docusaurus
 

@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { ModeChoice, PreparationFields } from './PreparationFields'
+import { visibleArchiveItems } from './archiveWindow'
 
 import {
   createPreparationDraft,
@@ -20,6 +21,7 @@ export type AssistantStudy = {
   days: Array<{ day: string; focus: string }>
   memoryVerse: { reference: string; application: string; url: string }
   sourceUrl: string
+  guidedSuggestions?: Array<{ questionId: string; text: string; sourceUrl: string }>
 }
 
 type PreparationWorkspaceProps = {
@@ -38,11 +40,7 @@ const reasonLabels: Record<WorkspaceSelectionReason, string> = {
 
 function routeDraftId() {
   const [section, draftId] = window.location.hash.replace(/^#\/?/, '').split('/')
-  return section === 'assistant' ? draftId : undefined
-}
-
-function defaultStudyId(reason: StudySelectionReason, studyId?: string) {
-  return reason === 'archive-fallback' ? undefined : studyId
+  return section === 'fanomanana' ? draftId : undefined
 }
 
 function resolveRouteStudyId(draftId: string | undefined, drafts: PreparationDraft[], fallbackStudyId?: string) {
@@ -50,15 +48,10 @@ function resolveRouteStudyId(draftId: string | undefined, drafts: PreparationDra
   return drafts.find((draft) => draft.id === draftId)?.studyId
 }
 
-function isVisibleInTwoMonthArchive(study: AssistantStudy, today: Date) {
-  const cutoff = new Date(today.getFullYear(), today.getMonth() - 2, today.getDate())
-  return new Date(`${study.endDate}T12:00:00`) >= cutoff
-}
-
 export function PreparationWorkspace({ studies, today = new Date() }: PreparationWorkspaceProps) {
   const defaultSelection = useMemo(() => selectFamilyStudy(studies, today), [studies, today])
   const [store, setStore] = useState(() => loadPreparationStore())
-  const fallbackStudyId = defaultStudyId(defaultSelection.reason, defaultSelection.study?.id)
+  const fallbackStudyId = defaultSelection.study?.id
   const [selectedStudyId, setSelectedStudyId] = useState(() => resolveRouteStudyId(routeDraftId(), store.drafts, fallbackStudyId))
   const [saveError, setSaveError] = useState(false)
 
@@ -75,9 +68,9 @@ export function PreparationWorkspace({ studies, today = new Date() }: Preparatio
 
   if (!selectedStudyId || !selectedStudy || !draft) {
     return (
-      <section className="assistant-empty" id="assistant">
-        <h1>Préparation locale</h1>
-        <p>Aucune étude actuelle ou à venir. Consultez l’historique pour reprendre une ancienne préparation.</p>
+      <section className="assistant-empty" id="fanomanana">
+        <h1>Tsy misy fianarana homanina <small>Aucune étude à préparer</small></h1>
+        <p>Tsy misy fianarana ankehitriny na manaraka. Mbola azonao jerena ao amin’ny tahiry ny fanomanana taloha. <small>Aucune étude actuelle ou à venir.</small></p>
       </section>
     )
   }
@@ -85,12 +78,13 @@ export function PreparationWorkspace({ studies, today = new Date() }: Preparatio
   const activeDraft = draft
   const activeStudy = selectedStudy
   const selectionReason: WorkspaceSelectionReason = selectedStudy.id === fallbackStudyId ? defaultSelection.reason : 'history'
+  const visibleStudyIds = new Set(visibleArchiveItems(studies, today).map((study) => study.id))
   const visibleHistory = store.drafts
     .map((item) => ({ draft: item, study: studies.find((study) => study.id === item.studyId) }))
-    .filter((item): item is { draft: PreparationDraft; study: AssistantStudy } => Boolean(item.study && isVisibleInTwoMonthArchive(item.study, today)))
+    .filter((item): item is { draft: PreparationDraft; study: AssistantStudy } => Boolean(item.study && visibleStudyIds.has(item.study.id)))
     .sort((a, b) => b.draft.updatedAt.localeCompare(a.draft.updatedAt))
 
-  if (isVisibleInTwoMonthArchive(selectedStudy, today) && !visibleHistory.some((item) => item.draft.studyId === activeDraft.studyId)) {
+  if (visibleStudyIds.has(selectedStudy.id) && !visibleHistory.some((item) => item.draft.studyId === activeDraft.studyId)) {
     visibleHistory.unshift({ draft: activeDraft, study: selectedStudy })
   }
 
@@ -101,7 +95,7 @@ export function PreparationWorkspace({ studies, today = new Date() }: Preparatio
       ...changes,
       completedQuestionIds,
       completedQuestionCount: completedQuestionIds.length,
-      revealedSuggestionCount: 0,
+      revealedSuggestionCount: (changes.revealedSuggestionIds ?? activeDraft.revealedSuggestionIds).length,
       updatedAt: new Date().toISOString(),
     }
     const saved = savePreparationDraft(next)
@@ -132,33 +126,64 @@ export function PreparationWorkspace({ studies, today = new Date() }: Preparatio
     updateDraft({ completedQuestionIds: completed })
   }
 
+  function updateQuestionResponse(questionId: string, value: string) {
+    updateDraft({ questionResponses: { ...activeDraft.questionResponses, [questionId]: value } })
+  }
+
+  function toggleSuggestion(questionId: string) {
+    const revealedSuggestionIds = activeDraft.revealedSuggestionIds.includes(questionId)
+      ? activeDraft.revealedSuggestionIds.filter((id) => id !== questionId)
+      : [...activeDraft.revealedSuggestionIds, questionId]
+    updateDraft({ revealedSuggestionIds })
+  }
+
 
   return (
-    <section className="assistant-workspace" id="assistant" aria-labelledby="assistant-title">
+    <section className="assistant-workspace" id="fanomanana" aria-labelledby="assistant-title">
       <header className="assistant-header">
-        <div><p className="eyebrow">{reasonLabels[selectionReason]}</p><h1 id="assistant-title">Préparation locale</h1><h2>{selectedStudy.reading}</h2><p>{selectedStudy.weekLabel} · {selectedStudy.theme}</p></div>
-        <a href={selectedStudy.sourceUrl} target="_blank" rel="noreferrer">Loharano ofisialy / Source officielle</a>
+        <div><p className="eyebrow">{reasonLabels[selectionReason]}</p><h1 id="assistant-title">Fanomanana manokana <small>Préparation locale</small></h1><h2>{selectedStudy.reading}</h2><p>{selectedStudy.weekLabel} · {selectedStudy.theme}</p></div>
+        <a href={selectedStudy.sourceUrl} target="_blank" rel="noreferrer">Loharano ofisialy <small>Source officielle</small></a>
       </header>
       <div className="assistant-layout">
         <aside className="assistant-history" aria-label="Historique des préparations">
-          <h2>Historique</h2><p>Deux derniers mois</p>
+          <h2>Tahiry</h2><p>Roa volana farany</p>
           <nav aria-label="Préparations récentes">{visibleHistory.map(({ draft: historyDraft, study }) => {
             const selected = study.id === selectedStudy.id
-            return <a key={historyDraft.id} href={`#/assistant/${historyDraft.id}`} aria-current={selected ? 'page' : undefined} className={selected ? 'is-selected' : ''} onClick={() => chooseDraft(study.id)}><strong>{study.weekLabel}</strong><small>{historyDraft.mode === 'guided' ? 'Guidée' : 'Manuelle'} · {historyDraft.completedQuestionCount}/{study.days.length}</small></a>
+            return <a key={historyDraft.id} href={`#/fanomanana/${historyDraft.id}`} aria-current={selected ? 'page' : undefined} className={selected ? 'is-selected' : ''} onClick={() => chooseDraft(study.id)}><strong>{study.weekLabel}</strong><small>{historyDraft.mode === 'guided' ? 'Misy tari-dalana' : 'An-tanana'} · {historyDraft.completedQuestionCount}/{study.days.length}</small></a>
           })}</nav>
         </aside>
         <div className="assistant-editor">
           <ModeChoice mode={activeDraft.mode} onChange={(mode) => updateDraft({ mode })} />
-          <section className="assistant-focus" aria-labelledby="source-focus-title"><h2 id="source-focus-title">Source focus</h2><p>{selectedStudy.theme}</p><p>{selectedStudy.memoryVerse.reference} — {selectedStudy.memoryVerse.application}</p></section>
-          <fieldset className="assistant-questions"><legend>Fanontaniana / Questions</legend><ul>{selectedStudy.days.map((day, index) => {
+          <section className="assistant-focus" aria-labelledby="source-focus-title"><h2 id="source-focus-title">Hevi-dehibe <small>Repère de l’étude</small></h2><p>{selectedStudy.theme}</p><p>{selectedStudy.memoryVerse.reference} — {selectedStudy.memoryVerse.application}</p></section>
+          {activeDraft.mode === 'guided' && (
+            <section className="assistant-ai" aria-live="polite">
+              <h2>Fanomanana misy tari-dalana</h2>
+              {selectedStudy.guidedSuggestions?.length
+                ? <p>Valio amin’ny teninao aloha ny fanontaniana. Rehefa avy eo vao azonao sokafana ny soso-kevitra voaomana ao amin’ny katalaogy.</p>
+                : <p><strong>Tsy mbola misy soso-kevitra voaomana / Suggestions indisponibles.</strong> Mbola afaka manoratra sy mitahiry ny valinteninao an-tanana ianao.</p>}
+            </section>
+          )}
+          <fieldset className="assistant-questions"><legend>Fanontaniana <small>Questions</small></legend><ul>{selectedStudy.days.map((day, index) => {
             const questionId = `${selectedStudy.id}-question-${index}`
-            return <li key={questionId}><label><input type="checkbox" checked={activeDraft.completedQuestionIds.includes(questionId)} onChange={() => toggleQuestion(questionId)} /><span><strong>{day.day}</strong>{day.focus}</span></label></li>
+            const reflection = activeDraft.questionResponses[questionId] ?? ''
+            const suggestion = selectedStudy.guidedSuggestions?.find((item) => item.questionId === questionId)
+            const isRevealed = activeDraft.revealedSuggestionIds.includes(questionId)
+            const isComplete = activeDraft.completedQuestionIds.includes(questionId)
+            return <li className="assistant-question" data-complete={isComplete} key={questionId}>
+              <label className="assistant-question__complete"><input type="checkbox" checked={activeDraft.completedQuestionIds.includes(questionId)} onChange={() => toggleQuestion(questionId)} /><span><strong>{day.day}</strong>{day.focus}</span></label>
+              <label className="assistant-question__reflection">Ny eritreritro momba an’i {day.day}<textarea data-filled={Boolean(reflection.trim())} placeholder="Soraty aloha amin’ny teninao…" value={reflection} onChange={(event) => updateQuestionResponse(questionId, event.target.value)} /></label>
+              {activeDraft.mode === 'guided' && suggestion && <div className="assistant-suggestion">
+                {isRevealed && <div className="assistant-suggestion__content"><p>{suggestion.text}</p><a href={suggestion.sourceUrl} target="_blank" rel="noreferrer">Loharano jw.org</a></div>}
+                <button type="button" aria-expanded={isRevealed} disabled={!reflection.trim()} onClick={() => toggleSuggestion(questionId)}>{isRevealed ? 'Afeno ny soso-kevitra' : 'Asehoy ny soso-kevitra'}</button>
+                {!reflection.trim() && <small>Manorata ny eritreritrao aloha.</small>}
+              </div>}
+            </li>
           })}</ul></fieldset>
-          {activeDraft.mode === 'guided' && <section className="assistant-ai" aria-live="polite"><h2>Préparation guidée</h2><p>Les contenus générés par GPT-5.6-terra sont préparés chaque semaine par le cron Hermes local, validés, puis publiés dans ce catalogue et dans Slack. Cette page reste locale pour vos réponses personnelles.</p><p><strong>Ordre recommandé :</strong> répondez d’abord aux questions, puis comparez avec le briefing hebdomadaire publié dans #bible-malagasy.</p></section>}
           <PreparationFields draft={activeDraft} onChange={updateDraft} />
+          {activeDraft.completedQuestionCount === selectedStudy.days.length && <p className="assistant-complete" role="status">Vita ny fanomanana amin’ity herinandro ity.</p>}
           {saveError
-            ? <p className="assistant-save-status" role="alert">Impossible d’enregistrer localement. La saisie reste disponible jusqu’à la fermeture de cette page.</p>
-            : <p className="assistant-save-status" role="status">Enregistré localement · {activeDraft.completedQuestionCount} question(s) terminée(s)</p>}
+            ? <p className="assistant-save-status" role="alert">Tsy voatahiry eo an-toerana. Mbola hita eto ny soratrao mandra-pikaton’ity pejy ity. <small>Impossible d’enregistrer localement.</small></p>
+            : <p className="assistant-save-status" role="status">Voatahiry eo an-toerana · {activeDraft.completedQuestionCount}/{selectedStudy.days.length} vita · {new Date(activeDraft.updatedAt).toLocaleTimeString('mg-MG', { hour: '2-digit', minute: '2-digit' })}</p>}
         </div>
       </div>
     </section>

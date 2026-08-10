@@ -7,10 +7,14 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "test": "vitest run",
+    "test": "vitest run && node --test scripts/catalogue-pipeline.test.mjs scripts/watchtower-private-pack.test.mjs",
+    "test:unit": "vitest run",
     "test:watch": "vitest",
     "hydrate:watchtower-verses": "node scripts/extract-jw-verses.mjs",
-    "validate:watchtower": "node scripts/validate-watchtower-studies.mjs"
+    "build:watchtower-private-pack": "node scripts/watchtower-private-pack.mjs",
+    "validate:watchtower": "node scripts/validate-watchtower-studies.mjs",
+    "validate:studies": "node scripts/validate-studies.mjs",
+    "validate:catalogues": "npm run validate:studies && npm run validate:watchtower"
   },
   "repository": {
     "type": "git",
@@ -28,6 +32,7 @@
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.3",
+    "fake-indexeddb": "^6.2.5",
     "jsdom": "^29.1.1",
     "typescript": "^7.0.2",
     "vite": "^8.1.4",

@@ -1,4 +1,4 @@
-import { render, screen, waitFor, within } from '@testing-library/react'
+import { act, render, screen, waitFor, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import App from './App'
 
@@ -9,9 +9,10 @@ beforeEach(() => {
 
 describe('Family Bible Study companion', () => {
   it('shows anonymized family role cards', () => {
+    window.history.replaceState(null, '', '#/fianarana/family-2026-08-03')
     render(<App />)
 
-    expect(screen.getByRole('heading', { name: /fianaram-pianakaviana/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 1, name: /Jeremia 22-23/i })).toBeInTheDocument()
     expect(screen.getAllByText('Ray aman-dreny')).toHaveLength(2)
     expect(screen.getByRole('heading', { name: 'Mpitarika' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'Mpampifandray' })).toBeInTheDocument()
@@ -21,11 +22,12 @@ describe('Family Bible Study companion', () => {
 
   it('rotates to the next activity when the family chooses another activity', async () => {
     const user = userEvent.setup()
+    window.history.replaceState(null, '', '#/fianarana/family-2026-08-03')
     render(<App />)
 
     expect(screen.getByText(/Karatra safidy/i)).toBeInTheDocument()
     expect(screen.getByRole('img', { name: /Karatra roa azo isafidianana/i })).toHaveAttribute('src', '/assets/activity-choice.svg')
-    await user.click(screen.getByRole('button', { name: /activité suivante/i }))
+    await user.click(screen.getByRole('button', { name: /Hetsika manaraka/i }))
     expect(screen.getByText(/Alaharo ny tantara/i)).toBeInTheDocument()
     expect(screen.getByRole('img', { name: /Karatra telo arindra/i })).toHaveAttribute('src', '/assets/activity-order.svg')
   })
@@ -43,6 +45,10 @@ describe('Family Bible Study companion', () => {
       expect(screen.queryByRole('dialog', { name: /Jeremia 18:1-6/i })).not.toBeInTheDocument()
     })
 
+    act(() => {
+      window.history.replaceState(null, '', '#/fanompoana/preaching-2026-08-07')
+      window.dispatchEvent(new HashChangeEvent('hashchange'))
+    })
     await user.click(screen.getByRole('button', { name: 'Matio 16:16' }))
     expect(screen.getByRole('dialog', { name: /Matio 16:16/i })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: /Vakio ao amin’ny jw.org/i })).toHaveAttribute(
@@ -53,6 +59,7 @@ describe('Family Bible Study companion', () => {
 
   it('changes the reading directly from the chronological sidebar', async () => {
     const user = userEvent.setup()
+    window.history.replaceState(null, '', '#/fianarana/family-2026-08-03')
     render(<App />)
 
     const history = screen.getByRole('complementary', { name: /Navigation chronologique des lectures/i })
@@ -60,7 +67,8 @@ describe('Family Bible Study companion', () => {
     await user.click(historicalStudy)
 
     expect(window.location.hash).toBe('#/fianarana/family-2026-07-20')
-    expect(screen.getByRole('heading', { name: 'Jeremia 18-19' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 1, name: 'Jeremia 18-19' })).toBeInTheDocument()
+
     expect(within(history).getByRole('link', { name: /20-26 Jolay 2026Jeremia 18-19/i })).toHaveAttribute('aria-current', 'page')
     expect(within(history).getAllByRole('link', { current: 'page' })).toHaveLength(1)
   })
@@ -69,18 +77,18 @@ describe('Family Bible Study companion', () => {
     window.history.replaceState(null, '', '#/fianarana/family-2026-07-20')
     render(<App />)
 
-    expect(screen.getByRole('heading', { name: 'Jeremia 18-19' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 1, name: 'Jeremia 18-19' })).toBeInTheDocument()
   })
 
   it('links to and renders the Watchtower study route', async () => {
     const user = userEvent.setup()
     render(<App />)
 
-    const assistantLink = screen.getByRole('link', { name: 'Étude Tour de Garde' })
+    const assistantLink = screen.getByRole('link', { name: 'Tilikambo Fiambenana' })
     await user.click(assistantLink)
 
-    expect(window.location.hash).toBe('#/assistant')
+    expect(window.location.hash).toBe('#/tilikambo')
     expect(assistantLink).toHaveAttribute('aria-current', 'page')
-    expect(screen.getAllByText(/Étude de La Tour de Garde|prochain cron Hermes/i).length).toBeGreaterThan(0)
+    expect(screen.getAllByText(/Tilikambo Fiambenana|fanavaozana manaraka/i).length).toBeGreaterThan(0)
   })
 })

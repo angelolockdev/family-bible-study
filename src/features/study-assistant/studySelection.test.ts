@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { selectFamilyStudy, type Study } from './studySelection'
+import { selectFamilyStudy, selectStudy, type Study } from './studySelection'
 
 const familyStudy = (id: string, startDate: string, endDate: string): Study => ({
   id,
@@ -69,6 +69,38 @@ describe('selectFamilyStudy', () => {
     expect(selectFamilyStudy([preachingStudy], new Date(2026, 6, 20))).toEqual({
       study: undefined,
       reason: 'archive-fallback',
+    })
+  })
+})
+
+describe('selectStudy', () => {
+  const catalogue: Study[] = [
+    familyStudy('family-current', '2026-08-03', '2026-08-09'),
+    { id: 'preaching-current', kind: 'preaching', startDate: '2026-08-07', endDate: '2026-08-08' },
+    { id: 'preaching-next', kind: 'preaching', startDate: '2026-08-14', endDate: '2026-08-15' },
+    { id: 'watchtower-2026404', kind: 'watchtower', startDate: '2026-08-03', endDate: '2026-08-09' },
+    { id: 'watchtower-2026442', kind: 'watchtower', startDate: '2026-08-10', endDate: '2026-08-16' },
+  ]
+
+  it('uses the same active, upcoming, then archive fallback order for every study kind', () => {
+    expect(selectStudy(catalogue, 'preaching', new Date(2026, 7, 8, 23, 30))).toEqual({
+      study: expect.objectContaining({ id: 'preaching-current' }),
+      reason: 'current',
+    })
+    expect(selectStudy(catalogue, 'preaching', new Date(2026, 7, 10))).toEqual({
+      study: expect.objectContaining({ id: 'preaching-next' }),
+      reason: 'upcoming',
+    })
+    expect(selectStudy(catalogue, 'preaching', new Date(2026, 7, 30))).toEqual({
+      study: expect.objectContaining({ id: 'preaching-next' }),
+      reason: 'archive-fallback',
+    })
+  })
+
+  it('selects a Watchtower study by dates when document ids are not consecutive', () => {
+    expect(selectStudy(catalogue, 'watchtower', new Date(2026, 7, 10))).toEqual({
+      study: expect.objectContaining({ id: 'watchtower-2026442' }),
+      reason: 'current',
     })
   })
 })

@@ -94,7 +94,7 @@ function ArticleFigure({ figure }: { figure: WatchtowerPrivateFigure }) {
 }
 
 function ArticleParagraphText({ paragraph }: { paragraph: WatchtowerPrivateParagraph }) {
-  if (!paragraph.segments) return <>{paragraph.text}</>
+  if (!paragraph.segments?.length) return <>{paragraph.text}</>
 
   return <>{paragraph.segments.map((segment, index) => segment.type === 'text'
     ? <span key={`text-${index}`}>{segment.text}</span>

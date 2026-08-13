@@ -77,6 +77,17 @@ describe('WatchtowerArticleReader', () => {
     expect(screen.queryByText('fanampiny-68')).not.toBeInTheDocument()
   })
 
+  it('keeps the official paragraph text visible when an older cache contains empty segments', () => {
+    const articleWithStaleSegments = structuredClone(article)
+    const paragraph = articleWithStaleSegments.blocks.find((block) => block.type === 'paragraph' && block.number === '2')
+    if (!paragraph || paragraph.type !== 'paragraph') throw new Error('Fixture paragraphe attendue')
+    paragraph.segments = []
+
+    render(<WatchtowerArticleReader article={articleWithStaleSegments} questions={questions} />)
+
+    expect(screen.getByText('Paragrafy faharoa.')).toBeVisible()
+  })
+
   it('keeps reflection optional and toggles the prepared answer independently', async () => {
     const user = userEvent.setup()
     render(<WatchtowerArticleReader article={article} questions={questions} />)

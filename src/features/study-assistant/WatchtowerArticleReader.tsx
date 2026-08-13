@@ -1,7 +1,8 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import { createPortal } from 'react-dom'
 import { ScripturePopover } from '../../components/ScripturePopover'
 import type { WatchtowerQuestion } from './WatchtowerWorkspace'
-import type { WatchtowerPrivateArticle, WatchtowerPrivateFigure } from './watchtowerPrivateContent'
+import type { WatchtowerPrivateArticle, WatchtowerPrivateFigure, WatchtowerPrivateParagraph } from './watchtowerPrivateContent'
 
 type WatchtowerArticleReaderProps = {
   article: WatchtowerPrivateArticle
@@ -9,27 +10,99 @@ type WatchtowerArticleReaderProps = {
 }
 
 function ArticleFigure({ figure }: { figure: WatchtowerPrivateFigure }) {
+  const [expanded, setExpanded] = useState(false)
+  const triggerRef = useRef<HTMLButtonElement>(null)
+  const closeRef = useRef<HTMLButtonElement>(null)
   const srcSet = figure.sources
     .slice()
     .sort((left, right) => left.width - right.width)
     .map((source) => `${source.url} ${source.width}w`)
     .join(', ')
 
+  useEffect(() => {
+    if (!expanded) return
+    const previousOverflow = document.documentElement.style.overflow
+    document.documentElement.style.overflow = 'hidden'
+    closeRef.current?.focus()
+
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setExpanded(false)
+      if (event.key === 'Tab') {
+        event.preventDefault()
+        closeRef.current?.focus()
+      }
+    }
+    document.addEventListener('keydown', closeOnEscape)
+    return () => {
+      document.removeEventListener('keydown', closeOnEscape)
+      document.documentElement.style.overflow = previousOverflow
+      triggerRef.current?.focus()
+    }
+  }, [expanded])
+
   return (
     <figure className="watchtower-reader__figure">
-      <img
-        src={figure.src}
-        srcSet={srcSet}
-        sizes="(max-width: 700px) calc(100vw - 40px), 760px"
-        alt={figure.alt}
-        width={figure.width}
-        height={figure.height}
-        loading="lazy"
-        decoding="async"
-      />
+      <button
+        type="button"
+        className="watchtower-reader__figure-trigger"
+        aria-expanded={expanded}
+        aria-haspopup="dialog"
+        aria-label={`Jereo akaiky: ${figure.alt}`}
+        onClick={() => setExpanded(true)}
+        ref={triggerRef}
+      >
+        <img
+          src={figure.src}
+          srcSet={srcSet}
+          sizes="(max-width: 700px) calc(100vw - 40px), 760px"
+          alt={figure.alt}
+          width={figure.width}
+          height={figure.height}
+          loading="lazy"
+          decoding="async"
+        />
+      </button>
       <figcaption>{figure.caption}</figcaption>
+      {expanded && createPortal(
+        <div className="watchtower-image-dialog" role="presentation" onPointerDown={() => setExpanded(false)}>
+          <div
+            className="watchtower-image-dialog__panel"
+            role="dialog"
+            aria-modal="true"
+            aria-label={figure.alt}
+            onPointerDown={(event) => event.stopPropagation()}
+          >
+            <button type="button" className="watchtower-image-dialog__close" onClick={() => setExpanded(false)} ref={closeRef}>
+              Akatona ny sary
+            </button>
+            <img
+              src={figure.src}
+              srcSet={srcSet}
+              sizes="96vw"
+              alt={figure.alt}
+              width={figure.width}
+              height={figure.height}
+              decoding="async"
+            />
+            <p>{figure.caption}</p>
+          </div>
+        </div>,
+        document.body,
+      )}
     </figure>
   )
+}
+
+function ArticleParagraphText({ paragraph }: { paragraph: WatchtowerPrivateParagraph }) {
+  if (!paragraph.segments) return <>{paragraph.text}</>
+
+  return <>{paragraph.segments.map((segment, index) => segment.type === 'text'
+    ? <span key={`text-${index}`}>{segment.text}</span>
+    : (
+      <ScripturePopover key={`${segment.url}-${index}`} label={segment.label} url={segment.url} variant="watchtower">
+        {segment.excerpt}
+      </ScripturePopover>
+    ))}</>
 }
 
 export function WatchtowerPreparedQuestion({ question }: { question: WatchtowerQuestion }) {
@@ -49,7 +122,7 @@ export function WatchtowerPreparedQuestion({ question }: { question: WatchtowerQ
             value={reflection}
             onChange={(event) => setReflection(event.target.value)}
             placeholder="Soraty eto raha tianao…"
-            aria-label={`Ny eritreritro tsy voatery — ${question.number}`}
+            aria-label={`Ny eritreritro tsy voatery - ${question.number}`}
           />
         </label>
         <button
@@ -113,6 +186,17 @@ export function WatchtowerArticleReader({ article, questions }: WatchtowerArticl
             return <Heading className="watchtower-reader__heading" key={block.id}>{block.text}</Heading>
           }
           if (block.type === 'figure') return <ArticleFigure figure={block} key={block.id} />
+          if (block.type === 'summary') {
+            return (
+              <section className="watchtower-reader__summary" aria-labelledby={`${block.id}-title`} key={block.id}>
+                <h2 id={`${block.id}-title`}>Famintinana</h2>
+                <p className="watchtower-reader__summary-title">{block.title}</p>
+                <ul>
+                  {block.prompts.map((prompt) => <li key={prompt}>{prompt}</li>)}
+                </ul>
+              </section>
+            )
+          }
 
           const questionsBefore = block.questionIds
             .filter((questionId) => firstParagraphByQuestion.get(questionId) === index)
@@ -125,7 +209,7 @@ export function WatchtowerArticleReader({ article, questions }: WatchtowerArticl
               {questionsBefore.map((question) => <WatchtowerPreparedQuestion question={question} key={question.id} />)}
               <div className="watchtower-reader__paragraph" id={`paragraph-${block.number}`}>
                 {!supplemental && <span className="watchtower-reader__paragraph-number" aria-label={`Paragrafy ${block.number}`}>{block.number}</span>}
-                <p>{block.text}</p>
+                <p><ArticleParagraphText paragraph={block} /></p>
               </div>
 
             </div>

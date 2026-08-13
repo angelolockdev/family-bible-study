@@ -3,6 +3,7 @@ import { mkdir, readFile, rename, rm, writeFile } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import { pathToFileURL } from 'node:url'
 import { JSDOM } from 'jsdom'
+import { extractVerseExcerptFromHtml, verseIdsFromUrl } from './extract-jw-verses.mjs'
 
 const RESPONSIVE_WIDTHS = { xs: 320, sm: 480, md: 800, lg: 1200 }
 
@@ -40,7 +41,7 @@ function questionIdsByParagraph(study) {
   return ids
 }
 
-function paragraphData(element) {
+async function paragraphData(element, sourceUrl, excerptForUrl) {
   const clone = element.cloneNode(true)
   const paragraphNumberNode = clone.querySelector('.parNum[data-pnum]')
   const explicitNumber = paragraphNumberNode?.getAttribute('data-pnum')
@@ -50,7 +51,45 @@ function paragraphData(element) {
   const prefixedNumber = text.match(/^(\d+)\s+(.+)$/s)
   const number = explicitNumber || prefixedNumber?.[1] || `fanampiny-${element.dataset.pid || element.id || 'sans-id'}`
   if (!explicitNumber && prefixedNumber) text = prefixedNumber[2]
-  return { number, text }
+
+  if (!excerptForUrl || !clone.querySelector('a.jsBibleLink')) return { number, text }
+
+  const segments = []
+  const appendText = (value) => {
+    const normalized = String(value ?? '').replace(/\s+/g, ' ')
+    if (!normalized) return
+    const previous = segments.at(-1)
+    if (previous?.type === 'text') previous.text += normalized
+    else segments.push({ type: 'text', text: normalized })
+  }
+  const walk = (node) => {
+    if (node.nodeType === 3) {
+      appendText(node.textContent)
+      return
+    }
+    if (node.nodeType !== 1) return
+    if (node.matches('a.jsBibleLink')) {
+      const url = officialPageUrl(new URL(node.getAttribute('href'), sourceUrl).toString()).toString()
+      segments.push({ type: 'scripture', label: normalizeText(node.textContent), url })
+      return
+    }
+    node.childNodes.forEach(walk)
+  }
+  clone.childNodes.forEach(walk)
+
+  const firstText = segments.find((segment) => segment.type === 'text')
+  if (firstText) {
+    firstText.text = explicitNumber
+      ? firstText.text.trimStart()
+      : firstText.text.replace(/^\s*\d+\s+/, '')
+  }
+  const lastText = segments.findLast((segment) => segment.type === 'text')
+  if (lastText) lastText.text = lastText.text.trimEnd()
+
+  for (const segment of segments) {
+    if (segment.type === 'scripture') segment.excerpt = await excerptForUrl(segment.url)
+  }
+  return { number, text, segments: segments.filter((segment) => segment.type !== 'text' || segment.text) }
 }
 
 function figureData(element, latestParagraphNumber) {
@@ -69,7 +108,7 @@ function figureData(element, latestParagraphNumber) {
   return { src, sources: entries, alt, caption, afterParagraph: latestParagraphNumber }
 }
 
-export async function extractPrivateArticle({ html, study, dimensionsForUrl }) {
+export async function extractPrivateArticle({ html, study, dimensionsForUrl, excerptForUrl }) {
   officialPageUrl(study.sourceUrl)
   const sourceDigest = createHash('sha256').update(html).digest('hex')
   if (study.sourceDigest && sourceDigest.toLowerCase() !== study.sourceDigest.toLowerCase()) {
@@ -114,7 +153,7 @@ export async function extractPrivateArticle({ html, study, dimensionsForUrl }) {
     }
 
     if (!/^p\d+$/.test(element.className)) continue
-    const { number, text } = paragraphData(element)
+    const { number, text, segments } = await paragraphData(element, study.sourceUrl, excerptForUrl)
     if (!text) continue
     latestParagraphNumber = number
     blocks.push({
@@ -123,6 +162,21 @@ export async function extractPrivateArticle({ html, study, dimensionsForUrl }) {
       number,
       text,
       questionIds: publicQuestions.get(number) ?? [],
+      ...(segments ? { segments } : {}),
+    })
+  }
+
+  const summary = document.querySelector('#article aside')
+  const summaryTitle = normalizeText(summary?.querySelector('.boxTtl h2, .boxTtl')?.textContent)
+  const summaryPrompts = [...(summary?.querySelectorAll('.boxContent li > p') ?? [])]
+    .map((element) => normalizeText(element.textContent))
+    .filter(Boolean)
+  if (summaryTitle && summaryPrompts.length > 0) {
+    blocks.push({
+      id: uniqueId('summary', summary?.dataset.pid || 'review'),
+      type: 'summary',
+      title: summaryTitle,
+      prompts: summaryPrompts,
     })
   }
 
@@ -173,6 +227,18 @@ async function fetchDimensions(url) {
   return jpegDimensions(Buffer.from(await response.arrayBuffer()))
 }
 
+function createVerseExcerptFetcher() {
+  const chapterCache = new Map()
+  return async (url) => {
+    const chapterUrl = new URL(url)
+    chapterUrl.hash = ''
+    const key = chapterUrl.toString()
+    const html = chapterCache.get(key) ?? await fetchText(key)
+    chapterCache.set(key, html)
+    return extractVerseExcerptFromHtml(html, verseIdsFromUrl(url))
+  }
+}
+
 function parseArguments(argv) {
   const result = { output: '.private/watchtower-private-pack.json', studyId: undefined }
   for (let index = 0; index < argv.length; index += 1) {
@@ -183,11 +249,12 @@ function parseArguments(argv) {
   return result
 }
 
-export async function buildPrivatePack({ studies, fetchArticle = fetchText, dimensionsForUrl = fetchDimensions }) {
+export async function buildPrivatePack({ studies, fetchArticle = fetchText, dimensionsForUrl = fetchDimensions, excerptForUrl }) {
   const articles = []
+  const resolveExcerpt = excerptForUrl ?? createVerseExcerptFetcher()
   for (const study of studies) {
     const html = await fetchArticle(study.sourceUrl)
-    articles.push(await extractPrivateArticle({ html, study, dimensionsForUrl }))
+    articles.push(await extractPrivateArticle({ html, study, dimensionsForUrl, excerptForUrl: resolveExcerpt }))
   }
   return { version: 1, generatedAt: new Date().toISOString(), articles }
 }

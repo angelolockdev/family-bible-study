@@ -12,7 +12,23 @@ const article: WatchtowerPrivateArticle = {
   title: 'Lahatsoratra fitsapana',
   blocks: [
     { id: 'heading-1', type: 'heading', level: 2, text: 'Intertitre' },
-    { id: 'paragraph-1', type: 'paragraph', number: '1', text: 'Paragrafy voalohany.', questionIds: ['2026401-q1-2'] },
+    {
+      id: 'paragraph-1',
+      type: 'paragraph',
+      number: '1',
+      text: 'Paragrafy voalohany. Jaona 6:68.',
+      questionIds: ['2026401-q1-2'],
+      segments: [
+        { type: 'text', text: 'Paragrafy voalohany. ' },
+        {
+          type: 'scripture',
+          label: 'Jaona 6:68',
+          url: 'https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jaona/6/#v43006068',
+          excerpt: 'Tompo ô, hankany amin’iza moa izahay?',
+        },
+        { type: 'text', text: '.' },
+      ],
+    },
     {
       id: 'figure-1',
       type: 'figure',
@@ -29,6 +45,12 @@ const article: WatchtowerPrivateArticle = {
     },
     { id: 'paragraph-2', type: 'paragraph', number: '2', text: 'Paragrafy faharoa.', questionIds: ['2026401-q1-2'] },
     { id: 'paragraph-supplemental', type: 'paragraph', number: 'fanampiny-68', text: 'Fanampim-panazavana.', questionIds: [] },
+    {
+      id: 'summary-review',
+      type: 'summary',
+      title: 'NAHOANA IRETO FAHAMARINANA IRETO NO MANAMPY ANTSIKA?',
+      prompts: ['I Jehovah no Mpamorona', 'Tenin’Andriamanitra ny Baiboly'],
+    },
   ],
 }
 
@@ -46,7 +68,7 @@ describe('WatchtowerArticleReader', () => {
     render(<WatchtowerArticleReader article={article} questions={questions} />)
 
     const question = screen.getByRole('heading', { name: 'Inona no nianarantsika?' })
-    const firstParagraph = screen.getByText('Paragrafy voalohany.')
+    const firstParagraph = screen.getByText(/Paragrafy voalohany/)
     const lastParagraph = screen.getByText('Paragrafy faharoa.')
     expect(question.compareDocumentPosition(firstParagraph) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()
     expect(firstParagraph.compareDocumentPosition(lastParagraph) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()
@@ -71,6 +93,29 @@ describe('WatchtowerArticleReader', () => {
     expect(screen.queryByText('Ity ny valiny voaomana.')).not.toBeInTheDocument()
   })
 
+  it('opens an official scripture excerpt directly from an article paragraph', async () => {
+    const user = userEvent.setup()
+    render(<WatchtowerArticleReader article={article} questions={questions} />)
+
+    await user.click(screen.getByRole('button', { name: 'Jaona 6:68' }))
+
+    const dialog = screen.getByRole('dialog', { name: 'Andinin-teny Jaona 6:68' })
+    expect(dialog).toHaveTextContent('Tompo ô, hankany amin’iza moa izahay?')
+    expect(screen.getByRole('link', { name: 'Vakio ao amin’ny jw.org' })).toHaveAttribute(
+      'href',
+      'https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jaona/6/#v43006068',
+    )
+  })
+
+  it('shows the final Famintinana with every official review prompt', () => {
+    render(<WatchtowerArticleReader article={article} questions={questions} />)
+
+    expect(screen.getByRole('heading', { name: 'Famintinana' })).toBeVisible()
+    expect(screen.getByText('NAHOANA IRETO FAHAMARINANA IRETO NO MANAMPY ANTSIKA?')).toBeVisible()
+    expect(screen.getByText('I Jehovah no Mpamorona')).toBeVisible()
+    expect(screen.getByText('Tenin’Andriamanitra ny Baiboly')).toBeVisible()
+  })
+
   it('reserves image space and lazy-loads an official responsive source', () => {
     render(<WatchtowerArticleReader article={article} questions={questions} />)
 
@@ -81,5 +126,19 @@ describe('WatchtowerArticleReader', () => {
     expect(image).toHaveAttribute('height', '800')
     expect(image).toHaveAttribute('srcset', expect.stringContaining('test_md.jpg 800w'))
     expect(screen.getByText('Fanazavana ny sary.')).toBeVisible()
+  })
+
+  it('opens an article image in an accessible detail dialog and closes it again', async () => {
+    const user = userEvent.setup()
+    render(<WatchtowerArticleReader article={article} questions={questions} />)
+
+    await user.click(screen.getByRole('button', { name: /Jereo akaiky: Sary fanazavana/i }))
+
+    const dialog = screen.getByRole('dialog', { name: 'Sary fanazavana' })
+    expect(dialog).toBeVisible()
+    expect(screen.getAllByRole('img', { name: 'Sary fanazavana' })).toHaveLength(2)
+
+    await user.click(screen.getByRole('button', { name: 'Akatona ny sary' }))
+    expect(screen.queryByRole('dialog', { name: 'Sary fanazavana' })).not.toBeInTheDocument()
   })
 })

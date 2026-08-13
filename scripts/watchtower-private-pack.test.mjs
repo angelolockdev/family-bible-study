@@ -14,7 +14,7 @@ const html = `<!doctype html><html><body>
 <article id="article">
   <div class="bodyTxt">
     <p class="qu" data-pid="40">1-2. Fanontaniana?</p>
-    <p class="p7" data-pid="7">1 Paragrafy voalohany.<a class="footnoteLink">a</a></p>
+    <p class="p7" data-pid="7">1 Paragrafy voalohany. <a class="jsBibleLink" href="https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jaona/6/#v43006068">Jaona 6:68</a>.<a class="footnoteLink">a</a></p>
     <figure>
       <span class="jsRespImg"
         data-img-att-alt="Sary fanazavana"
@@ -34,6 +34,7 @@ test('extracts ordered paragraphs, headings, responsive figures, and public ques
     html,
     study,
     dimensionsForUrl: async () => ({ width: 1200, height: 800 }),
+    excerptForUrl: async () => 'Tompo ô, hankany amin’iza moa izahay?',
   })
 
   assert.equal(article.contentKey, study.id)
@@ -44,8 +45,18 @@ test('extracts ordered paragraphs, headings, responsive figures, and public ques
     id: 'paragraph-7',
     type: 'paragraph',
     number: '1',
-    text: 'Paragrafy voalohany.',
+    text: 'Paragrafy voalohany. Jaona 6:68.',
     questionIds: ['2026401-q1-2'],
+    segments: [
+      { type: 'text', text: 'Paragrafy voalohany. ' },
+      {
+        type: 'scripture',
+        label: 'Jaona 6:68',
+        url: 'https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jaona/6/#v43006068',
+        excerpt: 'Tompo ô, hankany amin’iza moa izahay?',
+      },
+      { type: 'text', text: '.' },
+    ],
   })
   assert.equal(article.blocks[1].afterParagraph, '1')
   assert.equal(article.blocks[1].caption, 'Fanazavana ny sary.')
@@ -69,6 +80,30 @@ test('preserves supplemental unnumbered paragraphs without associating a public 
   assert.equal(supplemental.number, 'fanampiny-68')
   assert.equal(supplemental.text, 'Torohevitra fanampiny.')
   assert.deepEqual(supplemental.questionIds, [])
+})
+
+test('extracts the final official summary prompts after the article body', async () => {
+  const summaryHtml = html.replace('</article>', `
+    <aside>
+      <div class="boxTtl"><h2>NAHOANA IRETO FAHAMARINANA TELO IRETO NO MANAMPY ANTSIKA?</h2></div>
+      <div class="boxContent"><ul>
+        <li><p class="p30">I Jehovah no Mpamorona</p><div class="gen-field">Valin-teninao</div></li>
+        <li><p class="p32">Tenin’Andriamanitra ny Baiboly</p><div class="gen-field">Valin-teninao</div></li>
+      </ul></div>
+    </aside>
+  </article>`)
+  const article = await extractPrivateArticle({
+    html: summaryHtml,
+    study,
+    dimensionsForUrl: async () => ({ width: 1200, height: 800 }),
+  })
+
+  assert.deepEqual(article.blocks.at(-1), {
+    id: 'summary-review',
+    type: 'summary',
+    title: 'NAHOANA IRETO FAHAMARINANA TELO IRETO NO MANAMPY ANTSIKA?',
+    prompts: ['I Jehovah no Mpamorona', 'Tenin’Andriamanitra ny Baiboly'],
+  })
 })
 
 test('rejects non-Malagasy sources and stale public source digests', async () => {

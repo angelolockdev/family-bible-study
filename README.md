@@ -52,12 +52,13 @@ Le pack privé :
 - reste sous `.private/` et ne doit jamais être commité ou déployé ;
 - accepte uniquement des pages malagasy `jw.org` et des médias provenant des CDN officiels JW ;
 - doit correspondre exactement à l’identifiant, l’URL, le digest, le titre et aux associations question-paragraphe du catalogue public ;
-- conserve l’ordre des paragraphes, intertitres et figures ;
+- conserve l’ordre des paragraphes, intertitres, figures et de la synthèse finale ;
 - associe chaque question publique au dernier paragraphe concerné ;
 - contient les dimensions et variantes responsives des images pour éviter les sauts de mise en page ;
+- inclut les références bibliques détectées dans les paragraphes avec leur extrait officiel afin de permettre une lecture directe ;
 - est limité à 5 Mo lors de l’import dans le navigateur.
 
-Dans le lecteur continu, les paragraphes restent visibles. La réponse préparée ne peut être révélée qu’après la saisie d’une réflexion personnelle.
+Dans le lecteur continu, les paragraphes restent visibles, les versets s’ouvrent dans un panneau de lecture et les images peuvent être agrandies dans une fenêtre accessible. La section `Famintinana` termine l’article avec les questions officielles de synthèse. La réflexion personnelle reste facultative et chaque réponse préparée peut être affichée ou masquée indépendamment.
 
 ## Génération locale et synchronisation Slack
 

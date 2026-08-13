@@ -109,6 +109,7 @@ function TextWithVerses({ text }: { text: string }) {
 }
 
 function SiteNavigation({ section, familyStudy, preachingStudy }: { section: RouteSection; familyStudy?: FamilyStudy; preachingStudy?: PreachingStudy }) {
+  const [menuOpen, setMenuOpen] = useState(false)
   const links: Array<{ section: RouteSection; label: string; href: string }> = [
     { section: 'top', label: 'Fandraisana', href: '#/top' },
     { section: 'fianarana', label: 'Fianarana', href: `#/fianarana/${familyStudy?.id ?? ''}` },
@@ -117,10 +118,33 @@ function SiteNavigation({ section, familyStudy, preachingStudy }: { section: Rou
     { section: 'fanomanana', label: 'Fanomanana', href: '#/fanomanana' },
     { section: 'tahiry', label: 'Tahiry', href: '#/tahiry' },
   ]
+
+  useEffect(() => {
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setMenuOpen(false)
+    }
+    document.addEventListener('keydown', closeOnEscape)
+    return () => document.removeEventListener('keydown', closeOnEscape)
+  }, [])
+
   return (
     <nav className="site-nav" aria-label="Fizarana lehibe">
-      <a className="site-brand" href="#/top" aria-label="Fandraisana — Fianaram-pianakaviana" aria-current={section === 'top' ? 'page' : undefined}><span aria-hidden="true">JW</span><strong>Fianaram-pianakaviana</strong></a>
-      <div className="site-nav__links">{links.slice(1).map((link) => <a key={link.section} href={link.href} aria-current={section === link.section ? 'page' : undefined}>{link.label}</a>)}</div>
+      <a className="site-brand" href="#/top" aria-label="Fandraisana - Fianaram-pianakaviana" aria-current={section === 'top' ? 'page' : undefined}><span aria-hidden="true">JW</span><strong>Fianaram-pianakaviana</strong></a>
+      <button
+        type="button"
+        className="site-nav__toggle"
+        aria-expanded={menuOpen}
+        aria-controls="site-navigation-links"
+        onClick={() => setMenuOpen((current) => !current)}
+      >
+        <span className="site-nav__toggle-icon" aria-hidden="true">
+          <span />
+          <span />
+          <span />
+        </span>
+        <span>Menu</span>
+      </button>
+      <div className="site-nav__links" id="site-navigation-links" data-open={menuOpen}>{links.slice(1).map((link) => <a key={link.section} href={link.href} aria-current={section === link.section ? 'page' : undefined} onClick={() => setMenuOpen(false)}>{link.label}</a>)}</div>
     </nav>
   )
 }

@@ -17,7 +17,12 @@ export type WatchtowerPrivateParagraph = {
   number: string
   text: string
   questionIds: string[]
+  segments?: WatchtowerPrivateParagraphSegment[]
 }
+
+export type WatchtowerPrivateParagraphSegment =
+  | { type: 'text'; text: string }
+  | { type: 'scripture'; label: string; url: string; excerpt: string }
 
 export type WatchtowerPrivateFigureSource = {
   url: string
@@ -36,7 +41,14 @@ export type WatchtowerPrivateFigure = {
   height: number
 }
 
-export type WatchtowerPrivateBlock = WatchtowerPrivateHeading | WatchtowerPrivateParagraph | WatchtowerPrivateFigure
+export type WatchtowerPrivateSummary = {
+  id: string
+  type: 'summary'
+  title: string
+  prompts: string[]
+}
+
+export type WatchtowerPrivateBlock = WatchtowerPrivateHeading | WatchtowerPrivateParagraph | WatchtowerPrivateFigure | WatchtowerPrivateSummary
 
 export type WatchtowerPrivateArticle = {
   contentKey: string
@@ -132,6 +144,36 @@ function validateBlock(block: unknown, path: string, errors: string[]) {
       errors.push(`${path}.questionIds doit être une liste d’identifiants`)
     } else if (new Set(block.questionIds).size !== block.questionIds.length) {
       errors.push(`${path}.questionIds contient un identifiant dupliqué`)
+    }
+    if (block.segments !== undefined) {
+      if (!Array.isArray(block.segments) || block.segments.length === 0) {
+        errors.push(`${path}.segments doit être une liste non vide`)
+      } else {
+        block.segments.forEach((segment, segmentIndex) => {
+          const segmentPath = `${path}.segments[${segmentIndex}]`
+          if (!isRecord(segment)) {
+            errors.push(`${segmentPath} doit être un objet`)
+          } else if (segment.type === 'text') {
+            validateSafeText(segment.text, `${segmentPath}.text`, errors)
+          } else if (segment.type === 'scripture') {
+            validateSafeText(segment.label, `${segmentPath}.label`, errors)
+            validateSafeText(segment.excerpt, `${segmentPath}.excerpt`, errors)
+            if (!isOfficialSourceUrl(segment.url)) errors.push(`${segmentPath}.url doit pointer vers une source JW officielle en malagasy`)
+          } else {
+            errors.push(`${segmentPath}.type est inconnu`)
+          }
+        })
+      }
+    }
+    return
+  }
+
+  if (block.type === 'summary') {
+    validateSafeText(block.title, `${path}.title`, errors)
+    if (!Array.isArray(block.prompts) || block.prompts.length === 0) {
+      errors.push(`${path}.prompts doit contenir au moins une question de synthèse`)
+    } else {
+      block.prompts.forEach((prompt, promptIndex) => validateSafeText(prompt, `${path}.prompts[${promptIndex}]`, errors))
     }
     return
   }

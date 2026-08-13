@@ -91,4 +91,19 @@ describe('Family Bible Study companion', () => {
     expect(assistantLink).toHaveAttribute('aria-current', 'page')
     expect(screen.getAllByText(/Tilikambo Fiambenana|fanavaozana manaraka/i).length).toBeGreaterThan(0)
   })
+
+  it('opens and closes the compact navigation menu', async () => {
+    const user = userEvent.setup()
+    render(<App />)
+
+    const navigation = screen.getByRole('navigation', { name: 'Fizarana lehibe' })
+    const menu = within(navigation).getByRole('button', { name: 'Menu' })
+    expect(menu).toHaveAttribute('aria-expanded', 'false')
+
+    await user.click(menu)
+    expect(menu).toHaveAttribute('aria-expanded', 'true')
+
+    await user.keyboard('{Escape}')
+    expect(menu).toHaveAttribute('aria-expanded', 'false')
+  })
 })

@@ -36,6 +36,12 @@ const validPack: WatchtowerPrivatePack = {
         ],
       },
       { id: 'paragraph-2', type: 'paragraph', number: '2', text: 'Paragrafy faharoa.', questionIds: ['2026401-q1-2'] },
+      {
+        id: 'summary-review',
+        type: 'summary',
+        title: 'NAHOANA IRETO FAHAMARINANA IRETO NO MANAMPY ANTSIKA?',
+        prompts: ['I Jehovah no Mpamorona', 'Tenin’Andriamanitra ny Baiboly'],
+      },
     ],
   }],
 }
@@ -53,7 +59,7 @@ describe('watchtower private content', () => {
     const result = parseWatchtowerPrivatePack(JSON.stringify(validPack))
 
     expect(result).toEqual(validPack)
-    expect(result.articles[0].blocks.map((block) => block.type)).toEqual(['heading', 'paragraph', 'figure', 'paragraph'])
+    expect(result.articles[0].blocks.map((block) => block.type)).toEqual(['heading', 'paragraph', 'figure', 'paragraph', 'summary'])
   })
 
   it('rejects active markup, unofficial media, duplicate ids, and malformed dimensions', () => {
@@ -87,6 +93,20 @@ describe('watchtower private content', () => {
     figure.sources = []
 
     expect(() => parseWatchtowerPrivatePack(JSON.stringify(invalidPack))).toThrowError(/malagasy|sources/i)
+  })
+
+  it('rejects unsafe or incomplete scripture segments in private paragraphs', () => {
+    const invalidPack = structuredClone(validPack)
+    const paragraph = invalidPack.articles[0].blocks[1]
+    if (paragraph.type !== 'paragraph') throw new Error('Fixture paragraphe attendue')
+    paragraph.segments = [{
+      type: 'scripture',
+      label: 'Jaona 6:68',
+      url: 'https://example.com/not-official',
+      excerpt: '',
+    }]
+
+    expect(() => parseWatchtowerPrivatePack(JSON.stringify(invalidPack))).toThrowError(/segments|officiel|extrait/i)
   })
 
   it('replaces the local cache only after the complete file is valid', async () => {

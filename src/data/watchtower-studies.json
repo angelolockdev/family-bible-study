@@ -7,7 +7,8 @@
     "startDate": "2026-08-10",
     "endDate": "2026-08-16",
     "sourceUrl": "https://www.jw.org/mg/zavatra-misy/gazety/gazety-fianarana-jona-2026/Inona-no-Hanampy-Antsika-Tsy-Hivadika-Rehefa-Misy-Fitsapana/",
-    "generatedAt": "2026-08-03T08:20:00Z",
+    "sourceDigest": "a5b2c2f7712e620ab337675024a7fd4eca5a653a4ff5bbe0c1e80726d1947db1",
+    "generatedAt": "2026-08-10T07:14:37Z",
     "model": "gpt-5.6-sol",
     "questions": [
       {
@@ -197,6 +198,7 @@
     "startDate": "2026-08-03",
     "endDate": "2026-08-09",
     "sourceUrl": "https://www.jw.org/mg/zavatra-misy/gazety/gazety-fianarana-mey-2026/Hajao-ny-Fanapahan-kevitry-ny-Hafa/",
+    "sourceDigest": "21039e2baca1fc534452206779dc470ec8affc77215475267367a83a011e3956",
     "generatedAt": "2026-08-02T17:21:10Z",
     "model": "gpt-5.6-terra",
     "questions": [
@@ -476,6 +478,7 @@
     "startDate": "2026-07-27",
     "endDate": "2026-08-02",
     "sourceUrl": "https://www.jw.org/mg/zavatra-misy/gazety/gazety-fianarana-mey-2026/Miezaha-Hatanjaka-Ara-panahy-Foana-Rehefa-Manao-Fianarana-Fanampiny/",
+    "sourceDigest": "020f55e9d83a8aebd3504bc4894fcb15fbd006eb4f88703398e94607cfe6ecf6",
     "generatedAt": "2026-07-25T00:00:00Z",
     "model": "gpt-5.6-terra",
     "questions": [
@@ -867,6 +870,7 @@
     "startDate": "2026-07-20",
     "endDate": "2026-07-26",
     "sourceUrl": "https://www.jw.org/mg/zavatra-misy/gazety/gazety-fianarana-mey-2026/Hanao-Fianarana-Fanampiny-ve-Ianao-sa-Tsia/",
+    "sourceDigest": "2d0ae6d677a0879e038d42d63463322b208af24d1b8cb5e65725f06d619d0ff5",
     "generatedAt": "2026-07-20T00:00:00Z",
     "model": "gpt-5.6-terra",
     "questions": [
@@ -1262,6 +1266,7 @@
     "startDate": "2026-07-13",
     "endDate": "2026-07-19",
     "sourceUrl": "https://www.jw.org/mg/zavatra-misy/gazety/gazety-fianarana-mey-2026/Ampiasao-Hampiofanana-ny-Feonny-Fieritreretanao-ny-Torolalanny-Baiboly/",
+    "sourceDigest": "97d950b2a5204622032b73546fc469565136c5076c9670c30925e8f9c8e0a839",
     "generatedAt": "2026-07-16T11:39:42Z",
     "model": "gpt-5.6-terra",
     "questions": [

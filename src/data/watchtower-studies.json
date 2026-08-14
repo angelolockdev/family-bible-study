@@ -1,5 +1,394 @@
 [
   {
+    "id": "watchtower-2026444",
+    "documentId": 2026444,
+    "title": "Mahasoa Anao ny Andia-mpitory Misy Anao",
+    "weekLabel": "24-30 Aogositra 2026",
+    "startDate": "2026-08-24",
+    "endDate": "2026-08-30",
+    "sourceUrl": "https://www.jw.org/mg/zavatra-misy/gazety/gazety-fianarana-jona-2026/Mahasoa-Anao-ny-Andia-mpitory-Misy-Anao/",
+    "sourceDigest": "7139ee2ae07b6dcd95aca5dd13b63fdec6eb5fab257cf45dbd61624b7b27fead",
+    "generatedAt": "2026-08-14T11:00:00Z",
+    "model": "gpt-5.6-sol",
+    "questions": [
+      {
+        "id": "2026444-q1",
+        "number": "1",
+        "text": "Ahoana no fahitan'ny olona an'ilay hoe anisan'ny andia-mpitory?",
+        "paragraphNumbers": [
+          "1"
+        ],
+        "answer": "Faly ny mpitory rehefa lasa anisan'ny andia-mpitory, satria manampy azy hamita ny asa fitoriana maneran-tany. Nanampy ny mpitory sasany hahatratra tanjona sy hahazo namana ilay andia-mpitorin-dry zareo.",
+        "references": []
+      },
+      {
+        "id": "2026444-q2",
+        "number": "2",
+        "text": "Inona no hodinihintsika ato?",
+        "paragraphNumbers": [
+          "2"
+        ],
+        "answer": "Hojerentsika ny andraikitry ny mpiandraikitra ny andia-mpitory sy ny mpanampy azy, ny fomba anampian-dry zareo, izay azo atao mba hanohanana ny andia-mpitory, ary ny soa raisintsika noho isika anisan'izany.",
+        "references": []
+      },
+      {
+        "id": "2026444-q3",
+        "number": "3",
+        "text": "Inona no tena ataon'ny mpiandraikitra ny andia-mpitory?",
+        "paragraphNumbers": [
+          "3"
+        ],
+        "answer": "Miahy ny olona tsirairay izy, mampahery ny mpitory hazoto hanompo, ary mampiofana ireo rahalahy vita batisa mba ho afaka hiantsoroka andraikitra eo anivon'ny fiangonana.",
+        "references": []
+      },
+      {
+        "id": "2026444-q4",
+        "number": "4",
+        "text": "Inona no tena ataon'ny mpiandraikitra ny andia-mpitory?",
+        "paragraphNumbers": [
+          "4"
+        ],
+        "answer": "Mietika ho be andraikitra ny anti-panahy, ka sarotra aminy ny miresaka amin'ny olona tsirairay ao amin'ny andia-mpitoriny na ny mampiofana ny hafa toy ny tiany.",
+        "references": []
+      },
+      {
+        "id": "2026444-q5",
+        "number": "5",
+        "text": "Inona ny olana atrehin'ny mpiandraikitra ny andia-mpitory sasany?",
+        "paragraphNumbers": [
+          "5"
+        ],
+        "answer": "Mety ho be andraikitra ny anti-panahy, ka sarotra aminy ny miresaka amin'ny olona tsirairay ao amin'ny andia-mpitoriny na ny mampiofana ny hafa toy ny tiany.",
+        "references": []
+      },
+      {
+        "id": "2026444-q6",
+        "number": "6",
+        "text": "Nahoana no ho voakarakara kokoa ireo rahalahy sy anabavy raha vitsy ny iray andia-mpitory?",
+        "paragraphNumbers": [
+          "6"
+        ],
+        "answer": "Hifankahafantatra tsara amin'ny andia-mpitoriny ny mpiandraikitra amin'izay, ka ho afaka manampy an-dry zareo hatanjaka ara-panahy foana.",
+        "references": []
+      },
+      {
+        "id": "2026444-q7",
+        "number": "7",
+        "text": "Raha vitsy ny anti-panahy eo anivon'ny fiangonana, dia inona ny azon'ny mpiandraikitra ny andia-mpitory atao mba ho voakarakara tsara ny ao amin'ny andia-mpitoriny?",
+        "paragraphNumbers": [
+          "7"
+        ],
+        "answer": "Afaka mampiofana ny mpanampy azy izy mba hahay hikarakara ny andian'ondrin'Andriamanitra, ka manome andraikitra sy manaraka izay ataon-dry zareo.",
+        "references": []
+      },
+      {
+        "id": "2026444-q8",
+        "number": "8",
+        "text": "Inona no azontsika atao mba hanohanana ny andia-mpitory misy antsika?",
+        "paragraphNumbers": [
+          "8"
+        ],
+        "answer": "Miezaha ho eo foana amin'ny fivoriana alohan'ny fanompoana sy amin'ny fanompoana, mba hifampahery amin'ny mpiara-monina.",
+        "references": []
+      },
+      {
+        "id": "2026444-q9",
+        "number": "9",
+        "text": "Inona no azontsika atao mba hifankatia tsara ny ao amin'ny andia-mpitory misy antsika?",
+        "paragraphNumbers": [
+          "9"
+        ],
+        "answer": "Miezaha ho tia mandray vahiny, ohatra amin'ny fivoriana alohan'ny fanompoana, mba hifankatia tsara ny iray andia-mpitory.",
+        "references": []
+      },
+      {
+        "id": "2026444-q10",
+        "number": "10",
+        "text": "Inona no azontsika atao raha te hanatsara ny fanompoantsika isika?",
+        "paragraphNumbers": [
+          "10"
+        ],
+        "answer": "Mangataha fanampiana amin'ny mpisava lalana na mpitory za-draharaha ao amin'ny andia-mpitorinareo, ary resaho ny tanjonao amin'ny mpiandraikitra ny andia-mpitory.",
+        "references": []
+      },
+      {
+        "id": "2026444-q11",
+        "number": "11",
+        "text": "Nahoana no manampy antsika hatanjaka ara-panahy ilay hoe anisan'ny andia-mpitory?",
+        "paragraphNumbers": [
+          "11",
+          "12"
+        ],
+        "answer": "Mahazo fampaherezana ny mpitondratena, ny kamboty, ary ny zokiolona; ampiofanina hitory sy hampianatra koa ny rehetra rehefa miaraka amin'ny andia-mpitory.",
+        "references": []
+      },
+      {
+        "id": "2026444-q12",
+        "number": "12",
+        "text": "Inona no manampy antsika hahita namana tia sy miahy antsika ilay hoe anisan'ny andia-mpitory?",
+        "paragraphNumbers": [
+          "13"
+        ],
+        "answer": "Lasa akaikin'ny fontsika ireo iray andia-mpitory amintsika satria miara-miezaka amin'ny fanompoana, ka matoky isika hoe hanohana antsika ry zareo rehefa sahirana.",
+        "references": []
+      },
+      {
+        "id": "2026444-q13",
+        "number": "13",
+        "text": "Nahoana no manampy antsika hahita namana tia sy miahy antsika ilay hoe anisan'ny andia-mpitory? (Efesianina 4:2)",
+        "paragraphNumbers": [
+          "13"
+        ],
+        "answer": "Miezaha hanam-paharetana ka aza atao ho olana be ny toetran'ny hafa, satria samy manana ny toetnantsika izay maha izy antsika fotsiny.",
+        "references": []
+      },
+      {
+        "id": "2026444-q14",
+        "number": "14",
+        "text": "Lasa mifantoka amin'ny inona isika rehefa manam-paharetana?",
+        "paragraphNumbers": [
+          "14"
+        ],
+        "answer": "Hahavita mifantoka amin'ny toetra tsaran'ny mpiara-manompo isika, ka miezaka manahaka ny toetran'i Jesosy sy Jehovah Rainy.",
+        "references": []
+      },
+      {
+        "id": "2026444-q15",
+        "number": "15",
+        "text": "Miara-mientana hanao inona ny mpanompon'i Jehovah rehetra?",
+        "paragraphNumbers": [
+          "15"
+        ],
+        "answer": "Miara-mientana hitory ny vaovao tsaran'ilay Fanjakana ny mpanompon'i Jehovah rehetra, dia fandaharana ataon'i Jehovah izany mba hanampiana antsika hidera azy.",
+        "references": [
+          {
+            "label": "Salamo 111:1",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/salamo/111/#v19111001"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "watchtower-2026443",
+    "documentId": 2026443,
+    "title": "Inona no Hanampy Antsika ho Mpinamana Foana?",
+    "weekLabel": "17-23 Aogositra 2026",
+    "startDate": "2026-08-17",
+    "endDate": "2026-08-23",
+    "sourceUrl": "https://www.jw.org/mg/zavatra-misy/gazety/gazety-fianarana-jona-2026/Inona-no-Hanampy-Antsika-ho-Mpinamana-Foana/",
+    "sourceDigest": "21db2927fe7f3ffbf305db1aaabed19ad02bc271a13eba032ee2e21009a6b1d9",
+    "generatedAt": "2026-08-14T11:00:00Z",
+    "model": "gpt-5.6-sol",
+    "questions": [
+      {
+        "id": "2026443-q1",
+        "number": "1",
+        "text": "Aiza no ahitana ny tena namana?",
+        "paragraphNumbers": [
+          "1"
+        ],
+        "answer": "Tena fitahiana ilay hoe manana namana akaikin'ny fonao sady mpiara-manompo, satria hoatran'ny fianakaviana iray ihany mifankatia ny vahoakan'i Jehovah.",
+        "references": []
+      },
+      {
+        "id": "2026443-q2",
+        "number": "2",
+        "text": "Tokony ho mpinamana hoatran'ny ahoana isika sy ny mpiara-manompo?",
+        "paragraphNumbers": [
+          "2"
+        ],
+        "answer": "Tsy hoe mpinamanamana fotsiny akory isika, fa mpinamana akaiky sady tsy mivadika, satria fianakaviana tia an'i Jehovah sy Jesosy no mampifandray akaiky antsika. Mitaky ezaka anefa izany.",
+        "references": []
+      },
+      {
+        "id": "2026443-q3",
+        "number": "3",
+        "text": "Nahoana no mety ho sarotra ilay hoe ho mpinamana foana?",
+        "paragraphNumbers": [
+          "3"
+        ],
+        "answer": "Tsy dia mitovy hevitra na toetra amin'ny mpiara-manompo rehetra isika, ka mety hisy olana rehefa miatrika izany. Nanome modely anefa i Jesosy mba hanampy antsika hinamana foana.",
+        "references": []
+      },
+      {
+        "id": "2026443-q4",
+        "number": "4",
+        "text": "Inona no hanampy antsika ho lasa mpinamana be?",
+        "paragraphNumbers": [
+          "4"
+        ],
+        "answer": "Mila mijery ny toetra tsaran'ny hafa isika, ka hita amin'ny fifandraisana mivantana matetika, toy ny fiaraha-manompo na ny fanatrehana fivoriana.",
+        "references": []
+      },
+      {
+        "id": "2026443-q5",
+        "number": "5",
+        "text": "Inona no hanampy antsika ho mpinamana foana na misy olana aza? Hazavao amin'ny ohatra. (Kolosianina 3:12)",
+        "paragraphNumbers": [
+          "5"
+        ],
+        "answer": "Ny toetra tsara toy ny fanetren-tena, ny faharetana, ny hatsaram-panahy, ary ny fangorahana no hanampy antsika ho mpinamana foana, hoatran'ny menaka manampy ny maoteran'ny fiara handeha tsara.",
+        "references": [
+          {
+            "label": "Kolosianina 3:12",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/kolosianina/3/#v51003012"
+          }
+        ]
+      },
+      {
+        "id": "2026443-q6",
+        "number": "6",
+        "text": "Nahoana no mety hahatonga antsika tsy ho mpinamana intsony ny hevitra tsy mitovy?",
+        "paragraphNumbers": [
+          "6"
+        ],
+        "answer": "Rehefa samy be hambom-po isika, dia mety hiteraka lolompo ny hevitra tsy mitovy, ka hifampihatakataka ary tsy ho mpinamana intsony amin'ny farany.",
+        "references": []
+      },
+      {
+        "id": "2026443-q7",
+        "number": "7",
+        "text": "Tena ilaina ve ny manetry tena rehefa tsy mitovy hevitra? Inona no nampianarin'i Jesosy?",
+        "paragraphNumbers": [
+          "7"
+        ],
+        "answer": "Eny. Nampianarin'i Jesosy ny mpianany hihevitra ny hafa ho ambony noho ny tenany, ka nanasa ny tongotry ny apostoly izy mba hanome modely amin'izany.",
+        "references": []
+      },
+      {
+        "id": "2026443-q8",
+        "number": "8",
+        "text": "Nahoana no manampy anareo ho mpinamana foana ny fanetren-tena rehefa tsy mitovy hevitra ianareo? (Kolosianina 3:13)",
+        "paragraphNumbers": [
+          "8"
+        ],
+        "answer": "Raha manetry tena isika, dia hahavita tsy hifantoka amin-javatra madinidinika sady hamela heloka tanteraka, ka tsy ho mora tezitra amin'ny hafa.",
+        "references": []
+      },
+      {
+        "id": "2026443-q9",
+        "number": "9",
+        "text": "Nahoana no manampy anao ny fanetren-tena rehefa tsy voavaha vetivety ilay olana? (Ohabolana 17:9)",
+        "paragraphNumbers": [
+          "9"
+        ],
+        "answer": "Aza miady hevitra mba hanamarinana hoe ny hevitrao no tsara, fa ny handamina an'ilay olana no ataovy tanjona, ka manatona an'ilay olona.",
+        "references": []
+      },
+      {
+        "id": "2026443-q10",
+        "number": "10",
+        "text": "Nahoana no mety ho sarotra ilay hoe ho mpinamana foana amin'ny olona tsy mitovy toetra?",
+        "paragraphNumbers": [
+          "10"
+        ],
+        "answer": "Mety hahasosotra antsika ny toetran'ny olona sasany, na tia mifandray aman'olona isika fa saro-kenatra kosa izy, na ny mifanohitra amin'izay.",
+        "references": []
+      },
+      {
+        "id": "2026443-q11",
+        "number": "11",
+        "text": "Nahoana no Jesosy no nahavita ninamana foana tamin'ny olona tsy nitovy toetra taminy?",
+        "paragraphNumbers": [
+          "11"
+        ],
+        "answer": "Nanetry tena i Jesosy na dia tsy nitovy ny toetran'ny apostoly Jaona sy Jakoba taminy, ka nanam-paharetana tamin-dry zareo.",
+        "references": []
+      },
+      {
+        "id": "2026443-q12",
+        "number": "12",
+        "text": "Inona no nanampy an'i Jesosy hanam-paharetana tamin'ny namany?",
+        "paragraphNumbers": [
+          "12"
+        ],
+        "answer": "Fantany hoe efa izay foana no namolavolana ny mpianany nandritra ny taona maro, ka tsy nanantena izy hoe ho afaka vetivety amin'izany toe-tsaina izany ry zareo.",
+        "references": []
+      },
+      {
+        "id": "2026443-q13",
+        "number": "13",
+        "text": "Nahoana no hanampy antsika ho mpinamana foana ny faharetana? (Efesianina 4:2)",
+        "paragraphNumbers": [
+          "13"
+        ],
+        "answer": "Miezaha hanam-paharetana ka aza atao ho olana be ny toetran'ny hafa, satria samy manana ny toetrantsika izay maha izy antsika fotsiny.",
+        "references": []
+      },
+      {
+        "id": "2026443-q14",
+        "number": "14",
+        "text": "Lasa mifantoka amin'ny inona isika rehefa manam-paharetana?",
+        "paragraphNumbers": [
+          "14"
+        ],
+        "answer": "Hahavita mifantoka amin'ny toetra tsaran'ny mpiara-manompo isika, ka miezaka manahaka ny toetran'i Jesosy sy Jehovah Rainy.",
+        "references": []
+      },
+      {
+        "id": "2026443-q15",
+        "number": "15",
+        "text": "Iza no afaka manampy antsika hinamana amin'ny olona tsy mitovy toetra amintsika?",
+        "paragraphNumbers": [
+          "15"
+        ],
+        "answer": "Mivavaha amin'i Jehovah mba hanampy antsika hinamana foana amin'ny olona tsy mitovy toetra aminao, dia hahavita hiaritra foana isika.",
+        "references": []
+      },
+      {
+        "id": "2026443-q16",
+        "number": "16",
+        "text": "Inona ny olana mety hatrehintsika rehefa marary ny rahalahintsika na ny anabavintsika?",
+        "paragraphNumbers": [
+          "16"
+        ],
+        "answer": "Mety hilaza na hanao zavatra mampahatezitra antsika ny mpiara-manompo marary, nefa tsy haintsika ny zavatra manjo azy.",
+        "references": []
+      },
+      {
+        "id": "2026443-q17",
+        "number": "17",
+        "text": "Inona no ianarantsika avy amin'ny fomba nitondran'i Jesosy an'i Bartimeo?",
+        "paragraphNumbers": [
+          "17"
+        ],
+        "answer": "Tsara fanahy sy nangoraka an'ireo olona nijaly i Jesosy, na dia ireo olona sambany vao hitany aza, ka nanao fahagagana ho an'i Bartimeo.",
+        "references": []
+      },
+      {
+        "id": "2026443-q18",
+        "number": "18",
+        "text": "Ahoana no tokony hitondrantsika an'ireo namantsika marary? (1 Tesalonianina 5:14)",
+        "paragraphNumbers": [
+          "18"
+        ],
+        "answer": "Miezaha ho tsara fanahy sy hangoraka mba hahavita hampahery an'ireo mpiara-manompo marary na manana olana ara-pihetseham-po.",
+        "references": []
+      },
+      {
+        "id": "2026443-q19",
+        "number": "19",
+        "text": "Ahoana no ampisehoantsika hoe tsara fanahy sy mahay mangoraka isika? (Jereo koa ny sary.)",
+        "paragraphNumbers": [
+          "19"
+        ],
+        "answer": "Henoy tsara ny mpiara-manompo rehefa mitantara ny zavatra iainany, manaova teny mampahery, ary mitandrema mba tsy hitsaratsara azy.",
+        "references": []
+      },
+      {
+        "id": "2026443-q20",
+        "number": "20",
+        "text": "Tianao raha namana hoatran'ny ahoana ianao?",
+        "paragraphNumbers": [
+          "20"
+        ],
+        "answer": "Tena faly isika rehefa misy Kristianina manao izay hahatonga antsika ho mpinamana foana, ka miezaka hanetry tena, hanam-paharetana, ho tsara fanahy, ary hangoraka.",
+        "references": []
+      }
+    ]
+  },
+  {
     "id": "watchtower-2026442",
     "documentId": 2026442,
     "title": "Inona no Hanampy Antsika Tsy Hivadika Rehefa Misy Fitsapana?",

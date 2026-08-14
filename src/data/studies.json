@@ -233,6 +233,100 @@
     "generatedAt": "2026-08-03T08:20:00Z"
   },
   {
+    "id": "family-2026-08-17",
+    "kind": "family",
+    "startDate": "2026-08-17",
+    "endDate": "2026-08-23",
+    "weekLabel": "17-23 Aogositra 2026",
+    "reading": "Jeremia 26-28",
+    "theme": "Tena zava-dehibe ny hoe iza no atokisanao",
+    "days": [
+      {
+        "day": "Alatsinainy",
+        "focus": "Vakio Jeremia 26:1-6; diniho ny hafatra nampitondrain' i Jehovah an' i Jeremia tao amin'ny tempoly."
+      },
+      {
+        "day": "Talata",
+        "focus": "Vakio Jeremia 26:12-15; resaho ny fahasahian' i Jeremia rehefa nenjehina noho ny hafatra nampitainy."
+      },
+      {
+        "day": "Alarobia",
+        "focus": "Vakio Jeremia 27:14, 15; diniho ny antony tsy tokony hihainoana ny mpaminany sandoka."
+      },
+      {
+        "day": "Alakamisy",
+        "focus": "Vakio Jeremia 28:1-4, 10, 11; hazavao ny nataon' i Hanania mpaminany sandoka."
+      },
+      {
+        "day": "Zoma",
+        "focus": "Tantara: Nolazain' i Hanania fa ho vita faingana ny fanandevozana, saingy nambaran' i Jeremia fa lainga izany satria tsy avy amin' i Jehovah."
+      },
+      {
+        "day": "Sabotsy",
+        "focus": "Toetra: Fahamarinana. Ahoana no ahafantarantsika hoe fahamarinana ve na tsia ny zavatra ampianarina antsika?"
+      },
+      {
+        "day": "Alahady",
+        "focus": "Famerenana: Nahoana no nenjehina i Jeremia? Ahoana no ahafantarana ny mpaminany sandoka?"
+      }
+    ],
+    "memoryVerse": {
+      "reference": "Jeremia 28:9",
+      "application": "Diniho hoe tanteraka ve ny zavatra nolazain'ny mpaminany iray, alohan'ny hinoana azy.",
+      "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jeremia/28/#v24028009"
+    },
+    "sourceUrl": "https://www.jw.org/mg/zavatra-misy/fivoriana-vj-tari-dalana/jolay-aogositra-2026-mwb/Fivoriana-Momba-ny-Fiainantsika-sy-ny-Fanompoana-Fandaharana-ho-Anny-17-23-Aogositra-2026",
+    "printPrompt": "Create one A4 portrait printable activity sheet, exactly 2480 x 3508 px at 300 DPI, with four clearly separated warm illustrated story cards for children aged 2 and 3.5. Narrative order: a false prophet speaking confidently to a crowd in a courtyard; a true prophet speaking calmly nearby holding a wooden yoke; townspeople looking confused between the two speakers; a child asking a parent which speaker tells the truth. Use clear outlines, warm natural colours, large simple shapes, a light cream background, 10 mm safe margins, rounded rectangles, dotted cut guides only, and no text, letters, numbers, logos, watermarks, crosses, representation of God, or frightening imagery.",
+    "generatedAt": "2026-08-14T09:00:00Z"
+  },
+  {
+    "id": "family-2026-08-24",
+    "kind": "family",
+    "startDate": "2026-08-24",
+    "endDate": "2026-08-30",
+    "weekLabel": "24-30 Aogositra 2026",
+    "reading": "Jeremia 29-30",
+    "theme": "Manana fanantenana ny mpanompon' i Jehovah, na dia anarina aza",
+    "days": [
+      {
+        "day": "Alatsinainy",
+        "focus": "Vakio Jeremia 29:1-7; diniho ny torohevitr' i Jehovah tamin'ireo natao sesitany tany Babylona."
+      },
+      {
+        "day": "Talata",
+        "focus": "Vakio Jeremia 29:10-14; resaho ny fampanantenan' i Jehovah hampody sy hanome fanantenana ny vahoakany."
+      },
+      {
+        "day": "Alarobia",
+        "focus": "Vakio Jeremia 30:1-3; diniho ny fampanentenana famerenana nomen' i Jehovah."
+      },
+      {
+        "day": "Alakamisy",
+        "focus": "Vakio Jeremia 30:11; hazavao ny fomba anarenan' i Jehovah araka ny antony ny mpanompony."
+      },
+      {
+        "day": "Zoma",
+        "focus": "Ezaka Manokana Amin'ny Septambra, Fianarana Baiboly wcg toko 5, Teny Famarana Hira 156"
+      },
+      {
+        "day": "Sabotsy",
+        "focus": "Toetra: Fahamarinana. Rehefa ahitsy ianao, ahoana no ampisehoanao fa vonona hihaino sy hanitsy an'izay tokony hahitsy?"
+      },
+      {
+        "day": "Alahady",
+        "focus": "Famerenana: Iza no noharina tamin'ny aviavy tsara? Inona no fanovana kely azontsika atao mba hankatoavana an' i Jehovah kokoa?"
+      }
+    ],
+    "memoryVerse": {
+      "reference": "Jeremia 29:11-13",
+      "application": "Ahoana no azon'ny ray aman-dreny anahafana an' i Jehovah rehefa mananatra ny zanany?",
+      "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jeremia/29/#v24029011"
+    },
+    "sourceUrl": "https://www.jw.org/mg/zavatra-misy/fivoriana-vj-tari-dalana/jolay-aogositra-2026-mwb/Fivoriana-Momba-ny-Fiainantsika-sy-ny-Fanompoana-Fandaharana-ho-Anny-24-30-Aogositra-2026",
+    "printPrompt": "Create one A4 portrait printable activity sheet, exactly 2480 x 3508 px at 300 DPI, with four clearly separated warm illustrated story cards for children aged 2 and 3.5. Narrative order: a false prophet speaking confidently to a crowd in a courtyard; a true prophet speaking calmly nearby holding a wooden yoke; townspeople looking confused between the two speakers; a child asking a parent which speaker tells the truth. Use clear outlines, warm natural colours, large simple shapes, a light cream background, 10 mm safe margins, rounded rectangles, dotted cut guides only, and no text, letters, numbers, logos, watermarks, crosses, representation of God, or frightening imagery.",
+    "generatedAt": "2026-08-14T09:30:00Z"
+  },
+  {
     "id": "preaching-2026-07-17",
     "kind": "preaching",
     "startDate": "2026-07-17",

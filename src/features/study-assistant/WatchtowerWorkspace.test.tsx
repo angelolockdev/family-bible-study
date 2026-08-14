@@ -67,7 +67,7 @@ describe('WatchtowerWorkspace', () => {
     expect(screen.getByText(/fanavaozana manaraka/i)).toBeInTheDocument()
   })
 
-  it('always shows fallback questions and keeps their reflection optional', async () => {
+  it('always shows fallback questions without a reflection field', async () => {
     const user = userEvent.setup()
     render(<WatchtowerWorkspace studies={[study]} today={new Date(2026, 6, 16)} />)
 
@@ -76,7 +76,7 @@ describe('WatchtowerWorkspace', () => {
 
     const revealButton = screen.getByRole('button', { name: 'Asehoy ny valiny' })
     expect(revealButton).toBeEnabled()
-    expect(screen.getByRole('textbox', { name: /tsy voatery/i })).toBeVisible()
+    expect(screen.queryByRole('textbox', { name: /tsy voatery/i })).not.toBeInTheDocument()
     await user.click(revealButton)
 
     expect(screen.getByText(study.questions[0].answer)).toBeInTheDocument()

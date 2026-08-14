@@ -106,7 +106,6 @@ function ArticleParagraphText({ paragraph }: { paragraph: WatchtowerPrivateParag
 }
 
 export function WatchtowerPreparedQuestion({ question }: { question: WatchtowerQuestion }) {
-  const [reflection, setReflection] = useState('')
   const [revealed, setRevealed] = useState(false)
 
   return (
@@ -116,15 +115,6 @@ export function WatchtowerPreparedQuestion({ question }: { question: WatchtowerQ
         <h2 id={`reader-${question.id}`}>{question.text}</h2>
       </div>
       <div className="watchtower-reader__response-controls">
-        <label className="watchtower-reader__reflection">
-          <span>Ny eritreritro <small>Tsy voatery · Réflexion facultative</small></span>
-          <textarea
-            value={reflection}
-            onChange={(event) => setReflection(event.target.value)}
-            placeholder="Soraty eto raha tianao…"
-            aria-label={`Ny eritreritro tsy voatery - ${question.number}`}
-          />
-        </label>
         <button
           type="button"
           className="secondary-action"

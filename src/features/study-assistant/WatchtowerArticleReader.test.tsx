@@ -88,13 +88,13 @@ describe('WatchtowerArticleReader', () => {
     expect(screen.getByText('Paragrafy faharoa.')).toBeVisible()
   })
 
-  it('keeps reflection optional and toggles the prepared answer independently', async () => {
+  it('toggles the prepared answer without any reflection field', async () => {
     const user = userEvent.setup()
     render(<WatchtowerArticleReader article={article} questions={questions} />)
 
     const reveal = screen.getByRole('button', { name: 'Asehoy ny valiny' })
     expect(reveal).toBeEnabled()
-    expect(screen.getByRole('textbox', { name: /tsy voatery/i })).toBeVisible()
+    expect(screen.queryByRole('textbox', { name: /tsy voatery/i })).not.toBeInTheDocument()
     expect(screen.queryByText('Ity ny valiny voaomana.')).not.toBeInTheDocument()
 
     await user.click(reveal)

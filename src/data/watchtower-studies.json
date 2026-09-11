@@ -1,5 +1,318 @@
 [
   {
+    "id": "watchtower-2026483",
+    "documentId": 2026483,
+    "title": "Afaka Mampionona Anao ny Bokin'i Isaia",
+    "weekLabel": "14-20 Septambra 2026",
+    "startDate": "2026-09-14",
+    "endDate": "2026-09-20",
+    "sourceUrl": "https://www.jw.org/mg/zavatra-misy/gazety/gazety-fianarana-jolay-2026/Afaka-Mampionona-Anao-ny-Bokini-Isaia/",
+    "sourceDigest": "576ad70d0f9c9384ac59f6919c743271cffa9f1dfd295556214b934bc5223b69",
+    "generatedAt": "2026-09-11T12:05:00Z",
+    "model": "deepseek/deepseek-v4-flash",
+    "questions": [
+      {
+        "id": "2026483-q1",
+        "number": "1",
+        "text": "Inona no ataon'i Jehovah rehefa misy zavatra mampalahelo antsika?",
+        "paragraphNumbers": [
+          "1",
+          "2"
+        ],
+        "answer": "Hoy ny Isaia 66:13: 'Hampionona anareo foana aho, hoatran'ny reny mampionona ny zanany lahy.' Mampitaha ny tenany amin'ny reny be fitiavana mampionona ny zanany i Jehovah. Mampionona sy mampahery antsika izy ao amin'ny Teniny rehefa kivy isika na malahelo.",
+        "references": []
+      },
+      {
+        "id": "2026483-q2",
+        "number": "2",
+        "text": "Inona no hodinihintsika ato?",
+        "paragraphNumbers": [
+          "3"
+        ],
+        "answer": "Feno teny fampiononana avy amin'i Jehovah ao amin'ny bokin'i Isaia. Andao isika handinika andinin-teny vitsivitsy avy ao amin'ny bokin'i Isaia. Afaka mampionona sy mampahery antsika izy ireo rehefa 1) miova tampoka ny fiainantsika, 2) manamelo-tena be isika, na 3) maty ny olona akaikin'ny fontsika.",
+        "references": []
+      },
+      {
+        "id": "2026483-q3",
+        "number": "3",
+        "text": "Inona no mety ho vokany eo amintsika rehefa miova tampoka ny fiainantsika?",
+        "paragraphNumbers": [
+          "4"
+        ],
+        "answer": "Mety hiova tampoka ny fiainantsika. Mety harary tampoka isika, ho sahirana ara-bola, hiatrika korontana ara-politika, na hiova fanendrena. Ara-dalàna raha mahatsiaro ho tapi-dalan-kaleha isika.",
+        "references": []
+      },
+      {
+        "id": "2026483-q4",
+        "number": "4",
+        "text": "Inona no toky omen'i Jehovah antsika ao amin'ny Isaia 42:16?",
+        "paragraphNumbers": [
+          "5"
+        ],
+        "answer": "Mampanantena i Jehovah hoe hitarika antsika, sady hanova ny haizina ho mazava. Manome toky izy hoe n'inona n'inona iainantsika, dia hanome ny tari-dalana ilaintsika izy sady tsy handao antsika mihitsy.",
+        "references": []
+      },
+      {
+        "id": "2026483-q5",
+        "number": "5",
+        "text": "Inona no azontsika antoka raha miova tampoka ny fiainantsika?",
+        "paragraphNumbers": [
+          "6"
+        ],
+        "answer": "Raha miova tampoka ny fiainanao dia matokia fa hanome ny hery sy ny tari-dalana ilainao izy, na dia mafy be tahaka ny inona aza no fahitanao an'ilay fiovana. Na tsy araka ny nieritreretantsika azy aza ny zava-mitranga, dia hiara-dalana amintsika eny foana i Jehovah.",
+        "references": []
+      },
+      {
+        "id": "2026483-q6",
+        "number": "6",
+        "text": "Inona ny ady mafy atrehin'ny olona sasany noho ny fahadisoana nataony taloha?",
+        "paragraphNumbers": [
+          "7"
+        ],
+        "answer": "Mety mbola hanamelo-tena be foana isika na dia efa nahazo famindram-po aza. Mety hieritreritra isika hoe: 'I Jehovah ve dia hamela ahy tamin'iny zavatra nataoko iny?' Ara-dalàna izany fihetseham-po izany.",
+        "references": []
+      },
+      {
+        "id": "2026483-q7",
+        "number": "7",
+        "text": "Hoatran'ny ahoana ny famelan-kelok'i Jehovah, araka ny Isaia 1:18?",
+        "paragraphNumbers": [
+          "8",
+          "9"
+        ],
+        "answer": "Nampiasa sarin-teny mazava tsara i Jehovah mba hampisehoana hoe rehefa mamela ny fahotantsika izy dia tena mamela tanteraka. Milaza izy hoe na dia 'mena midorehitra' aza ny fahotantsika, dia hataony 'fotsy mangatsakatsaka.' Manome toky antsika izy hoe rehefa mamela antsika dia hoatran'ny hoe nokosehiny ny fahotantsika ka tsy misy dian'ilay izy intsony.",
+        "references": []
+      },
+      {
+        "id": "2026483-q8",
+        "number": "8",
+        "text": "Inona no zavatra mampahery ampanantenain'i Jehovah ao amin'ny Isaia 38:17?",
+        "paragraphNumbers": [
+          "10",
+          "11"
+        ],
+        "answer": "Ilay hoe 'narianao any an-damosinao daholo ny fahotako' dia azo adika koa hoe 'nesorinao mba tsy ho hitanao daholo ny fahotako.' Hoatran'ny hoe alain'i Jehovah ny fahotan'ny mpanota nibebaka, dia atsipiny any aorianany. Rehefa mamela ny fahotantsika i Jehovah dia hoatran'ny hoe tsy nanota mihitsy no fahitany antsika.",
+        "references": []
+      },
+      {
+        "id": "2026483-q9",
+        "number": "9",
+        "text": "Inona no mety ho tsapantsika rehefa maty ny olona akaiky antsika?",
+        "paragraphNumbers": [
+          "12"
+        ],
+        "answer": "Rehefa maty ny olona akaiky antsika, dia mety ho tototry ny alahelo isika ary mety tsy hisinda vetivety izany. Mety ho lasa saina isika indraindray hoe maninona izy no navelan'i Jehovah ho faty.",
+        "references": []
+      },
+      {
+        "id": "2026483-q10",
+        "number": "10",
+        "text": "Inona no ampanantenain'i Jehovah ao amin'ny Isaia 25:8?",
+        "paragraphNumbers": [
+          "13"
+        ],
+        "answer": "Mampanantena i Jehovah hoe 'hofoanany tsy hisy mandrakizay ny fahafatesana.' Tsy hisy fahafatesana intsony! Tsy nofinofy fotsiny izany fa fampanantenana avy amin'Andriamanitra, ary izy ihany no afaka manatanteraka an'izany.",
+        "references": []
+      },
+      {
+        "id": "2026483-q11",
+        "number": "11",
+        "text": "Inona no tsapanao rehefa saintsaininao ilay fampanantenana hoe mbola hatsangana ny maty?",
+        "paragraphNumbers": [
+          "14",
+          "15"
+        ],
+        "answer": "Tsy hoe hanafoana ny fahafatesana fotsiny i Jehovah, fa hatsangany koa ireo olona akaiky antsika efa maty. Hoy izy: 'Hitsangana ny fatiko.' Tsy hadinon'i Jehovah mihitsy ry zareo ka hatsangany amin'ny fotoana voatondrony.",
+        "references": []
+      },
+      {
+        "id": "2026483-q12",
+        "number": "12",
+        "text": "Inona ny andinin-teny nampionona anao tamin'ianao niatrika ny mafy?",
+        "paragraphNumbers": [
+          "16"
+        ],
+        "answer": "Nandinika andinin-teny vitsivitsy avy ao amin'ny bokin'i Isaia isika tato. Afaka mampionona antsika izy ireny rehefa miova tampoka ny fiainantsika, na manamelo-tena be isika, na maty ny olona akaiky antsika.",
+        "references": []
+      }
+    ]
+  },
+  {
+    "id": "watchtower-2026482",
+    "documentId": 2026482,
+    "title": "Tahafo ny Gibeonita",
+    "weekLabel": "7-13 Septambra 2026",
+    "startDate": "2026-09-07",
+    "endDate": "2026-09-13",
+    "sourceUrl": "https://www.jw.org/mg/zavatra-misy/gazety/gazety-fianarana-jolay-2026/Tahafo-ny-Gibeonita/",
+    "sourceDigest": "46c968e0572345258011721d73247d99325fc1f4044e9f4e81087d7593e5f5b6",
+    "generatedAt": "2026-09-11T12:05:00Z",
+    "model": "deepseek/deepseek-v4-flash",
+    "questions": [
+      {
+        "id": "2026482-q1",
+        "number": "1",
+        "text": "Nahoana no tokony hahaliana antsika izay lazain'ny Baiboly momba ny Gibeonita?",
+        "paragraphNumbers": [
+          "1",
+          "2"
+        ],
+        "answer": "Be dia be ny tantara ao amin'ny Baiboly mampiseho hoe nifandray akaiky tamin'ny Israelita ny Gibeonita nandritra ny taonjato maro. Andraisantsika lesona sarobidy ireny tantara ireny, sady ianarantsika zavatra betsaka momba an'i Jehovah Andriamanitra.",
+        "references": []
+      },
+      {
+        "id": "2026482-q2",
+        "number": "2",
+        "text": "Iza moa ny Gibeonita, ary nahoana ry zareo no te hihavana tamin'ny Israely?",
+        "paragraphNumbers": [
+          "3"
+        ],
+        "answer": "Tanàna voaro mafy i Gibeona, ilay nipetrahan'ny Gibeonita, tamin'ny Israelita nanomboka naka ny tany Kanana. Anisan'ny foko Hivita ny Gibeonita. Tsy hoatran'ny Kananita hafa ry zareo, satria nahatsapa hoe hoatran'ny atody miady amam-bato izy raha hiady amin'ny Israelita.",
+        "references": []
+      },
+      {
+        "id": "2026482-q3",
+        "number": "3",
+        "text": "Inona no tetika nampiasain'ny Gibeonita mba hahatonga ny Israelita hanao fifanekem-pihavanana tamin-dry zareo?",
+        "paragraphNumbers": [
+          "4"
+        ],
+        "answer": "Mody nilaza hoe avy lavitra ny Gibeonita. Fetsifetsy ry zareo ka tsy niresaka momba an'i Jeriko sy Ay mihitsy. Tsy nanontany an'i Jehovah akory ireo solontenan'ny Israelita. Tonga dia nino an'izay nolazain'ny Gibeonita ry zareo, ka nanaiky hanao fifanekem-pihavanana taminy.",
+        "references": []
+      },
+      {
+        "id": "2026482-q4",
+        "number": "4",
+        "text": "Ahoana avy no nampisehoan'ny Gibeonita hoe nino an'i Jehovah ry zareo?",
+        "paragraphNumbers": [
+          "5"
+        ],
+        "answer": "Nisy mpanjaka amorita dimy naheno hoe lasa nihavana tamin'ny Israelita ny Gibeonita. Nivondrona izy mba hanafika an'i Gibeona. Nila vonjy tamin'i Josoa ny Gibeonita. Namonjy an-dry zareo i Josoa sy ny Israelita, ary nanampy an-dry zareo i Jehovah.",
+        "references": []
+      },
+      {
+        "id": "2026482-q5",
+        "number": "5",
+        "text": "Inona no ianarantsika momba an'i Jehovah rehefa jerena ny fomba nitondrany ny Gibeonita?",
+        "paragraphNumbers": [
+          "6"
+        ],
+        "answer": "Manetry tena i Jehovah sady mamindra fo. Namindra fo izy ka tsy naringany ny Gibeonita, noho ilay fifanekem-pihavanana nataon'ny Israelita tamin-dry zareo. Nanao an'izany i Jehovah, na dia tsy nanontany azy aza ny Israelita.",
+        "references": []
+      },
+      {
+        "id": "2026482-q6",
+        "number": "6",
+        "text": "Nanam-pinoana sy nanetry tena ny Gibeonita. Ahoana no hanahafantsika an-dry zareo?",
+        "paragraphNumbers": [
+          "7"
+        ],
+        "answer": "Mila manatanjaka ny finoantsika an'i Jehovah isika. Be dia be ny zavatra fantatsika momba an'i Jehovah, raha oharina amin'ny an'ny Gibeonita tamin'izany. Vao mainka isika tokony hatoky tanteraka an'i Jehovah. Manahaka ny Gibeonita koa isika, raha vonona hanao asa heverina ho ambany rehefa manompo an'i Jehovah.",
+        "references": []
+      },
+      {
+        "id": "2026482-q7",
+        "number": "7",
+        "text": "Inona ny tsy rariny nataon'i Saoly Mpanjaka tamin'ny Gibeonita?",
+        "paragraphNumbers": [
+          "8"
+        ],
+        "answer": "Nankahala an'ireo Gibeonita nipetraka tany Israely i Saoly Mpanjaka. Nitady handripaka azy ireo izy, 'noho izy nafana fo loatra nanampy ny vahoakan'Israely sy Joda.' Betsaka ny Gibeonita novonoiny. Tena tsy rariny izany!",
+        "references": []
+      },
+      {
+        "id": "2026482-q8",
+        "number": "8",
+        "text": "Oviana vao nalamina ilay tsy rariny nihatra tamin'ny Gibeonita?",
+        "paragraphNumbers": [
+          "9"
+        ],
+        "answer": "Tsy tonga dia nalamin'i Jehovah ilay tsy rariny nihatra tamin'ny Gibeonita. Rehefa lasa mpanjaka i Davida, ilay nandimby an'i Saoly, izay i Jehovah vao nanao zavatra. Nataony nisy mosary tany Israely nandritra ny telo taona.",
+        "references": []
+      },
+      {
+        "id": "2026482-q9",
+        "number": "9",
+        "text": "Ahoana no ahitana hoe nanaja ny Lalàn'Andriamanitra ny Gibeonita?",
+        "paragraphNumbers": [
+          "10"
+        ],
+        "answer": "Tsy nangataka vola be tamin'i Davida ry zareo. Nilaza ny Gibeonita hoe 'tsy volafotsy na volamena' no notakin-dry zareo, satria raha araka ny Lalàna, dia tsy azo natao ny nandray vidim-panavotana hamonjena ny ain'ny mpamono olona.",
+        "references": []
+      },
+      {
+        "id": "2026482-q10",
+        "number": "10",
+        "text": "Inona no ianarantsika momba an'i Jehovah avy amin'ny tantaran'ny tsy rariny nihatra tamin'ny Gibeonita?",
+        "paragraphNumbers": [
+          "11"
+        ],
+        "answer": "Hitantsika avy amin'io hoe Andriamanitra manao ny rariny i Jehovah. Tsy tiany hisy olona iharan'ny tsy rariny mihitsy. Handamina ny tsy rariny mahazo ny mpanompony i Jehovah amin'ny fotoana mety aminy.",
+        "references": []
+      },
+      {
+        "id": "2026482-q11",
+        "number": "11",
+        "text": "Ahoana no hanahafantsika ny Gibeonita rehefa miatrika ny tsy rariny isika?",
+        "paragraphNumbers": [
+          "12"
+        ],
+        "answer": "Na dia manao ny tsy rariny amintsika aza ny rahalahy sy anabavintsika, dia afaka ny hanam-paharetana sy hiandry an'i Jehovah isika. Asehontsika amin'izany fa matoky isika hoe halamin'i Jehovah amin'ny fotoana mety aminy ilay olana.",
+        "references": []
+      },
+      {
+        "id": "2026482-q12",
+        "number": "12",
+        "text": "Iza ny 'Netinima', ary inona no nataon-dry zareo taorian'ilay sesitany tany Babylona?",
+        "paragraphNumbers": [
+          "13"
+        ],
+        "answer": "'Olona tsy israelita nanompo tao amin'ny tempoly' ry zareo, ary azo inoana hoe taranaky ny Gibeonita ny ankamaroany. Niverina tany Jerosalema niaraka tamin'i Zerobabela Governora ny andiany voalohany tamin-dry zareo, tamin'ny 537 T.K.",
+        "references": []
+      },
+      {
+        "id": "2026482-q13",
+        "number": "13",
+        "text": "Ahoana no nampisehoan'ny Gibeonita hoe tsy nivadika tamin'i Jehovah ry zareo?",
+        "paragraphNumbers": [
+          "14"
+        ],
+        "answer": "Anisan'ireo voalohany niverina tany Israely 'ny mpanompo tao amin'ny tempoly.' Niverina tany ry zareo mba hanao ny andraikiny tao amin'ny tempoly. Nanampy tamin'ny fanamboarana ny mandan'i Jerosalema mihitsy aza ry zareo.",
+        "references": []
+      },
+      {
+        "id": "2026482-q14",
+        "number": "14",
+        "text": "Inona no ianarantsika momba an'i Jehovah avy amin'ny tantaran'ny Gibeonita momba ny faharetany?",
+        "paragraphNumbers": [
+          "15"
+        ],
+        "answer": "Hita hoe tena mankasitraka ny mpanompony tsy mivadika ilay Andriamanitsika, sady mikarakara an-dry zareo foana. Namonjy ny Gibeonita izy, tamin'ny Israelita naka ny Tany Nampanantenaina. Mbola nitahy an-dry zareo foana anefa izy.",
+        "references": []
+      },
+      {
+        "id": "2026482-q15",
+        "number": "15",
+        "text": "Ahoana no hanahafantsika ny Gibeonita eo amin'ny fanompoana ataontsika?",
+        "paragraphNumbers": [
+          "16"
+        ],
+        "answer": "Te hanao an'izay rehetra azontsika atao koa isika, mba hanohanana ny fivavahana marina. Vonona hanao sorona isika mba hanompoana an'i Jehovah, satria tiantsika izy ary te hampifaly azy isika.",
+        "references": []
+      },
+      {
+        "id": "2026482-q16",
+        "number": "16",
+        "text": "Inona no nianarantsika avy amin'ny tantaran'ny Gibeonita?",
+        "paragraphNumbers": [
+          "17"
+        ],
+        "answer": "Nampianatra antsika ny toetra tsaran'i Jehovah ny tantaran'ny Gibeonita. Manetry tena izy, mamindra fo, tia rariny, ary tsy mivadika. Omeny valisoa foana ny mpanompony tsy mivadika.",
+        "references": []
+      }
+    ]
+  },
+  {
     "id": "watchtower-2026444",
     "documentId": 2026444,
     "title": "Mahasoa Anao ny Andia-mpitory Misy Anao",

@@ -327,6 +327,98 @@
     "generatedAt": "2026-08-14T09:30:00Z"
   },
   {
+    "id": "family-2026-09-07",
+    "kind": "family",
+    "startDate": "2026-09-07",
+    "endDate": "2026-09-13",
+    "weekLabel": "7-13 Septambra 2026",
+    "reading": "Jeremia 32-33",
+    "theme": "Manatanjaka Finoana ny Misaintsaina ny Toetran'i Jehovah",
+    "days": [
+      {
+        "day": "Alatsinainy",
+        "focus": "Vakio Jeremia 32:1-19; diniho ny toetran'i Jehovah: mahery, tia sy tsy mivadika, tia rariny."
+      },
+      {
+        "day": "Talata",
+        "focus": "Vakio Jeremia 32:20-44; resaho ny fampanantenan'i Jehovah momba ny fanarenana."
+      },
+      {
+        "day": "Alarobia",
+        "focus": "Vakio Jeremia 33:1-13; saintsaino ny toky omen'i Jehovah fa hamerina amin'ny laoniny ny vahoakany."
+      },
+      {
+        "day": "Alakamisy",
+        "focus": "Vakio Jeremia 33:14-26; resaho ny fampanantenan'i Jehovah momba ilay Taranaka marina."
+      },
+      {
+        "day": "Zoma",
+        "focus": "Tantara: Nividy saha i Jeremia tao Anatota. Manatanjaka finoana ny misaintsaina ny toetran'i Jehovah."
+      },
+      {
+        "day": "Sabotsy",
+        "focus": "Toetra: Fitokiana an'i Jehovah. Ahoana no anampian'ny famakiana Baiboly isan'andro antsika hahalala azy tsara kokoa?"
+      },
+      {
+        "day": "Alahady",
+        "focus": "Famerenana: Inona no mampahery anao momba ny herin'i Jehovah sy ny fitiavany ary ny rariny?"
+      }
+    ],
+    "memoryVerse": {
+      "reference": "Jeremia 32:17",
+      "application": "Saintsaino ny herin'i Jehovah rehefa mivavaka ianao, ary matokia fa mahavita ny zavatra rehetra izy.",
+      "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jeremia/32/#v24032017"
+    },
+    "sourceUrl": "https://www.jw.org/mg/zavatra-misy/fivoriana-vj-tari-dalana/septambra-oktobra-2026-mwb/Fivoriana-Momba-ny-Fiainantsika-Kristianina-sy-ny-Fanompoana-Fandaharana-ho-Anny-7-13-Septambra-2026/",
+    "printPrompt": "Create one A4 portrait printable activity sheet, exactly 2480 x 3508 px at 300 DPI. Make four child-friendly illustrated cards showing: a man praying while looking at mountains (Jehovah's power), a family reading together (Jehovah's love), a judge's scale (Jehovah's justice), and a child trusting a parent (our trust in Jehovah). Use clean outlines, warm natural colours, large simple shapes, a light cream background, 10 mm safe margins, dotted cut guides only, and no text, logos, watermarks, crosses, or representation of God."
+  },
+  {
+    "id": "family-2026-09-14",
+    "kind": "family",
+    "startDate": "2026-09-14",
+    "endDate": "2026-09-20",
+    "weekLabel": "14-20 Septambra 2026",
+    "reading": "Jeremia 34-35",
+    "theme": "Tahin'i Jehovah Izay Tsy Mivadika sy Mankatò Azy",
+    "days": [
+      {
+        "day": "Alatsinainy",
+        "focus": "Vakio Jeremia 34:1-11; diniho ny tsy fankatoavan'ny Jiosy sy ny fibebahana nataony."
+      },
+      {
+        "day": "Talata",
+        "focus": "Vakio Jeremia 34:12-22; resaho ny vokatry ny tsy fankatoavana an'i Jehovah."
+      },
+      {
+        "day": "Alarobia",
+        "focus": "Vakio Jeremia 35:1-11; diniho ny ohatra tsaran'ny Rekabita tsy nisotro divay."
+      },
+      {
+        "day": "Alakamisy",
+        "focus": "Vakio Jeremia 35:12-19; resaho ny valisoa nahazo ny Rekabita noho ny fankatoavany."
+      },
+      {
+        "day": "Zoma",
+        "focus": "Tantara: Ny Rekabita tsy nisotro divay na dia nanolotra azy aza i Jeremia. Nanaraka ny didin'i Jonadaba izy."
+      },
+      {
+        "day": "Sabotsy",
+        "focus": "Toetra: Fankatoavana. Ahoana no anahafantsika ny Rekabita amin'ny fankatoavana an'i Jehovah?"
+      },
+      {
+        "day": "Alahady",
+        "focus": "Famerenana: Inona no lesona momba ny fankatoavana sy ny tsy fivadihana? Ahoana no tahin'i Jehovah ny mpanompony?"
+      }
+    ],
+    "memoryVerse": {
+      "reference": "Jeremia 35:18, 19",
+      "application": "Mankatoa an'i Jehovah na dia sarotra aza, fa tahiny ny tsy mivadika aminy.",
+      "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jeremia/35/#v24035018-v24035019"
+    },
+    "sourceUrl": "https://www.jw.org/mg/zavatra-misy/fivoriana-vj-tari-dalana/septambra-oktobra-2026-mwb/Fivoriana-Momba-ny-Fiainantsika-Kristianina-sy-ny-Fanompoana-Fandaharana-ho-Anny-14-20-Septambra-2026/",
+    "printPrompt": "Create one A4 portrait printable activity sheet, exactly 2480 x 3508 px at 300 DPI, with four clearly separated warm illustrated story cards for children aged 2 and 3.5. Narrative order: a family obeying instructions and being blessed; the Rekabites refusing wine offered by Jeremiah; children obeying parents; a child receiving a reward for obedience. Use clean outlines, a light cream background, 10 mm safe margins, rounded rectangles, dotted cut guides only, and no text, letters, numbers, logos, watermarks, crosses, representation of God, or frightening imagery."
+  },
+  {
     "id": "preaching-2026-07-17",
     "kind": "preaching",
     "startDate": "2026-07-17",
@@ -440,5 +532,51 @@
     "nextStep": "Miaraha mametraka tanjona madinika iray, mivavaha momba izany, ary manendre fotoana hifampiresahana indray momba ny fandrosoany.",
     "practice": "Mifandimby: olona iray manao mpampianatra, olona iray manao mpianatra miady amin’ny fahazarana iray, ary olona iray mijery raha hita tao ny fitiavana, fahatsorana, fankasitrahana, ary tanjona azo tratrarina.",
     "sourceUrl": "https://www.jw.org/mg/zavatra-misy/fivoriana-vj-tari-dalana/jolay-aogositra-2026-mwb/Fivoriana-Momba-ny-Fiainantsika-sy-ny-Fanompoana-Fandaharana-ho-Anny-10-16-Aogositra-2026"
+  },
+  {
+    "id": "preaching-2026-09-11",
+    "kind": "preaching",
+    "startDate": "2026-09-11",
+    "endDate": "2026-09-12",
+    "weekLabel": "11-12 Septambra 2026",
+    "publishedAt": "11 Septambra 2026, 19:00",
+    "title": "Fianarana ho an'ny fanompoana",
+    "subtitle": "Miresadresaha Aloha sy Rehefa Miverina Mitsidika",
+    "objective": "Hianatra hanomboka fampianarana Baiboly rehefa miresaka amin'ny olona isika.",
+    "theme": "Asao hianatra Baiboly ilay olona",
+    "opening": "Te hanomboka fampianarana Baiboly ve isika amin'ity volana ity? Mety hahavita an'izany isika raha mampihatra ny soso-kevitra horesahintsika.",
+    "question": "Inona no azontsika atao mba hanombohana fampianarana Baiboly rehefa miresaka amin'ny olona isika?",
+    "scripture": {
+      "reference": "1 Korintianina 9:26",
+      "application": "Aza mamely rivotra fotsiny amin'ny fanompoana, fa manana tanjona hanomboka fampianarana Baiboly.",
+      "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/1-korintianina/9/#v46009026"
+    },
+    "response": "Azontsika atao ny manasa ny olona hianatra Baiboly amin'ny alalan'ny fanontaniana tsotra sy ny fampisehoana video mampahery.",
+    "nextStep": "Mametraha fanontaniana tsotra toy ny 'Mbola te hahalala bebe kokoa ve ianao?' rehefa avy niresaka.",
+    "practice": "Mananatra ny olona iray amin'ny fampiasana ny lmd lesona 4 na lesona 8.",
+    "sourceUrl": "https://www.jw.org/mg/zavatra-misy/fivoriana-vj-tari-dalana/septambra-oktobra-2026-mwb/Fivoriana-Momba-ny-Fiainantsika-Kristianina-sy-ny-Fanompoana-Fandaharana-ho-Anny-7-13-Septambra-2026/"
+  },
+  {
+    "id": "preaching-2026-09-18",
+    "kind": "preaching",
+    "startDate": "2026-09-18",
+    "endDate": "2026-09-19",
+    "weekLabel": "18-19 Septambra 2026",
+    "publishedAt": "18 Septambra 2026, 19:00",
+    "title": "Fianarana ho an'ny fanompoana",
+    "subtitle": "Miresadresaha Aloha sy Rehefa Mampianatra",
+    "objective": "Hianatra hanomboka fampianarana Baiboly sy hampianatra ny mpianatra Baiboly.",
+    "theme": "Asao hianatra Baiboly ilay olona ary mampiasà fitaovana fampianarana",
+    "opening": "Rehefa miresaka amin'ny olona isika dia afaka mampiseho video iray avy amin'ny Fitaovana Fampianarana mba hanombohana fampianarana Baiboly.",
+    "question": "Ahoana no hanombohana fampianarana Baiboly rehefa mitsidika indray na mampianatra?",
+    "scripture": {
+      "reference": "Kolosianina 4:6",
+      "application": "Aoka ho tsara sy hanitra ny resakao, mba hahafahanao mamaly tsara ny fanontanian'ny olona.",
+      "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/kolosianina/4/#v51004006"
+    },
+    "response": "Afaka manasa ny olona hianatra Baiboly isika amin'ny fampisehoana video fohy sy ny fametrahana fanontaniana.",
+    "nextStep": "Aorian'ny fahitana ny olona, manaraha azy amin'ny fampisehoana video iray avy amin'ny lmd.",
+    "practice": "Mananatra ny olona iray amin'ny fampiasana ny lmd lesona 3 sy lesona 7.",
+    "sourceUrl": "https://www.jw.org/mg/zavatra-misy/fivoriana-vj-tari-dalana/septambra-oktobra-2026-mwb/Fivoriana-Momba-ny-Fiainantsika-Kristianina-sy-ny-Fanompoana-Fandaharana-ho-Anny-14-20-Septambra-2026/"
   }
 ]

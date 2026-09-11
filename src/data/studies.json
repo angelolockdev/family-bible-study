@@ -419,6 +419,52 @@
     "printPrompt": "Create one A4 portrait printable activity sheet, exactly 2480 x 3508 px at 300 DPI, with four clearly separated warm illustrated story cards for children aged 2 and 3.5. Narrative order: a family obeying instructions and being blessed; the Rekabites refusing wine offered by Jeremiah; children obeying parents; a child receiving a reward for obedience. Use clean outlines, a light cream background, 10 mm safe margins, rounded rectangles, dotted cut guides only, and no text, letters, numbers, logos, watermarks, crosses, representation of God, or frightening imagery."
   },
   {
+    "id": "family-2026-09-21",
+    "kind": "family",
+    "startDate": "2026-09-21",
+    "endDate": "2026-09-27",
+    "weekLabel": "21-27 Septambra 2026",
+    "reading": "Jeremia 36-37",
+    "theme": "Ampian'i Jehovah Izay Manohana ny Fanjakany",
+    "days": [
+      {
+        "day": "Alatsinainy",
+        "focus": "Vakio Jeremia 36:1-19; diniho ny nandidian'i Jehovah an'i Jeremia hanoratra ny faminaniana tao anaty horonam-boky."
+      },
+      {
+        "day": "Talata",
+        "focus": "Vakio Jeremia 36:20-32; resaho ny fanehoan'i Joiakima Mpanjaka fa tsy nanaja ny Tenin'Andriamanitra tamin'ny nandorany ny horonam-boky."
+      },
+      {
+        "day": "Alarobia",
+        "focus": "Vakio Jeremia 37:1-10; diniho ny fihetsiky ny mpanompon'i Jehovah nandritra ny korontana ara-politika."
+      },
+      {
+        "day": "Alakamisy",
+        "focus": "Vakio Jeremia 37:11-21; resaho ny fomba nanampian'i Jehovah an'i Jeremia na dia nigadra aza."
+      },
+      {
+        "day": "Zoma",
+        "focus": "Tantara: Nampiasain'i Jehovah i Ebeda-meleka mba hamonjy an'i Jeremia avy tao anaty lavaka fanangonan-drano."
+      },
+      {
+        "day": "Sabotsy",
+        "focus": "Toetra: Herim-po. Ahoana no anahafantsika an'i Ebeda-meleka amin'ny fanehoana herim-po hanao izay marina?"
+      },
+      {
+        "day": "Alahady",
+        "focus": "Famerenana: Ahoana no anampian'i Jehovah ireo manohana ny Fanjakany, na dia eo aza ny korontana sy ny fanenjehana?"
+      }
+    ],
+    "memoryVerse": {
+      "reference": "Jeremia 37:21",
+      "application": "Saintsaino fa mikarakara ny mpanompony i Jehovah na dia ao anatin'ny fitsapana mafy aza, ary matokia fa tsy handao antsika izy.",
+      "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jeremia/37/#v24037021"
+    },
+    "sourceUrl": "https://www.jw.org/mg/zavatra-misy/fivoriana-vj-tari-dalana/septambra-oktobra-2026-mwb/Fivoriana-Momba-ny-Fiainantsika-Kristianina-sy-ny-Fanompoana-Fandaharana-ho-Anny-21-27-Septambra-2026/",
+    "printPrompt": "Create one A4 portrait printable activity sheet, exactly 2480 x 3508 px at 300 DPI, with four clearly separated warm illustrated story cards for children aged 2 and 3.5. Narrative order: Jeremiah writing the scroll, King Jehoiakim burning the scroll, Ebed-melech rescuing Jeremiah from the cistern, children showing courage to do what is right. Use clean outlines, a light cream background, 10 mm safe margins, rounded rectangles, dotted cut guides only, and no text, letters, numbers, logos, watermarks, crosses, representation of God, or frightening imagery."
+  },
+  {
     "id": "preaching-2026-07-17",
     "kind": "preaching",
     "startDate": "2026-07-17",
@@ -578,5 +624,28 @@
     "nextStep": "Aorian'ny fahitana ny olona, manaraha azy amin'ny fampisehoana video iray avy amin'ny lmd.",
     "practice": "Mananatra ny olona iray amin'ny fampiasana ny lmd lesona 3 sy lesona 7.",
     "sourceUrl": "https://www.jw.org/mg/zavatra-misy/fivoriana-vj-tari-dalana/septambra-oktobra-2026-mwb/Fivoriana-Momba-ny-Fiainantsika-Kristianina-sy-ny-Fanompoana-Fandaharana-ho-Anny-14-20-Septambra-2026/"
+  },
+  {
+    "id": "preaching-2026-09-25",
+    "kind": "preaching",
+    "startDate": "2026-09-25",
+    "endDate": "2026-09-26",
+    "weekLabel": "25-26 Septambra 2026",
+    "publishedAt": "25 Septambra 2026, 19:00",
+    "title": "Fianarana ho an'ny fanompoana",
+    "subtitle": "Miresadresaha Aloha sy Rehefa Miverina Mitsidika",
+    "objective": "Hianatra hanomboka fampianarana Baiboly amin'ny olona tsy kristianina sy ny olona nandray trakta.",
+    "theme": "Asao hianatra Baiboly ilay olona",
+    "opening": "Afaka manomboka fampianarana Baiboly amin'ny olona maro isika amin'ity herinandro ity. Andeha hojerentsika ny soso-kevitra azo ampiasaina.",
+    "question": "Ahoana no hanombohana fampianarana Baiboly rehefa miresaka amin'ny olona tsy kristianina na mitsidika indray?",
+    "scripture": {
+      "reference": "1 Timoty 2:4",
+      "application": "Tsara ho fantatsika fa 'tian'i Jehovah ny hamonjy ny olona rehetra.' Koa aza misalasala manasa ny olona hianatra Baiboly.",
+      "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/1-timoty/2/#v54002004"
+    },
+    "response": "Azontsika atao ny manasa ny olona hianatra Baiboly amin'ny alalan'ny fanontaniana tsotra toy ny 'Mbola te hahalala bebe kokoa ve ianao?'",
+    "nextStep": "Mametraha fanontaniana tsotra rehefa avy niresaka, ary asao hianatra Baiboly ilay olona.",
+    "practice": "Mananatra ny olona iray amin'ny fampiasana ny lmd lesona 5 hevitra 5 sy lesona 9 hevitra 4.",
+    "sourceUrl": "https://www.jw.org/mg/zavatra-misy/fivoriana-vj-tari-dalana/septambra-oktobra-2026-mwb/Fivoriana-Momba-ny-Fiainantsika-Kristianina-sy-ny-Fanompoana-Fandaharana-ho-Anny-21-27-Septambra-2026/"
   }
 ]

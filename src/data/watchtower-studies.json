@@ -320,8 +320,8 @@
     "startDate": "2026-08-24",
     "endDate": "2026-08-30",
     "sourceUrl": "https://www.jw.org/mg/zavatra-misy/gazety/gazety-fianarana-jona-2026/Mahasoa-Anao-ny-Andia-mpitory-Misy-Anao/",
-    "sourceDigest": "7139ee2ae07b6dcd95aca5dd13b63fdec6eb5fab257cf45dbd61624b7b27fead",
-    "generatedAt": "2026-08-14T11:00:00Z",
+    "sourceDigest": "e2ed1bce7cafb3c8ad425862a242fde9ba37132a0e26499371f59a2d6855c4c1",
+    "generatedAt": "2026-09-11T12:30:00Z",
     "model": "gpt-5.6-sol",
     "questions": [
       {
@@ -490,8 +490,8 @@
     "startDate": "2026-08-17",
     "endDate": "2026-08-23",
     "sourceUrl": "https://www.jw.org/mg/zavatra-misy/gazety/gazety-fianarana-jona-2026/Inona-no-Hanampy-Antsika-ho-Mpinamana-Foana/",
-    "sourceDigest": "21db2927fe7f3ffbf305db1aaabed19ad02bc271a13eba032ee2e21009a6b1d9",
-    "generatedAt": "2026-08-14T11:00:00Z",
+    "sourceDigest": "fa1a8f860516a4f7adfc4aada50d60e4c81f50cef1de521abc0a5b3e91ee9b13",
+    "generatedAt": "2026-09-11T12:30:00Z",
     "model": "gpt-5.6-sol",
     "questions": [
       {
@@ -709,8 +709,8 @@
     "startDate": "2026-08-10",
     "endDate": "2026-08-16",
     "sourceUrl": "https://www.jw.org/mg/zavatra-misy/gazety/gazety-fianarana-jona-2026/Inona-no-Hanampy-Antsika-Tsy-Hivadika-Rehefa-Misy-Fitsapana/",
-    "sourceDigest": "a5b2c2f7712e620ab337675024a7fd4eca5a653a4ff5bbe0c1e80726d1947db1",
-    "generatedAt": "2026-08-10T07:14:37Z",
+    "sourceDigest": "f75d3040f4436d6883dd1725c74a2ae438990c1bd1aa0dc03ab974fdf7bbc1ce",
+    "generatedAt": "2026-09-11T12:30:00Z",
     "model": "gpt-5.6-sol",
     "questions": [
       {
@@ -900,8 +900,8 @@
     "startDate": "2026-08-03",
     "endDate": "2026-08-09",
     "sourceUrl": "https://www.jw.org/mg/zavatra-misy/gazety/gazety-fianarana-mey-2026/Hajao-ny-Fanapahan-kevitry-ny-Hafa/",
-    "sourceDigest": "21039e2baca1fc534452206779dc470ec8affc77215475267367a83a011e3956",
-    "generatedAt": "2026-08-02T17:21:10Z",
+    "sourceDigest": "a7fb9c64a17ffc5d8721ea8fead0f742c395cfe535ba69c318ea68c96520352e",
+    "generatedAt": "2026-09-11T12:30:00Z",
     "model": "gpt-5.6-terra",
     "questions": [
       {
@@ -1180,8 +1180,8 @@
     "startDate": "2026-07-27",
     "endDate": "2026-08-02",
     "sourceUrl": "https://www.jw.org/mg/zavatra-misy/gazety/gazety-fianarana-mey-2026/Miezaha-Hatanjaka-Ara-panahy-Foana-Rehefa-Manao-Fianarana-Fanampiny/",
-    "sourceDigest": "020f55e9d83a8aebd3504bc4894fcb15fbd006eb4f88703398e94607cfe6ecf6",
-    "generatedAt": "2026-07-25T00:00:00Z",
+    "sourceDigest": "a867d69c2fec25f9a0e9756e53728f2f8a47b83e2db68b7b67ace6d9947d06a0",
+    "generatedAt": "2026-09-11T12:30:00Z",
     "model": "gpt-5.6-terra",
     "questions": [
       {
@@ -1572,8 +1572,8 @@
     "startDate": "2026-07-20",
     "endDate": "2026-07-26",
     "sourceUrl": "https://www.jw.org/mg/zavatra-misy/gazety/gazety-fianarana-mey-2026/Hanao-Fianarana-Fanampiny-ve-Ianao-sa-Tsia/",
-    "sourceDigest": "2d0ae6d677a0879e038d42d63463322b208af24d1b8cb5e65725f06d619d0ff5",
-    "generatedAt": "2026-07-20T00:00:00Z",
+    "sourceDigest": "01e7d5f8c79fa0c3ce5b38369189c1bb3d0ea4882537b6adfd708f0376d5c072",
+    "generatedAt": "2026-09-11T12:30:00Z",
     "model": "gpt-5.6-terra",
     "questions": [
       {
@@ -1968,8 +1968,8 @@
     "startDate": "2026-07-13",
     "endDate": "2026-07-19",
     "sourceUrl": "https://www.jw.org/mg/zavatra-misy/gazety/gazety-fianarana-mey-2026/Ampiasao-Hampiofanana-ny-Feonny-Fieritreretanao-ny-Torolalanny-Baiboly/",
-    "sourceDigest": "97d950b2a5204622032b73546fc469565136c5076c9670c30925e8f9c8e0a839",
-    "generatedAt": "2026-07-16T11:39:42Z",
+    "sourceDigest": "f18c4453a85e53ecd1d8037979e355bc78783c12793ca213c7a29055d0bf291f",
+    "generatedAt": "2026-09-11T12:30:00Z",
     "model": "gpt-5.6-terra",
     "questions": [
       {

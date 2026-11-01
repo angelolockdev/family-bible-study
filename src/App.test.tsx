@@ -58,20 +58,20 @@ describe('Family Bible Study companion', () => {
   })
 
   it('changes the reading directly from the chronological sidebar', async () => {
-    const user = userEvent.setup()
-    window.history.replaceState(null, '', '#/fianarana/family-2026-08-03')
-    render(<App />)
+      const user = userEvent.setup()
+      window.history.replaceState(null, '', '#/fianarana/family-2026-09-07')
+      render(<App />)
 
-    const history = screen.getByRole('complementary', { name: /Navigation chronologique des lectures/i })
-    const historicalStudy = within(history).getByRole('link', { name: /20-26 Jolay 2026Jeremia 18-19/i })
-    await user.click(historicalStudy)
+      const history = screen.getByRole('complementary', { name: /Navigation chronologique des lectures/i })
+      const historicalStudy = within(history).getByRole('link', { name: /21-27 Septambra 2026Jeremia 36-37/i })
+      await user.click(historicalStudy)
 
-    expect(window.location.hash).toBe('#/fianarana/family-2026-07-20')
-    expect(screen.getByRole('heading', { level: 1, name: 'Jeremia 18-19' })).toBeInTheDocument()
+      expect(window.location.hash).toBe('#/fianarana/family-2026-09-21')
+      expect(screen.getByRole('heading', { level: 1, name: 'Jeremia 36-37' })).toBeInTheDocument()
 
-    expect(within(history).getByRole('link', { name: /20-26 Jolay 2026Jeremia 18-19/i })).toHaveAttribute('aria-current', 'page')
-    expect(within(history).getAllByRole('link', { current: 'page' })).toHaveLength(1)
-  })
+      expect(within(history).getByRole('link', { name: /21-27 Septambra 2026Jeremia 36-37/i })).toHaveAttribute('aria-current', 'page')
+      expect(within(history).getAllByRole('link', { current: 'page' })).toHaveLength(1)
+    })
 
   it('opens a study directly from a route URL', () => {
     window.history.replaceState(null, '', '#/fianarana/family-2026-07-20')

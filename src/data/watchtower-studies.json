@@ -1,5 +1,817 @@
 [
   {
+    "id": "watchtower-2026560",
+    "documentId": 2026560,
+    "title": "Matokia hoe Hiaro Anao i Jehovah",
+    "weekLabel": "2-8 Novambra 2026",
+    "startDate": "2026-11-02",
+    "endDate": "2026-11-08",
+    "sourceUrl": "https://www.jw.org/mg/zavatra-misy/gazety/gazety-fianarana-septambra-2026/Matokia-hoe-Hiaro-Anao-i-Jehovah/",
+    "sourceDigest": "31847dab99398ef6ccfa383a60646717c8bc5517df83f21ef32215987a071137",
+    "generatedAt": "2026-11-01T03:00:00Z",
+    "model": "deepseek/deepseek-v4-flash-latest",
+    "questions": [
+      {
+        "id": "2026560-q1-2",
+        "number": "1-2",
+        "text": "Inona avy ireo zavatra hitranga tsy ho ela, izay tsy hampoizin'ny ankamaroan'ny olona?",
+        "paragraphNumbers": [
+          "1",
+          "2"
+        ],
+        "answer": "Hisy fiovana lehibe hitranga. Hataon'i Jehovah ao am-pon'ireo firenena 'ny heviny', izany hoe ny hanomezan-dry zareo ny fanjakany ho an'ilay bibidia na ny Firenena Mikambana. Hiara-handringana ny fivavahan-diso rehetra io bibidia nahazo fahefana io sy ny fitondram-panjakana rehetra. Hiara-hanafika ny vahoakan'i Jehovah ny fitondram-panjakana rehetra maneran-tany. Hanarakaraka an'izay ny ady Aramagedona.",
+        "references": [
+          {
+            "label": "Apok. 17:16, 17",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/apokalypsy/17/#v66017016-v66017017"
+          },
+          {
+            "label": "Ezek. 38:14-16",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/ezekiela/38/#v26038014-v26038016"
+          },
+          {
+            "label": "Apok. 16:14-16",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/apokalypsy/16/#v66016014-v66016016"
+          },
+          {
+            "label": "Apok. 19:11-21",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/apokalypsy/19/#v66019011-v66019021"
+          }
+        ]
+      },
+      {
+        "id": "2026560-q3",
+        "number": "3",
+        "text": "Inona no hodinihintsika ato?",
+        "paragraphNumbers": [
+          "3"
+        ],
+        "answer": "Hodinihintsika ny Salamo faha-91. Handinika ny fiarovana ampanantenain'i Jehovah, ny fomba hiarovany antsika amin'izao, ary ny fomba hiarovany antsika amin'ny hoavy. Mampanantena i Jehovah hoe hiaro antsika: 'Na dia hisy arivo ho lavo aza eo anilanao, ary iray alina eo ankavananao, dia tsy hisy hanakaiky anao izany loza izany.'",
+        "references": [
+          {
+            "label": "Sal. 91:7",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/salamo/91/#v19091007"
+          }
+        ]
+      },
+      {
+        "id": "2026560-q4",
+        "number": "4",
+        "text": "Nahoana ny Salamo 91:1, 2 no manome toky antsika fa hiaro antsika i Jehovah?",
+        "paragraphNumbers": [
+          "4"
+        ],
+        "answer": "Vao eo amin'ny andininy voalohany sy faharoa dia efa omena toky isika hoe hiaro an'izay miantehitra aminy i Jehovah. Aiza tokoa moa no misy toerana azo antoka kokoa noho ny hoe mialoka eo ambany elatr'ilay Avo Indrindra sy Mahery Indrindra? Mampahatsiahy antsika an'ireo tanàna ao anaty manda tamin'ny andron'ny Baiboly ilay teny hoe 'fialofana' sy 'manda fiarovana'.",
+        "references": [
+          {
+            "label": "Sal. 91:1, 2",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/salamo/91/#v19091001-v19091002"
+          },
+          {
+            "label": "Rota 2:12",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/rota/2/#v8002012"
+          },
+          {
+            "label": "Sal. 17:8",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/salamo/17/#v19017008"
+          }
+        ]
+      },
+      {
+        "id": "2026560-q5-6",
+        "number": "5-6",
+        "text": "a) Inona no ampanantenain'i Jehovah antsika ao amin'ny Salamo 91:14-16? b) Nahoana isika no afaka matoky an'io fampanantenana io?",
+        "paragraphNumbers": [
+          "5",
+          "6"
+        ],
+        "answer": "a) Tsy miresaka momba ny fiarovan'i Jehovah intsony ny mpanao Salamo eo, fa i Jehovah mihitsy no miteny. Manome antoka ho an'ny mpanompony izy hoe hiaro an-dry zareo, satria ry zareo matoky azy, mankamamy ny anarany, ary miantso azy. b) Matoky tanteraka an'ilay Mpanatanteraka fampanantenana isika. Tsy honohono fotsiny ny fiarovany fa azo antoka tanteraka. Nasain'i Jehovah nanoratra ny Salamo faha-91 ny mpanao salamo mba hahasoa antsika.",
+        "references": [
+          {
+            "label": "Sal. 91:14-16",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/salamo/91/#v19091014-v19091016"
+          },
+          {
+            "label": "Jos. 23:14",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/josoa/23/#v6023014"
+          },
+          {
+            "label": "Nom. 23:19",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/nomery/23/#v4023019"
+          },
+          {
+            "label": "Rom. 15:4",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/romanina/15/#v45015004"
+          }
+        ]
+      },
+      {
+        "id": "2026560-q7",
+        "number": "7",
+        "text": "Fiarovana hoatran'ny ahoana no resahin'ny Salamo faha-91?",
+        "paragraphNumbers": [
+          "7"
+        ],
+        "answer": "Fiarovana ara-panahy sy ara-batana ary ara-pihetseham-po no ampanantenaina ao. Afaka matoky isika hoe hanampy antsika foana i Jehovah amin'izay isika mahavita mankatò azy sy hinamana aminy foana. Mampanantena koa izy io fa tsy havelan'i Jehovah handringana ny vahoakany ny fahavalony. Harovany koa ny fony sy ny sainy.",
+        "references": []
+      },
+      {
+        "id": "2026560-q8-9",
+        "number": "8-9",
+        "text": "Ahoana no navalin'i Jesosy tamin'i Satana naka fanahy azy? Ary inona no ianarantsika avy amin'ny valin-teniny? (Matio 4:5-7)",
+        "paragraphNumbers": [
+          "8",
+          "9"
+        ],
+        "answer": "Nasain'i Satana nitsambikina avy eny an-tampon'ny mandan'ny tempoly i Jesosy mba hahitana raha hiaro azy ny anjely. Tsy niteny i Jesosy hoe diso io fampiasana io, fa namaly hoe: 'Aza mitsapa toetra an'i Jehovah Andriamanitrao.' Tsy nety hitsapa toetra ny Rainy izy ka hanantena hoe hiaro azy ny anjely raha misangy loza. Afaka manatsoaka hevitra isika fa fiarovana amin'ny lafiny rehetra no ampanantenaina ao amin'ny Salamo faha-91.",
+        "references": [
+          {
+            "label": "Mat. 4:5-7",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/matio/4/#v40004005-v40004007"
+          },
+          {
+            "label": "Sal. 91:11, 12",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/salamo/91/#v19091011-v19091012"
+          },
+          {
+            "label": "2 Mpanj. 6:15-17",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/2-mpanjaka/6/#v12006015-v12006017"
+          },
+          {
+            "label": "Dan. 6:16-22",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/daniela/6/#v27006016-v27006022"
+          }
+        ]
+      },
+      {
+        "id": "2026560-q10",
+        "number": "10",
+        "text": "Resy lahatra ny amin'ny inona isika?",
+        "paragraphNumbers": [
+          "10"
+        ],
+        "answer": "Resy lahatra isika hoe harovan'i Jehovah izay rehetra matoky azy, ka manao azy ho fialofana sy manda fiarovana. Tsy tokony hatahotra ary isika rehefa horavana ny tontolon'i Satana.",
+        "references": []
+      },
+      {
+        "id": "2026560-q11",
+        "number": "11",
+        "text": "Ahoana no hiarovan'i Jehovah antsika eo amin'ny lafiny ara-panahy?",
+        "paragraphNumbers": [
+          "11"
+        ],
+        "answer": "Miaro antsika eo amin'ny lafiny ara-panahy i Jehovah. Ampiany isika mba ho voaro ny fifandraisantsika aminy. Misy ady mafy tsy maintsy ataontsika isan'andro noho isika tsy lavorary. Azon'i Jehovah tsara hoe misy vokany be amintsika ny ota, ka manampy antsika amin'io ady io amin'ny fampahatsiahivana antsika ny fomba hiarovana ny finoantsika.",
+        "references": [
+          {
+            "label": "Rom. 6:16",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/romanina/6/#v45006016"
+          },
+          {
+            "label": "Rom. 7:21-23",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/romanina/7/#v45007021-v45007023"
+          }
+        ]
+      },
+      {
+        "id": "2026560-q12-13",
+        "number": "12-13",
+        "text": "Inona no hanampy antsika tsy ho resin'ny fanirian-dratsy? (Matio 5:28, 29)",
+        "paragraphNumbers": [
+          "12",
+          "13"
+        ],
+        "answer": "Manampy antsika i Jehovah hahatsapa hoe mavesa-danja ny filam-panahy noho ny filan'ny nofo. Rehefa samy manana ny maha-izy azy isika dia tsy tokony hanao tsinontsinona ny fanambadiana, ny fianakaviana, ary ny finoana mba hahazoana izay irintsika. Manome hery antsika i Jehovah mba hanozongozona ny eritreritra ratsy sy hanaraka ny lalana mifanaraka amin'ny sitrapony.",
+        "references": [
+          {
+            "label": "Mat. 5:28, 29",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/matio/5/#v40005028-v40005029"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "watchtower-2026523",
+    "documentId": 2026523,
+    "title": "Voninahitra ho Antsika ny 'Manao Fanompoana Masina Tsy Amin-tahotra'",
+    "weekLabel": "26 Oktobra-1 Novambra 2026",
+    "startDate": "2026-10-26",
+    "endDate": "2026-11-01",
+    "sourceUrl": "https://www.jw.org/mg/zavatra-misy/gazety/gazety-fianarana-aogositra-2026/Voninahitra-ho-Antsika-ny-Manao-Fanompoana-Masina-Tsy-Amin-tahotra/",
+    "sourceDigest": "36b4dedeb6aef02d5748e84ea2ed99b7733ae603ff9e82eb2f18f67d400a5fc8",
+    "generatedAt": "2026-11-01T03:00:00Z",
+    "model": "deepseek/deepseek-v4-flash-latest",
+    "questions": [
+      {
+        "id": "2026523-q1",
+        "number": "1",
+        "text": "Inona no resahin'ny faminanian'i Zakaria?",
+        "paragraphNumbers": [
+          "1"
+        ],
+        "answer": "Nampiasa an'i Zakaria i Jehovah mba hamaliana ny fanontanian'ny olona momba an'i Jaona zanany. Nohazavainy hoe kely sisa dia ho tonga ny Mesia, ilay nandrasana hatry ny ela, ary i Jaona no hanampy ny vahoaka hibebaka sy hanara-dia azy. Niresaka zavatra telo tokony hankasitrahantsika izy: ny famonjena antsika, ilay tombontsoa hanao fanompoana masina, ary ny andraikitsika hitory.",
+        "references": [
+          {
+            "label": "Lioka 1:57-79",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/lioka/1/#v42001057-v42001079"
+          },
+          {
+            "label": "Amosa 3:7",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/amosa/3/#v30003007"
+          }
+        ]
+      },
+      {
+        "id": "2026523-q2",
+        "number": "2",
+        "text": "a) Inona no nampanantenain'Andriamanitra ny vahoakany, araka ny Lioka 1:67-73? b) Iza ilay 'mpamonjy mahery' resahin'ny Lioka 1:69?",
+        "paragraphNumbers": [
+          "2"
+        ],
+        "answer": "a) Nampanantena Andriamanitra hoe hamonjy ny vahoakany. b) Ny Mesia io 'mpamonjy mahery' io. Efa niandriandry ny Mesia nampanantenaina ny Jiosy tamin'ny andron'i Zakaria. Lasa 'mpamonjy mahery' i Jesosy rehefa natao batisa tamin'izy 30 taona, rehefa nohosoran'i Jehovah ny fanahy masina izy ka lasa Mesia.",
+        "references": [
+          {
+            "label": "Lioka 1:67-73",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/lioka/1/#v42001067-v42001073"
+          },
+          {
+            "label": "Gen. 22:17, 18",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/genesisy/22/#v1022017-v1022018"
+          },
+          {
+            "label": "Mat. 22:42",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/matio/22/#v40022042"
+          },
+          {
+            "label": "Mat. 3:16, 17",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/matio/3/#v40003016-v40003017"
+          }
+        ]
+      },
+      {
+        "id": "2026523-q3",
+        "number": "3",
+        "text": "Nila novonjena tamin'inona ny Jiosy tamin'ny taonjato voalohany?",
+        "paragraphNumbers": [
+          "3"
+        ],
+        "answer": "Nila novonjena tamin'i Satana, ilay tena fototry ny fijaliana, ry zareo. I Satana no nahatonga ny Jiosy sy ny olon-kafa rehetra ho andevon'ny ota sy ny fahafatesana. Ankoatra izay, dia tsy nahavita nankato tanteraka ny Lalan'i Mosesy ny Jiosy, ka lasa voaozona noho izany ary nila navotana.",
+        "references": [
+          {
+            "label": "Lioka 1:71, 77",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/lioka/1/#v42001071-v42001077"
+          },
+          {
+            "label": "Heb. 2:14, 15",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/hebreo/2/#v58002014-v58002015"
+          },
+          {
+            "label": "Rom. 3:20",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/romanina/3/#v45003020"
+          },
+          {
+            "label": "Gal. 3:10, 13",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/galatianina/3/#v48003010-v48003013"
+          }
+        ]
+      },
+      {
+        "id": "2026523-q4",
+        "number": "4",
+        "text": "Mila vonjena amin'inona isika?",
+        "paragraphNumbers": [
+          "4"
+        ],
+        "answer": "Mila vonjena amin'ny ota sy ny fahafatesana koa isika, hoatran'ireo Jiosy tamin'ny andron'i Jesosy. Ankoatra izay, dia mampijaly antsika i Satana sy ny demonia, izay miezaka mamitaka antsika sy mampirisika ny olona hanohitra ny fivavahantsika. Mila vonjena amin'ireo fahavalo ireo koa ary isika.",
+        "references": [
+          {
+            "label": "Rom. 5:12",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/romanina/5/#v45005012"
+          }
+        ]
+      },
+      {
+        "id": "2026523-q5",
+        "number": "5",
+        "text": "Ahoana no hanafahan'i Jesosy antsika amin'ny ota?",
+        "paragraphNumbers": [
+          "5"
+        ],
+        "answer": "Nampianariny ny mpanara-dia azy hoe ahoana no tokony hanompoana an'i Jehovah. Nanome ny ainy ho vidim-panavotana izy, 'mba tsy ho ringana izay rehetra maneho finoana azy, fa hahazo fiainana mandrakizay.' Miezaka mafy isika mba hanompo an'i Jehovah, nefa mbola tsy lavorary ka miangavy an'i Jehovah mba hamela antsika. Eken'i Jehovah ny fanompoantsika noho ny vidim-panavotana.",
+        "references": [
+          {
+            "label": "Jaona 3:16",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jaona/3/#v43003016"
+          },
+          {
+            "label": "Mat. 20:28",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/matio/20/#v40020028"
+          },
+          {
+            "label": "1 Jaona 2:1, 2",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/1-jaona/2/#v62002001-v62002002"
+          }
+        ]
+      },
+      {
+        "id": "2026523-q6",
+        "number": "6",
+        "text": "Inona no hataon'i Jesosy rehefa lasa Mpanjaka izy, ka hipetraka eo amin'ny 'seza fiandrianan'i Davida'? (Jereo koa ny sary.)",
+        "paragraphNumbers": [
+          "6"
+        ],
+        "answer": "Nanomboka nanjaka tany an-danitra i Jesosy tamin'ny 1914. Handringana ny fahavalon'Andriamanitra rehetra eto an-tany izy sy ireo hiara-manjaka aminy ary ny anjeliny masina amin'ny Aramagedona. Mandritra ny Fanjakana Arivo Taona, dia hanangana ny maty i Jesosy, ary hamerina ny olona ho lavorary tsikelikely. Ho efa foana tanteraka ny ota sy ny fahafatesana amin'ny faran'ny arivo taona.",
+        "references": [
+          {
+            "label": "Lioka 1:32, 33",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/lioka/1/#v42001032-v42001033"
+          },
+          {
+            "label": "Jaona 5:28",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jaona/5/#v43005028"
+          },
+          {
+            "label": "Apok. 22:1, 2",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/apokalypsy/22/#v66022001-v66022002"
+          },
+          {
+            "label": "1 Kor. 15:26, 55-57",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/1-korintianina/15/#v46015026"
+          },
+          {
+            "label": "Apok. 20:7-10",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/apokalypsy/20/#v66020007-v66020010"
+          },
+          {
+            "label": "2 Kor. 9:15",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/2-korintianina/9/#v47009015"
+          }
+        ]
+      },
+      {
+        "id": "2026523-q7",
+        "number": "7",
+        "text": "Inona ny tombontsoa omen'i Jehovah ny vahoakany, araka ny Lioka 1:74, 75?",
+        "paragraphNumbers": [
+          "7"
+        ],
+        "answer": "'Ilay voninahitra hanao fanompoana masina tsy amin-tahotra.' Tafiditra amin'ny hoe 'fanompoana masina' izay rehetra ataontsika amin'ny fanompoana an'i Jehovah: mitory, mivavaka, mianatra ny Teniny, manatrika fivoriana sy fivoriambe. Anisan'izany koa ny fanompoana ao amin'ny Betela sy ny fanorenana sy fikojakojana Efitrano Fanjakana sy Efitrano Fivoriambe.",
+        "references": [
+          {
+            "label": "Lioka 1:74, 75",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/lioka/1/#v42001074-v42001075"
+          }
+        ]
+      },
+      {
+        "id": "2026523-q8",
+        "number": "8",
+        "text": "Inona no tsy atahorantsika?",
+        "paragraphNumbers": [
+          "8"
+        ],
+        "answer": "Voalohany, tsy matahotra fahafatesana intsony isika satria manantena hiaina mandrakizay. Tsy manaiky ho resin'ny tahotra isika na dia mandrahona ny hamono antsika aza ny mpanenjika. Faharoa, tsy matahotra isika hoe harian'i Jehovah satria mpanota, fa matoky isika fa tia sy mankasitraka antsika i Jehovah sady mamindra fo ka hamela ny fahotantsika.",
+        "references": [
+          {
+            "label": "Jaona 6:39, 40",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jaona/6/#v43006039-v43006040"
+          },
+          {
+            "label": "1 Jaona 4:9, 10",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/1-jaona/4/#v62004009-v62004010"
+          }
+        ]
+      },
+      {
+        "id": "2026523-q9",
+        "number": "9",
+        "text": "Inona ny olana atrehin'ny Kristianina sasany?",
+        "paragraphNumbers": [
+          "9"
+        ],
+        "answer": "Sarotra amin'ny Kristianina sasany ny mino hoe eken'i Jehovah ny fanompoana ataony. Mety hieritreritra ry zareo hoe tsy mendrika ny hotiavin'i Jehovah, noho ny zavatra ratsy niainany taloha. Na mety hoe mbola manamelo-tena be foana izy noho ny fahotana nataony tany aloha, na dia efa nangataka famelan-keloka tamin'i Jehovah sy nangataka ny fanampian'ny anti-panahy aza.",
+        "references": []
+      },
+      {
+        "id": "2026523-q10-11",
+        "number": "10-11",
+        "text": "Inona no azontsika atao raha malahelo be isika, satria mieritreritra hoe tsy ho tia antsika intsony i Jehovah noho ny fahotana nataontsika? Hazavao amin'ny ohatra.",
+        "paragraphNumbers": [
+          "10",
+          "11"
+        ],
+        "answer": "Tahaka ny dokotera manasitrana taolana tapaka, i Jehovah koa afaka manasitrana antsika amin'ny alalan'ny vidim-panavotana. Matokia azy ary araho izay asainy ataontsika: vavaka, fianarana Baiboly, fanompoana ary fivoriana. Mety ho elaela vao hahatsapa hoe tia antsika i Jehovah, nefa tsy maintsy ho tonga izany. Aza kivy fa tohizo foana ny fahazarana ara-panahy.",
+        "references": [
+          {
+            "label": "Jaona 1:16, 17",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jaona/1/#v43001016-v43001017"
+          },
+          {
+            "label": "Rom. 3:23, 24",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/romanina/3/#v45003023-v45003024"
+          },
+          {
+            "label": "1 Jaona 3:19, 20",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/1-jaona/3/#v62003019-v62003020"
+          },
+          {
+            "label": "Sal. 1:2",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/salamo/1/#v19001002"
+          },
+          {
+            "label": "1 Tes. 5:17",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/1-tesalonianina/5/#v52005017"
+          },
+          {
+            "label": "Heb. 10:25",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/hebreo/10/#v58010025"
+          },
+          {
+            "label": "Fil. 3:16",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/filipianina/3/#v50003016"
+          }
+        ]
+      },
+      {
+        "id": "2026523-q12",
+        "number": "12",
+        "text": "Ahoana no nanomanan'i Jaona Mpanao Batisa ny lalan'i Jehovah? (Lioka 1:76-79)",
+        "paragraphNumbers": [
+          "12"
+        ],
+        "answer": "Lasa mpitory nafana fo izy rehefa lehibe. Nampirisihiny ny Jiosy mba hibebaka tamin'ny fahotan-dry zareo sy hatao batisa ary hanaiky an'ilay Mesia rehefa tonga izy. Rehefa avy nanao batisa an'i Jesosy izy, dia nampahafantariny ny olona hoe solontenan'i Jehovah i Jesosy. Nampirisihiny ny mpianany mba hanara-dia an'i Jesosy, ilay Mesia.",
+        "references": [
+          {
+            "label": "Lioka 1:76-79",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/lioka/1/#v42001076-v42001079"
+          },
+          {
+            "label": "Jaona 1:29, 34-36, 40, 41",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jaona/1/#v43001029"
+          }
+        ]
+      },
+      {
+        "id": "2026523-q13",
+        "number": "13",
+        "text": "Nahoana ny fiavian'ny Mesia no ho toy ny 'mazava hiposaka'?",
+        "paragraphNumbers": [
+          "13"
+        ],
+        "answer": "Hanova ny fiainan'ny olona rehetra mantsy izany. Tokony ho betsaka araka izay azo atao ny olona haheno an'io vaovao tsara io. Tsy ho vitan'i Jaona irery anefa ny hanambara an'izany.",
+        "references": []
+      },
+      {
+        "id": "2026523-q14",
+        "number": "14",
+        "text": "Inona no asa lehibe nataon'i Jesosy sy ny mpianany? (Isaia 61:1, 2)",
+        "paragraphNumbers": [
+          "14"
+        ],
+        "answer": "Nitory ny vaovao tsara momba ny famonjena i Jesosy. Nanatanteraka ny tenin'i Zakaria izy ka 'nanome hazavana ho an'izay mipetraka ao amin'ny haizina sy ny aloky ny fahafatesana.' Tena nangoraka an'ireo olona natao tsinontsinona izy. Nafana fo izy nitory, nefa fantany hoe mbola betsaka ny mpitory ilaina, ka nampiofana ny mpianany hitory.",
+        "references": [
+          {
+            "label": "Isaia 61:1, 2",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/isaia/61/#v23061001-v23061002"
+          },
+          {
+            "label": "Lioka 4:16-21",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/lioka/4/#v42004016-v42004021"
+          },
+          {
+            "label": "Mat. 4:16, 17",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/matio/4/#v40004016-v40004017"
+          },
+          {
+            "label": "Mat. 28:19, 20",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/matio/28/#v40028019-v40028020"
+          }
+        ]
+      },
+      {
+        "id": "2026523-q15",
+        "number": "15",
+        "text": "Nahoana no vao mainka tena ilaina ny asa fitoriana amin'izao?",
+        "paragraphNumbers": [
+          "15"
+        ],
+        "answer": "Tsy ho ela dia ho avy ny 'fahoriana lehibe izay mbola tsy nisy hoatr'izany hatramin'ny niandohan'izao tontolo izao.' Mety ho betsaka amin'izany ny hanaiky ny vaovao tsaran'ny famonjena sy hiandany amin'i Jehovah, satria ho tadidiny ny zavatra notorintsika taminy. Tena iankinan'ny aina ny asa fitoriana amin'izao.",
+        "references": [
+          {
+            "label": "Mat. 24:21",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/matio/24/#v40024021"
+          },
+          {
+            "label": "Mat. 25:34",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/matio/25/#v40025034"
+          },
+          {
+            "label": "Apok. 16:16",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/apokalypsy/16/#v66016016"
+          },
+          {
+            "label": "Mat. 24:14",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/matio/24/#v40024014"
+          }
+        ]
+      },
+      {
+        "id": "2026523-q16",
+        "number": "16",
+        "text": "Tapa-kevitra ny hanao inona ianao? (Jereo koa ny sary.)",
+        "paragraphNumbers": [
+          "16"
+        ],
+        "answer": "Raha mino ny vidim-panavotan'i Kristy ianao ary efa nanokan-tena ho an'i Jehovah, dia ataovy tsara ilay andraikitrao hitory ny 'taona fanehoan'i Jehovah fankasitrahana.' Resaho amin'ny olona ilay vaovao tsara. Andao isika 'hanao fanompoana masina' ho an'Andriamanitra 'tsy amin-tahotra', ka tsy hivadika ary hanao ny marina eo anatrehany mandritra ny androm-piainantsika.",
+        "references": [
+          {
+            "label": "Lioka 1:74, 75",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/lioka/1/#v42001074-v42001075"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "watchtower-2026485",
+    "documentId": 2026485,
+    "title": "Ampio ny Hafa Hahafantatra Kokoa An'i Jehovah",
+    "weekLabel": "28 Septambra-4 Oktobra 2026",
+    "startDate": "2026-09-28",
+    "endDate": "2026-10-04",
+    "sourceUrl": "https://www.jw.org/mg/zavatra-misy/gazety/gazety-fianarana-jolay-2026/Ampio-ny-Hafa-Hahafantatra-Kokoa-Ani-Jehovah/",
+    "sourceDigest": "27dad76dfc768dc07eb111e66ef3719b0fd6741a0f2b622e342029f9fbab798b",
+    "generatedAt": "2026-09-27T16:50:40Z",
+    "model": "deepseek/deepseek-v4-flash-latest",
+    "questions": [
+      {
+        "id": "2026485-q1",
+        "number": "1",
+        "text": "Inona no tsapanao rehefa misy mpianatra Baiboly mandroso?",
+        "paragraphNumbers": [
+          "1"
+        ],
+        "answer": "Faly be isika rehefa misy mpianatra Baiboly manomboka mivory, manome valin-teny, miresaka amin'ny hafa ny zavatra inoany, ary manapa-kevitra ny hanokan-tena ho an'i Jehovah. Mazava ho azy fa i Jehovah no nanampy an'ilay olona hahavita an'ireo, dia izy no deraintsika.",
+        "references": [
+          {
+            "label": "1 Kor. 3:5-9",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/1-korintianina/3/#v46003005-v46003009"
+          },
+          {
+            "label": "3 Jaona 3, 4",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/3-jaona/1/#v64001003-v64001004"
+          }
+        ]
+      },
+      {
+        "id": "2026485-q2",
+        "number": "2",
+        "text": "Tian'i Jehovah hanao ahoana ny mpianatra Baiboly? (1 Timoty 2:3, 4)",
+        "paragraphNumbers": [
+          "2"
+        ],
+        "answer": "Ny sitrapon'Andriamanitra dia ny hamonjena ny karazan'olona rehetra sy ny hahalalan'izy ireo tsara ny fahamarinana. Tiany hahalala tsara azy sy ny fikasany ny olona. Midika izany fa mila manana fahalalana marina tsara ry zareo. Rehefa lasa mahafantatra an'i Jehovah ny mpianatra Baiboly iray, dia misy vokany amin'ny fomba fiainany izany, ka lasa afaka manantena ny hiaina mandrakizay.",
+        "references": [
+          {
+            "label": "1 Tim. 2:3, 4",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/1-timoty/2/#v54002003-v54002004"
+          },
+          {
+            "label": "Jer. 9:24",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jeremia/9/#v24009024"
+          },
+          {
+            "label": "Jaona 17:3",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jaona/17/#v43017003"
+          }
+        ]
+      },
+      {
+        "id": "2026485-q3",
+        "number": "3",
+        "text": "Inona no hodinihintsika ato?",
+        "paragraphNumbers": [
+          "3"
+        ],
+        "answer": "Asain'i Jehovah manampy ny olona hahafantatra kokoa azy isika, izay tombontsoa miavaka. Hodinihintsika fanontaniana telo: Nahoana ny mpianatra Baiboly no mila mahafantatra tsara an'i Jehovah? Ahoana no hanampiantsika azy hahafantatra hoe hoatran'ny ahoana i Jehovah? Ary ahoana no hanampiantsika azy hampiasa an'izay efa fantany momba an'i Jehovah?",
+        "references": []
+      },
+      {
+        "id": "2026485-q4",
+        "number": "4",
+        "text": "Inona no tena tanjontsika rehefa mampianatra Baiboly, araka ny Marka 12:30?",
+        "paragraphNumbers": [
+          "4"
+        ],
+        "answer": "Nilaza i Jesosy fa ny didy lehibe indrindra dia hoe tia an'i Jehovah amin'ny fo manontolo, ny tena manontolo, ny saina manontolo, ary ny hery manontolo. Mila mahafantatra kokoa an'i Jehovah ny mpianatra Baiboly, amin'izay lasa tia azy. Ny tena tanjontsika rehefa mampianatra dia ny hanampy ny olona hahafantatra kokoa an'i Jehovah sy ho tia azy, fa tsy noho isika na noho ny zavatra nianarany.",
+        "references": [
+          {
+            "label": "Marka 12:30",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/marka/12/#v41012030"
+          }
+        ]
+      },
+      {
+        "id": "2026485-q5",
+        "number": "5",
+        "text": "Handrisika an'ilay mpianatra hanao inona ny fitiavany an'i Jehovah?",
+        "paragraphNumbers": [
+          "5"
+        ],
+        "answer": "Mifandray ilay hoe tia an'i Jehovah sy mankatò azy. Lasa te hankatò an'i Jehovah ny mpianatrao rehefa mahalala kokoa azy sy tia azy. Hoy i Jesosy: 'Mba hahafantaran'izao tontolo izao fa tiako ny Ray, dia izay nasain'ny Ray nataoko mihitsy no ataoko.' Ho vonona hankatò an'i Jehovah sy tsy hivadika aminy koa ny mpianatrao raha tsy misy tiany kokoa noho izy.",
+        "references": [
+          {
+            "label": "Jaona 14:31",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jaona/14/#v43014031"
+          },
+          {
+            "label": "1 Jaona 5:3",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/1-jaona/5/#v62005003"
+          }
+        ]
+      },
+      {
+        "id": "2026485-q6",
+        "number": "6",
+        "text": "Inona no tafiditra amin'ny hoe mahafantatra an'i Jehovah, ary nahoana izany no manampy ny mpianatra Baiboly? Manomeza ohatra.",
+        "paragraphNumbers": [
+          "6"
+        ],
+        "answer": "Azo inoana kokoa fa hahay hanapa-kevitra ilay mpianatra rehefa fantany tsara i Jehovah. Tsy ampy ny mianatra fotsiny raha te hahafantatra kokoa an'i Jehovah; mila hitany koa ny vokany rehefa mandray fanapahan-kevitra mifanaraka amin'ny torolalan'ny Soratra Masina izy. Hahay hanapa-kevitra izy na inona na inona mitranga, arakaraka ny ahafantarany an'i Jehovah sy ahitany hoe manampy azy ilay Rainy any an-danitra.",
+        "references": []
+      },
+      {
+        "id": "2026485-q7",
+        "number": "7",
+        "text": "Nahoana no nanampy an'i Josefa handray fanapahan-kevitra tsara ny fahafantarany an'i Jehovah?",
+        "paragraphNumbers": [
+          "7"
+        ],
+        "answer": "Nanampy an'i Josefa ny fahafantarany an'i Jehovah rehefa nanadala azy ny vadin'i Potifara. Efa nahafantatra ny fomba fiheveran'i Jehovah ny fanambadiana sy ny firaisana izy tamin'ny alalan'ny tantaran'i Adama sy Eva sy ny tantaran'i Abrahama sy Saraha. Lasa nahafantatra tsara an'i Jehovah izy, ka tsy nanaiky hotaominy haloto fitondran-tena. Fantany ny atao hoe tsara sy ratsy eo imason'i Jehovah.",
+        "references": [
+          {
+            "label": "Gen. 2:24",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/genesisy/2/#v1002024"
+          },
+          {
+            "label": "Gen. 39:7-9",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/genesisy/39/#v1039007-v1039009"
+          }
+        ]
+      },
+      {
+        "id": "2026485-q8",
+        "number": "8",
+        "text": "Ahoana no azonao ampiasana ny boky Ankafizo Mandrakizay ny Fiainana! mba hanampiana ny mpianatra hahafantatra kokoa an'i Jehovah?",
+        "paragraphNumbers": [
+          "8"
+        ],
+        "answer": "Afaka mametraka fanontaniana isika, tahaka ny nataon'i Jehovah tamin'i Joba izay nametrahany fanontaniana 50 mahery. Natao hanampiana ny mpianatra hahafantatra tsikelikely ny toetran'i Jehovah ny fanontaniana ao amin'ny boky Ankafizo Mandrakizay ny Fiainana!, toy ny hoe: 'Ahoana no fahitan'i Jehovah ny olona mitory ny vaovao tsara?' sy 'Inona no tsapan'i Jehovah rehefa hendry sy mankatò azy ianao?'",
+        "references": [
+          {
+            "label": "Joba 38:1–41:34",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/joba/38/#v18038001-v18038041"
+          }
+        ]
+      },
+      {
+        "id": "2026485-q9-10",
+        "number": "9-10",
+        "text": "a) Inona no hanampy ny mpianatra handray soa avy amin'ny famakiany Baiboly? (Jakoba 5:11) b) Rehefa mamaky ny tantaran'i Daniela ny mpianatra iray, dia inona no fanontaniana azony eritreretina mba hahafantarana an'izay tian'i Jehovah na tsy tiany?",
+        "paragraphNumbers": [
+          "9",
+          "10"
+        ],
+        "answer": "a) Ampirisihintsika ny mpianatra hisaintsaina ny toetran'i Jehovah isaky ny mamaky Baiboly. Tsy ny fiaretan'i Joba ihany no nasongadin'i Jakoba fa ny toetra tsaran'i Jehovah koa, dia ilay izy be fitiavana sy mamindra fo. b) Rehefa mamaky ny tantaran'i Daniela ao an-davaky ny liona ny mpianatra, dia azony eritreretina hoe: 'Maninona i Jehovah no namonjy an'i Daniela? Inona no mampifaly an'i Jehovah?' ary koa: 'Inona no nanjo an'ireo lehilahy nanendrikendrika an'i Daniela? Inona izany no tsy mampifaly an'i Jehovah?'",
+        "references": [
+          {
+            "label": "Jak. 5:11",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jakoba/5/#v59005011"
+          },
+          {
+            "label": "Dan. 6:10, 22",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/daniela/6/#v27006010"
+          },
+          {
+            "label": "Dan. 6:4, 5, 24",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/daniela/6/#v27006004-v27006005"
+          }
+        ]
+      },
+      {
+        "id": "2026485-q11",
+        "number": "11",
+        "text": "Ahoana no hanampiantsika ny olona ampianarintsika mba hahita hoe i Jehovah, raha ny marina, no tena mampianatra azy?",
+        "paragraphNumbers": [
+          "11"
+        ],
+        "answer": "Tokony hataontsika tsapan'ilay mpianatra fa i Jehovah, ilay Mpampianatra Be Voninahitra, no tena mampianatra azy. Mety hisaotra antsika ilay mpianatra na hidera antsika, kanefa ampahatsiahivintsika azy hoe i Jehovah no tena tokony hoderaina sy hisaorana.",
+        "references": [
+          {
+            "label": "Isaia 30:20, 21",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/isaia/30/#v23030020-v23030021"
+          }
+        ]
+      },
+      {
+        "id": "2026485-q12-13",
+        "number": "12-13",
+        "text": "Raha misy tantara ao amin'ny Baiboly tsy tena azon'ny mpianatra iray, dia nahoana no mahasoa azy ny fahafantarany tsara an'i Jehovah? (Jereo koa ny sary.)",
+        "paragraphNumbers": [
+          "12",
+          "13"
+        ],
+        "answer": "Mila ampiasaintsika ny fahalalana marina ananantsika raha tiantsika ny handray soa avy amin'izany. Raha tsy azon'ny mpianatra ny tantara iray, dia ampirisiho izy hisaintsaina an'izay efa fantany momba an'i Jehovah. Ohatra, azonao atao ny manontany azy hoe: 'Sarobidy amin'i Jehovah ve ny aina? I Jehovah ve manasazy olona tsy meloka?' Tsy azontsika indraindray ny fanapahan-kevitr'i Jehovah, saingy efa fantatsika tsara ilay Andriamanitsika, ka resy lahatra isika fa mety foana izay ataony.",
+        "references": [
+          {
+            "label": "2 Pet. 3:9",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/2-petera/3/#v61003009"
+          },
+          {
+            "label": "Efes. 2:4, 5",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/efesianina/2/#v49002004-v49002005"
+          },
+          {
+            "label": "Eks. 34:6, 7",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/eksodosy/34/#v2034006-v2034007"
+          }
+        ]
+      },
+      {
+        "id": "2026485-q14",
+        "number": "14",
+        "text": "Ahoana no hanampianao ny olona ampianarinao raha misy olona mahasosotra azy ao am-pivoriana?",
+        "paragraphNumbers": [
+          "14"
+        ],
+        "answer": "Ampirisiho ilay mpianatra hisaintsaina hoe ahoana no fahitan'i Jehovah an'ireo rahalahy sy anabavy. Anontanio izy hoe: 'Inona ny sorona nataon'i Jehovah mba hampisehoana hoe tiany ry zareo? Zava-dehibe aminy ve ny hoe miray saina isika?' Ampio ilay mpianatra hahatsapa fa faly i Jehovah rehefa mifantoka amin'ny toetra tsaran'ny hafa isika fa tsy amin'ny fahadisoany.",
+        "references": [
+          {
+            "label": "Jaona 3:16",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jaona/3/#v43003016"
+          },
+          {
+            "label": "Sal. 133:1",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/salamo/133/#v19133001"
+          },
+          {
+            "label": "2 Kor. 13:11",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/2-korintianina/13/#v47013011"
+          }
+        ]
+      },
+      {
+        "id": "2026485-q15-16",
+        "number": "15-16",
+        "text": "a) Ahoana no azon'ny mpianatra Baiboly anahafana an'i Jesosy rehefa handray fanapahan-kevitra lehibe izy? (Jaona 8:29) b) Ahoana no nanampian'i Marianne ny mpianany handray fanapahan-kevitra tsara? (Jereo koa ny sary.)",
+        "paragraphNumbers": [
+          "15",
+          "16"
+        ],
+        "answer": "a) Azonao atoro ny mpianatra ny lesona faha-35 ao amin'ny boky Ankafizo Mandrakizay ny Fiainana! mba hanampiana azy handray fanapahan-kevitra. Ampirisihino izy hisaintsaina ny ohatr'i Jesosy, izay nanao hoe: 'Manao zavatra mahafaly an'ilay Raiko foana aho.' Anontanio izy hoe: 'Raha ny fikarohana nataoko sy ny zavatra fantatro momba an'i Jehovah, dia inona re no fanapahan-kevitra hampifaly azy?' b) Nampirisihin'i Marianne ny mpianany hisaintsaina hoe hampifaly an'i Jehovah sa hampalahelo azy ny fanapahan-kevitra horaisiny. Tsy nanapa-kevitra teo amin'ny toeran'ilay mpianatra izy fa nampiany hisaintsaina ny zavatra efa fantany momba an'i Jehovah.",
+        "references": [
+          {
+            "label": "Jaona 8:29",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/jaona/8/#v43008029"
+          }
+        ]
+      },
+      {
+        "id": "2026485-q17",
+        "number": "17",
+        "text": "Inona no zava-dehibe indrindra tokony hianaran'ny olona ampianarintsika Baiboly?",
+        "paragraphNumbers": [
+          "17"
+        ],
+        "answer": "Betsaka ny zavatra ianaran'ny olona rehefa mianatra Baiboly, anisan'izany ny fampianarana fototra momba ny vidim-panavotana, ilay Fanjakana, ary ny hoe manao ahoana ny olona rehefa maty. Tsy ireo fotsiny anefa no tiantsika ho fantany, fa tiantsika hahafantatra tsara an'i Jehovah koa izy.",
+        "references": []
+      },
+      {
+        "id": "2026485-q18",
+        "number": "18",
+        "text": "Inona no fitahiana miandry an'izay mahafantatra tsara an'i Jehovah?",
+        "paragraphNumbers": [
+          "18"
+        ],
+        "answer": "Tombontsoa be ilay hoe mampianatra ny hafa hahafantatra tsara an'i Jehovah. Dieny izao dia efa mahatsiaro ho sambatra izay mahafantatra tsara azy sy manompo azy. Ary amin'ny hoavy, dia hiaina mandrakizay izay mahalala an'i Jehovah. Tsy izay ihany fa milaza ny Baiboly hoe 'fantatr'Andriamanitra' izay miezaka hahafantatra azy sy tia azy, ka mandray antsika ho namany ilay Andriamanitra Mahery Indrindra.",
+        "references": [
+          {
+            "label": "Sal. 25:12-15",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/salamo/25/#v19025012-v19025015"
+          },
+          {
+            "label": "1 Jaona 5:20",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/1-jaona/5/#v62005020"
+          },
+          {
+            "label": "1 Kor. 8:3",
+            "url": "https://www.jw.org/mg/zavatra-misy/baiboly/nwt/boky/1-korintianina/8/#v46008003"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "watchtower-2026484",
     "documentId": 2026484,
     "title": "Miezaka Hahafantatra Kokoa An'i Jehovah ve Ianao?",
